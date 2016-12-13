@@ -13,7 +13,7 @@ import static org.testng.Assert.fail;
  * Created by gorozheyevd on 13.12.2016.
  */
 public class BaseClass {
-    private static WebDriver driver;
+    protected static WebDriver driver;
     private static String baseUrl;
     private static boolean acceptNextAlert = true;
     private static StringBuffer verificationErrors = new StringBuffer();

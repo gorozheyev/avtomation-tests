@@ -5,7 +5,7 @@ package com.example.tests;
 
 import org.testng.annotations.Test;
 
-public class TestsForMainPage extends BaseClass{
+public class TestsForMainPage1 extends BaseClass{
 
     @Test
     public void testSearchFilterWithWalue() throws Exception {
@@ -22,5 +22,4 @@ public class TestsForMainPage extends BaseClass{
         inputValueInSearchField(new MainPageData(""));
         clickOnSearchButton();
     }
-
 }

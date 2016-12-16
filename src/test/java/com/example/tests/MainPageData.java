@@ -4,6 +4,7 @@ public class MainPageData {
     public  String name;
 
     public MainPageData(String name) {
+
         this.name = name;
     }
 

@@ -82,4 +82,22 @@ public class BaseClass {
             acceptNextAlert = true;
         }
     }
+
+    protected void presenceFiveBlocksOnMainePage() {
+        driver.findElement(By.xpath("(//div[@class='content-frame margin-b20'])[1]")).isDisplayed();
+        driver.findElement(By.xpath("(//div[@class='content-frame margin-b20'])[2]")).isDisplayed();
+        driver.findElement(By.xpath("(//div[@class='content-frame margin-b20'])[3]")).isDisplayed();
+        driver.findElement(By.xpath("(//div[@class='content-frame margin-b20'])[4]")).isDisplayed();
+        driver.findElement(By.id("tabsJQ")).isDisplayed();
+    }
+
+    protected void openMoskvaMainPage() {
+        driver.get("http://www.avtopoisk.ru/");
+        driver.findElement(By.cssSelector(".caret-dd")).click();
+        driver.findElement(By.linkText("Москва")).click();
+    }
+
+    protected String getFooterSeoText() {
+        return driver.findElement(By.cssSelector(".seo-text.text")).getText();
+    }
 }

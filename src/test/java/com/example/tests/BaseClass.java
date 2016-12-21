@@ -2,6 +2,7 @@ package com.example.tests;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -99,5 +100,27 @@ public class BaseClass {
 
     protected String getFooterSeoText() {
         return driver.findElement(By.cssSelector(".seo-text.text")).getText();
+    }
+
+    protected void clickOnElementsFromOtherServices() {
+        driver.findElement(By.xpath("//div[contains(text(), 'Продажа авто')]")).click();
+        driver.findElement(By.xpath("//div/h3[contains(text(), 'Размещение объявления')]"));
+        driver.navigate().back();
+        driver.findElement(By.xpath("//div[contains(text(), 'Автосалоны')]")).click();
+        driver.navigate().back();
+        driver.findElement(By.xpath("//div[contains(text(), 'СТО')]")).click();
+        driver.navigate().back();
+        driver.findElement(By.xpath("//div[contains(text(), 'Автовыкуп')]")).click();
+        driver.navigate().back();
+        driver.findElement(By.xpath("//div[contains(text(), 'Кредиты')]")).click();
+        driver.navigate().back();
+        driver.findElement(By.xpath("//div[contains(text(), 'Страхование')]")).click();
+    }
+
+    protected void checkTitleInBlockOtherServices() {
+        String title = driver.findElement(By.cssSelector(".simple-tile.service-img.service-img__sell")).getAttribute("title");
+        if (!title.equals("")){}
+            else {
+            AssertJUnit.fail("Пропали тайтлы в блоке Другие услуги");}
     }
 }

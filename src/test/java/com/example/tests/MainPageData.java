@@ -12,4 +12,5 @@ public class MainPageData {
         return name;
     }
 
+    public MainPageData() {}
 }

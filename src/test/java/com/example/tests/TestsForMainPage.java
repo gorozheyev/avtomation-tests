@@ -9,37 +9,35 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.AssertJUnit.fail;
 
 public class TestsForMainPage extends BaseClass{
 
-//   =============================================
-//    тесты для фильтра поиска
+//   ======================================================================================= тесты для фильтра поиска
     @Test
     public void testSearchFilterWithWalue() throws Exception {
         openMainPage();
-        MainPageData car = new MainPageData("toyota");
+        MainPageData car = new MainPageData();
         car.name = "toyota";
         inputValueInSearchField(car);
         clickOnSearchButton();
 //     проверяем тайтл открывшейся страницы
-        String pageTitle = driver.getTitle();
-        if (pageTitle.equals("Купить Toyota б/у в России: цены, фото, характеристики. Продажа Тойота с пробегом"));
-        else {
-            throw new Exception("Тайтл страницы не совпадает");
-        }
+        if (driver.getTitle().equals("Купить Toyota б/у в России: цены, фото, характеристики. Продажа Тойота с пробегом")){}
+        else fail("Тайтл страницы не совпадает");
     }
 
     @Test
-    public void testWithEmptySearchFilter() throws Exception {
+    public void testWithEmptySearchFilter() {
         openMainPage();
         inputValueInSearchField(new MainPageData(""));
         clickOnSearchButton();
+        if (driver.getTitle().equals("Купить б/у авто с пробегом в России. Подержанные автомобили и цены в России, недорого")){}
+        else fail("Тайтл страницы не совпадает");
     }
 
 //    тeсты для блока "по маркам"
-//    ================================================
-//    проверка тайтла для марки из блока
+//    ============================================================================= проверка тайтла для марки из блока
     @Test
     public void checkTitleOnMainPage()  {
         openMoskvaMainPage();
@@ -49,23 +47,29 @@ public class TestsForMainPage extends BaseClass{
         String titleName = markTitle.getAttribute("title");
         if (titleName.equals(""))
             fail("Пропали тайтлы у марок на главной странице");
+    }
+
+    @Test
+    public void goToMarkPageAndToAllBrandsPage() {
+        openMoskvaMainPage();
         driver.findElement(By.xpath("//div[@class='simple-tile simple-tile__sm'][3]")).click();
         driver.navigate().back();
         driver.findElement(By.xpath("(//span[@class='link-more text-uppercase'])[1]")).click();
-        driver.findElement(By.xpath("html/body/section/div[2]/div/div[2]/div[2]/div[2]/a")).click();
+        driver.findElement(By.linkText("Все марки")).click();
         String url = driver.getCurrentUrl();
         if (url.equals("http://moskva.avtopoisk.ru/all-brands.html")) {
-            driver.navigate().back();
-        } else {
-            fail("Это не страница всех марок");
+        } else {fail("Это не страница всех марок");}
+        String markTitle = driver.findElement(By.xpath("//div[@class='simple-tile simple-tile__sm'][12]")).getAttribute("title");
+        if (markTitle.equals("")){
+            fail("Не отображаются тайтлы марок на странице Всех марок");
         }
     }
 
-//    =========================== тесты для хедера
+//    ==================================================================================== тесты для хедера
 //    клик по лого и проверка возврата на главную страницу
     @Test
     public void checkCkickOnLogo() throws Exception {
-        openMainPage();
+        openMoskvaMainPage();
         clickOnSearchButton();
         driver.findElement(By.xpath("//a[@class='logo']")).click();
         String mainTitle = driver.getTitle();
@@ -116,7 +120,7 @@ public class TestsForMainPage extends BaseClass{
         presenceFiveBlocksOnMainePage();
     }
 
-//    ==================== тесты для футера
+//    ====================================================================================== тесты для футера
     @Test
     public void presenceSeoTextInFooter() throws Exception {
         openMainPage();
@@ -126,13 +130,42 @@ public class TestsForMainPage extends BaseClass{
         System.out.println(seoText);
     }
 
-//    ======================== тесты для блока другие услуги
-//    @Test
-//    public void checkTitleAndCklickOnServices(){
-//        openMainPage();
-//        String titles = driver.findElement(By.xpath("//div[@class='services-container content-panel']")).getText();
-//        System.out.println(titles);
-//        if (!titles.equals(""));
-//        driver.findElement()
-//    }
+//    ================================================================================ тесты для блока другие услуги
+    @Test
+//    проверка тайтлов + клик по разделам
+    public void checkTitleAndCklickOnServices(){
+        openMainPage();
+        checkTitleInBlockOtherServices();
+        clickOnElementsFromOtherServices();
+        openMoskvaMainPage();
+        checkTitleInBlockOtherServices();
+        clickOnElementsFromOtherServices();
+    }
+
+//    ================================================================================== тесты для блока топ категорий
+    @Test
+//    проверка тайтлов + клик по категориям
+    public void checkTitlesTopCategory(){
+        openMainPage();
+        assertEquals("Продажа легковых авто в России", driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).getAttribute("title"));
+        driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).click();
+        driver.findElement(By.cssSelector(".listing-item-flex"));
+        driver.navigate().back();
+        assertEquals("Продажа спецтехники в России", driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).getAttribute("title"));
+        driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).click();
+        driver.findElement(By.cssSelector(".listing-item-flex"));
+    }
+
+    @Test
+    public void checkTitlesTopCategoryMoscow(){
+        openMainPage();
+        assertEquals("Продажа легковых авто в Москве", driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).getAttribute("title"));
+        driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).click();
+        driver.findElement(By.cssSelector(".listing-item-flex"));
+        driver.navigate().back();
+        assertEquals("Продажа спецтехники в Москве", driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).getAttribute("title"));
+        driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).click();
+        driver.findElement(By.cssSelector(".listing-item-flex"));
+    }
+
 }

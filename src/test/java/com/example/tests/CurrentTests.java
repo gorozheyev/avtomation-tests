@@ -44,7 +44,8 @@ public class CurrentTests extends BaseClass{
     public void initPopapOnSearchPage() {
         openMoskvaMainPage();
         clickOnSearchButton();
-        driver.findElement(By.xpath("//input[@placeholder='E-mail']")).sendKeys("kljkljkljl");
+        WebElement inputField = driver.findElement(By.xpath("//input[@placeholder='E-mail']"));
+        inputField.sendKeys("kljkljkljl");
         driver.findElement(By.cssSelector(".btn.btn-lg.btn-blue.w-fluid.buttonSubscribe")).click();
         driver.findElement(By.cssSelector(".btn-close-cross__dk.btn-rnd.btn-md.closeSubscribe")).click();
         assertEquals("Купить б/у авто с пробегом в Москве. Подержанные автомобили и цены в Москве, недорого", driver.getTitle());

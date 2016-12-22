@@ -158,12 +158,15 @@ public class TestsForMainPage extends BaseClass{
 
     @Test
     public void checkTitlesTopCategoryMoscow(){
-        openMainPage();
+        openMoskvaMainPage();
         assertEquals("Продажа легковых авто в Москве", driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).getAttribute("title"));
         driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).click();
         driver.findElement(By.cssSelector(".listing-item-flex"));
         driver.navigate().back();
-        assertEquals("Продажа спецтехники в Москве", driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).getAttribute("title"));
+//        assertEquals("Продажа спецтехники в Москве", driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).getAttribute("title"));
+        String titleTopCategory = driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).getAttribute("title");
+        if (titleTopCategory.contains("в Москве")){}
+            else {fail("Проверить тайтлы в блоке топ категорий на главной Москвы");}
         driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).click();
         driver.findElement(By.cssSelector(".listing-item-flex"));
     }

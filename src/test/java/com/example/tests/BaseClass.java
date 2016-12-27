@@ -2,7 +2,6 @@ package com.example.tests;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -121,6 +120,6 @@ public class BaseClass {
         String title = driver.findElement(By.cssSelector(".simple-tile.service-img.service-img__sell")).getAttribute("title");
         if (!title.equals("")){}
             else {
-            AssertJUnit.fail("Пропали тайтлы в блоке Другие услуги");}
+            fail("Пропали тайтлы в блоке Другие услуги");}
     }
 }

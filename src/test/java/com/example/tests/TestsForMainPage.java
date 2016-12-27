@@ -40,7 +40,7 @@ public class TestsForMainPage extends BaseClass{
 //    ============================================================================= проверка тайтла для марки из блока
     @Test
     public void checkTitleOnMainPage()  {
-        openMoskvaMainPage();
+        openMainPage();
         // находим элемент
         WebElement markTitle = driver.findElement(By.xpath("(//a[@class='tile-title'])[2]"));
         // получаем значение из title
@@ -50,6 +50,7 @@ public class TestsForMainPage extends BaseClass{
     }
 
     @Test
+//    клик по марке из блока марок и проверка тайтла у марки на странице 'всех марок'
     public void goToMarkPageAndToAllBrandsPage() {
         openMoskvaMainPage();
         driver.findElement(By.xpath("//div[@class='simple-tile simple-tile__sm'][3]")).click();
@@ -151,7 +152,9 @@ public class TestsForMainPage extends BaseClass{
         driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).click();
         driver.findElement(By.cssSelector(".listing-item-flex"));
         driver.navigate().back();
-        assertEquals("Продажа спецтехники в России", driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).getAttribute("title"));
+        String titleTopCategory = driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).getAttribute("title");
+        if (titleTopCategory.contains("в России")){}
+        else {fail("Проверить тайтлы в блоке топ категорий на главной Москвы");}
         driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).click();
         driver.findElement(By.cssSelector(".listing-item-flex"));
     }
@@ -169,6 +172,61 @@ public class TestsForMainPage extends BaseClass{
             else {fail("Проверить тайтлы в блоке топ категорий на главной Москвы");}
         driver.findElement(By.xpath("(//a[@class='title-item'])[2]")).click();
         driver.findElement(By.cssSelector(".listing-item-flex"));
+    }
+
+//    ===========================================================================Тесты для блока Похожие объявления
+    @Test
+    public void checkClickAndTitleOnLastAdverts(){
+        openMainPage();
+        String advertTitle = driver.findElement(By.xpath("//a[@class='link-tile'][1]")).getAttribute("title");
+//        проверяем тайтлы у похожих объявлений
+        if (advertTitle.equals(""))
+            fail("Пропали тайтлы в блоке последних объявлений на лавной странице");
+        String advertAlt = driver.findElement(By.xpath("html/body/section/div[2]/div/div[4]/div[2]/div/div/div/a[1]/div[1]/div/img[1]")).getAttribute("alt");
+//        проверяем alt у картинок
+        if (advertAlt.equals(""))
+            fail("В похожих объявлениях у картинок пропали ALTы");
+        driver.findElement(By.xpath("//a[@class='link-tile'][1]")).click();
+        String adpageUrl = driver.getCurrentUrl();
+//        проверяем что при клике мы пореходим на страницу адпейдж
+        if (adpageUrl.contains("avtopoisk.ru/search/adpage/"));
+        else fail("Это не страница адпейдж, проверить клик по последним объявлениям");
+        driver.navigate().back();
+        List<WebElement> listOfTitles = driver.findElements(By.xpath("//div[@class='links-tiles-container']/div/a"));
+        if (listOfTitles.size() <= 15);
+            else fail("Похожих объявлений должно быть не больше 15");
+    }
+
+    @Test
+    public void checkTitlesAndGoToAllCityesPage(){
+        openMainPage();
+        driver.findElement(By.cssSelector(".caret-dd")).click();
+        String cityTitle = driver.findElement(By.xpath("//div[@class='cities-list margin-t05']/ul/li[3]/a")).getAttribute("title");
+        if (cityTitle.contains("Продажа автомобилей в"));
+        else fail("Пропали тайтлы в выпадающем списке локаций на главной");
+        assertEquals("Продажа автомобилей по городам ", driver.findElement(By.linkText("Все города")).getAttribute("title"));
+        driver.findElement(By.linkText("Все города")).click();
+        assertEquals("http://www.avtopoisk.ru/all-cities.html", driver.getCurrentUrl());
+        assertEquals("ПРОДАЖА АВТОМОБИЛЕЙ В ГОРОДАХ", driver.findElement(By.xpath("//h2[@class='h3']")).getText());
+    }
+
+//    ============================================================================ тесты для блока 'тест-драйвы'
+    @Test
+    public void checkClickAndTitlesInBlockTestDrives(){
+        openMainPage();
+        assertEquals("Тест-драйвы", driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[1]")).getAttribute("title"));
+        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[1]")).click();
+        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
+        driver.navigate().back();
+        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[2]")).click();
+        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
+        driver.navigate().back();
+        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[3]")).click();
+        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//a[@id='tile-more-testdrives'])[1]")).click();
+        assertEquals("http://www.avtopoisk.ru/testdrive.html", driver.getCurrentUrl());
+        assertEquals("Тест-драйвы автомобилей на Avtopoisk.ru - каталог тест-драйвов авто.", driver.getTitle());
     }
 
 }

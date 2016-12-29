@@ -41,7 +41,7 @@ public class CurrentTests extends BaseClass{
 
     @Test
 //    проверка попапа-подписки на выдаче и при клике на пагинацию
-    public void initPopapOnSearchPage() {
+    public void initPopapOnFirstAndSecondSearchPages() {
         openMoskvaMainPage();
         clickOnSearchButton();
         WebElement inputField = driver.findElement(By.xpath("//input[@placeholder='E-mail']"));

@@ -122,4 +122,48 @@ public class BaseClass {
             else {
             fail("Пропали тайтлы в блоке Другие услуги");}
     }
+
+    protected void clickOnSeeMoreTestDrivesButton() {
+        driver.findElement(By.xpath("(//a[@id='tile-more-testdrives'])[1]")).click();
+    }
+
+    protected void clickOnThirdTestDriveAndGoBack() {
+        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[3]")).click();
+        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
+        driver.navigate().back();
+    }
+
+    protected void clickOnSecondTestDriveAndGoBack() {
+        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[2]")).click();
+        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
+        driver.navigate().back();
+    }
+
+    protected void clickOnFirstTestDriveAndGoBack() {
+        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[1]")).click();
+        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
+        driver.navigate().back();
+    }
+
+    protected void clickSeeMoreCatalogButton() {
+        driver.findElement(By.xpath("((//div[@id='panel-testdrives'])[2])/a[4]")).click();
+    }
+
+    protected void clickOnThirdCatalogModelAndGoBack() {
+        driver.findElement(By.xpath("((//div[@id='panel-testdrives'])[2])/a[3]")).click();
+        driver.findElement(By.cssSelector(".content-frame.margin-b15"));
+        driver.navigate().back();
+    }
+
+    protected void clickOnSecondCatalogModelAndGoBack() {
+        driver.findElement(By.xpath("((//div[@id='panel-testdrives'])[2])/a[2]")).click();
+        driver.findElement(By.cssSelector(".content-frame.margin-b15"));
+        driver.navigate().back();
+    }
+
+    protected void clickOnFirstCatalogModelAndGoBack() {
+        driver.findElement(By.xpath("((//div[@id='panel-testdrives'])[2])/a[1]")).click();
+        driver.findElement(By.cssSelector(".content-frame.margin-b15"));
+        driver.navigate().back();
+    }
 }

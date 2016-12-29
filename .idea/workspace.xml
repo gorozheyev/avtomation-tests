@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3e1a924-b8cb-4d5b-87d2-1c5562b9a43d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java" />
     </list>
     <ignored path="AvtomationTestsAvtopoisk.iws" />
@@ -34,22 +34,35 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="493">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestsForMainPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestsForMainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="229" column="5" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
+            <state relative-caret-position="276">
+              <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <marker date="1482847180931" expanded="true" signature="6467:6756" ph="..." />
+                <marker date="1482927547774" expanded="true" signature="6467:6756" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+              <folding>
+                <element signature="e#1551#1552#0" expanded="true" />
+                <element signature="e#1592#1593#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,11 +71,11 @@
       <file leaf-file-name="CurrentTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            <state relative-caret-position="867">
+              <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1482409565214" expanded="true" signature="1510:2349" ph="..." />
+                <marker date="1483005875252" expanded="true" signature="1510:2364" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,9 +107,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage1.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/MainPageData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java" />
       </list>
     </option>
   </component>
@@ -232,72 +245,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.com.example.tests">
-    <configuration default="false" name="C:/Users/gorozheyevd/.IdeaIC2016.2/system/temp-testng-customsuite.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.example.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="AvtomationTestsAvtopoisk" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$USER_HOME$/.IdeaIC2016.2/system/temp-testng-customsuite.xml" />
-      <option name="PACKAGE_NAME" value="com.example.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.TestsForMainPage" />
-      <option name="METHOD_NAME" value="checkClickAndTitleOnLastAdverts" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestsForMainPage.goToMarkPageAndToAllBrandsPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.example.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="AvtomationTestsAvtopoisk" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.example.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.TestsForMainPage" />
-      <option name="METHOD_NAME" value="goToMarkPageAndToAllBrandsPage" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="false" name="TestsForMainPage.checkTitlesAndGoToAllCityesPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -364,7 +311,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="TestsForMainPage.checkClickAndTitlesInBlockTestDrives" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.example.tests.*" />
@@ -377,7 +324,73 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.example.tests" />
       <option name="MAIN_CLASS_NAME" value="com.example.tests.TestsForMainPage" />
-      <option name="METHOD_NAME" value="checkClickAndTitlesInBlockTestDrives" />
+      <option name="METHOD_NAME" value="checkClickAndTitlesInBlockTestDrivesOnMainPage" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AvtomationTestsAvtopoisk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.example.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.TestsForMainPage" />
+      <option name="METHOD_NAME" value="checkClickAndTitlesInBlockCatalogOnMainPage" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="CurrentTests.openStoOnMainPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AvtomationTestsAvtopoisk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.example.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.CurrentTests" />
+      <option name="METHOD_NAME" value="openStoOnMainPage" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -671,19 +684,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.com.example.tests" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/gorozheyevd/.IdeaIC2016.2/system/temp-testng-customsuite.xml" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.goToMarkPageAndToAllBrandsPage" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkTitlesAndGoToAllCityesPage" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkTitlesAndGoToAllCityesPage (1)" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkClickAndTitlesInBlockTestDrives" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkTitlesAndGoToAllCityesPage" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkTitlesAndGoToAllCityesPage (1)" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.CurrentTests.openStoOnMainPage" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkTitlesAndGoToAllCityesPage" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkClickAndTitlesInBlockTestDrives" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkTitlesAndGoToAllCityesPage (1)" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.goToMarkPageAndToAllBrandsPage" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/Users/gorozheyevd/.IdeaIC2016.2/system/temp-testng-customsuite.xml" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.CurrentTests.openStoOnMainPage" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkTitlesAndGoToAllCityesPage" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.checkTitlesAndGoToAllCityesPage (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -701,34 +714,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockTestDrives - 2016.12.27 at 15h 56m 01s.xml">
-      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockTestDrives" configurationId="TestNG" />
+    <history-entry file="CurrentTests_openStoOnMainPage - 2016.12.28 at 15h 12m 46s.xml">
+      <configuration name="CurrentTests.openStoOnMainPage" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockTestDrives - 2016.12.27 at 15h 57m 07s.xml">
-      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockTestDrives" configurationId="TestNG" />
+    <history-entry file="CurrentTests_openStoOnMainPage - 2016.12.28 at 15h 31m 01s.xml">
+      <configuration name="CurrentTests.openStoOnMainPage" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockTestDrives - 2016.12.27 at 15h 58m 32s.xml">
-      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockTestDrives" configurationId="TestNG" />
+    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockCatalog - 2016.12.28 at 13h 21m 37s.xml">
+      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockCatalog" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockTestDrives - 2016.12.27 at 15h 59m 16s.xml">
-      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockTestDrives" configurationId="TestNG" />
+    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockCatalog - 2016.12.28 at 13h 29m 36s.xml">
+      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockCatalog" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockTestDrives - 2016.12.27 at 16h 00m 16s.xml">
-      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockTestDrives" configurationId="TestNG" />
+    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockCatalogOnMainPage - 2016.12.28 at 14h 06m 28s.xml">
+      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsForMainPage_checkTitlesAndGoToAllCityesPage - 2016.12.27 at 14h 29m 49s.xml">
-      <configuration name="TestsForMainPage.checkTitlesAndGoToAllCityesPage" configurationId="TestNG" />
+    <history-entry file="TestsForMainPage_checkClickAndTitlesInBlockTestDrivesOnMainPage - 2016.12.28 at 14h 05m 54s.xml">
+      <configuration name="TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsForMainPage_checkTitlesAndGoToAllCityesPage - 2016.12.27 at 14h 31m 12s.xml">
-      <configuration name="TestsForMainPage.checkTitlesAndGoToAllCityesPage" configurationId="TestNG" />
+    <history-entry file="com_example_tests - 2016.12.28 at 10h 53m 34s.xml">
+      <configuration name="com.example.tests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsForMainPage_checkTitlesAndGoToAllCityesPage - 2016.12.27 at 14h 32m 01s.xml">
-      <configuration name="TestsForMainPage.checkTitlesAndGoToAllCityesPage" configurationId="TestNG" />
+    <history-entry file="com_example_tests - 2016.12.28 at 14h 45m 07s.xml">
+      <configuration name="com.example.tests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestsForMainPage_checkTitlesAndGoToAllCityesPage - 2016.12.27 at 16h 00m 46s.xml">
-      <configuration name="TestsForMainPage.checkTitlesAndGoToAllCityesPage" configurationId="TestNG" />
+    <history-entry file="com_example_tests - 2016.12.28 at 14h 51m 11s.xml">
+      <configuration name="com.example.tests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="com_example_tests - 2016.12.27 at 16h 14m 18s.xml">
+    <history-entry file="com_example_tests - 2016.12.29 at 09h 38m 17s.xml">
       <configuration name="com.example.tests" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -742,7 +755,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -827,7 +840,7 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <marker date="1482847180931" expanded="true" signature="6467:6756" ph="..." />
+            <marker date="1482927547774" expanded="true" signature="6467:6756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -838,7 +851,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482409565214" expanded="true" signature="1510:2349" ph="..." />
+            <marker date="1483005875252" expanded="true" signature="1510:2364" ph="..." />
           </folding>
         </state>
       </provider>
@@ -858,7 +871,7 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <marker date="1482847180931" expanded="true" signature="6467:6756" ph="..." />
+            <marker date="1482927547774" expanded="true" signature="6467:6756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -892,7 +905,7 @@
           <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482409565214" expanded="true" signature="1510:2349" ph="..." />
+            <marker date="1483005875252" expanded="true" signature="1510:2364" ph="..." />
           </folding>
         </state>
       </provider>
@@ -912,7 +925,7 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <marker date="1482847180931" expanded="true" signature="6467:6756" ph="..." />
+            <marker date="1482927547774" expanded="true" signature="6467:6756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -935,7 +948,7 @@
           <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482409565214" expanded="true" signature="1510:2349" ph="..." />
+            <marker date="1483005875252" expanded="true" signature="1510:2364" ph="..." />
           </folding>
         </state>
       </provider>
@@ -955,7 +968,7 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <marker date="1482847180931" expanded="true" signature="6467:6756" ph="..." />
+            <marker date="1482927547774" expanded="true" signature="6467:6756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -978,7 +991,7 @@
           <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482409565214" expanded="true" signature="1510:2349" ph="..." />
+            <marker date="1483005875252" expanded="true" signature="1510:2364" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1044,39 +1057,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
+        <state relative-caret-position="493">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+        <state relative-caret-position="867">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482409565214" expanded="true" signature="1510:2349" ph="..." />
+            <marker date="1483005875252" expanded="true" signature="1510:2364" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="229" column="5" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
+        <state relative-caret-position="276">
+          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <marker date="1482847180931" expanded="true" signature="6467:6756" ph="..." />
+            <marker date="1482927547774" expanded="true" signature="6467:6756" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+          <folding>
+            <element signature="e#1551#1552#0" expanded="true" />
+            <element signature="e#1592#1593#0" expanded="true" />
           </folding>
         </state>
       </provider>

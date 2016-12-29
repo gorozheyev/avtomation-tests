@@ -212,21 +212,27 @@ public class TestsForMainPage extends BaseClass{
 
 //    ============================================================================ тесты для блока 'тест-драйвы'
     @Test
-    public void checkClickAndTitlesInBlockTestDrives(){
+    public void checkClickAndTitlesInBlockTestDrivesOnMainPage(){
         openMainPage();
         assertEquals("Тест-драйвы", driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[1]")).getAttribute("title"));
-        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[1]")).click();
-        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
-        driver.navigate().back();
-        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[2]")).click();
-        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
-        driver.navigate().back();
-        driver.findElement(By.xpath("//div[@id='panel-testdrives']/a[3]")).click();
-        driver.findElement(By.cssSelector(".div-panel.indent__on.toe.div-panel_content"));
-        driver.navigate().back();
-        driver.findElement(By.xpath("(//a[@id='tile-more-testdrives'])[1]")).click();
+        clickOnFirstTestDriveAndGoBack();
+        clickOnSecondTestDriveAndGoBack();
+        clickOnThirdTestDriveAndGoBack();
+        clickOnSeeMoreTestDrivesButton();
         assertEquals("http://www.avtopoisk.ru/testdrive.html", driver.getCurrentUrl());
         assertEquals("Тест-драйвы автомобилей на Avtopoisk.ru - каталог тест-драйвов авто.", driver.getTitle());
+    }
+
+    @Test
+    public void checkClickAndTitlesInBlockCatalogOnMainPage(){
+        openMainPage();
+        assertEquals("каталог", driver.findElement(By.xpath("((//div[@id='panel-testdrives'])[2])/a[1]")).getAttribute("title"));
+        clickOnFirstCatalogModelAndGoBack();
+        clickOnSecondCatalogModelAndGoBack();
+        clickOnThirdCatalogModelAndGoBack();
+        clickSeeMoreCatalogButton();
+        assertEquals("http://www.avtopoisk.ru/catalog.html", driver.getCurrentUrl());
+        assertEquals("Каталог автомобилей по маркам на Avtopoisk.Ru в России.", driver.getTitle());
     }
 
 }

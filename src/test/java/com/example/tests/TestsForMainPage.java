@@ -36,8 +36,8 @@ public class TestsForMainPage extends BaseClass{
         else fail("Тайтл страницы не совпадает");
     }
 
-//    тeсты для блока "по маркам"
-//    ============================================================================= проверка тайтла для марки из блока
+//    ============================================================================= тeсты для блока "по маркам"
+//  проверка тайтла для марки из блока
     @Test
     public void checkTitleOnMainPage()  {
         openMainPage();
@@ -128,7 +128,78 @@ public class TestsForMainPage extends BaseClass{
         String seoText = getFooterSeoText();
         if (!seoText.equals("") & seoText.contains("Наиболее простой и комфортный поиск автомобилей")){}
         else {throw new Exception("Пропали сео тексты в футере");}
-        System.out.println(seoText);
+    }
+
+    @Test
+    public void blockPartners(){
+        openMainPage();
+        driver.findElement(By.cssSelector("div.col-md-5"));
+        assertEquals("Условия пользования", driver.findElement(By.xpath("(//ul[@class='list-items list-reset'])[2]/li[1]/a")).getAttribute("title"));
+        driver.findElement(By.xpath("(//ul[@class='list-items list-reset'])[2]/li[1]")).click();
+        assertEquals("http://www.avtopoisk.ru/page/terms.html", driver.getCurrentUrl());
+        driver.findElement(By.cssSelector(".content-cell.table-cell"));
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//ul[@class='list-items list-reset'])[2]/li[2]")).click();
+        assertEquals("http://www.avtopoisk.ru/page/policy.html", driver.getCurrentUrl());
+        driver.findElement(By.cssSelector(".content-cell.table-cell"));
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//a[contains(text(), 'Обратная связь')])[2]")).click();
+        assertEquals("http://www.avtopoisk.ru/feedback.html", driver.getCurrentUrl());
+        driver.findElement(By.cssSelector(".content-cell.table-cell"));
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//a[contains(text(), 'Для партнеров')])")).click();
+        assertEquals("http://www.avtopoisk.ru/partner/login.html", driver.getCurrentUrl());
+        driver.findElement(By.cssSelector(".content-cell.table-cell"));
+    }
+
+    @Test
+    public void presenceIconsOfSocialNetworks(){
+        openMainPage();
+        driver.findElement(By.cssSelector(".col-md-3.col-social"));
+        driver.findElement(By.xpath("(//a[@class='soc-link soc-link-vk'])[2]")).click();
+        if (driver.getCurrentUrl().contains("https://vk.com/public"));
+            else fail("Это не страница Avtopoisk в VK");
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//a[@class='soc-link soc-link-ok'])[2]")).click();
+        if (driver.getCurrentUrl().contains("https://ok.ru/group/"));
+        else fail("Это не страница Avtopoisk в ОК");
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//a[@class='soc-link soc-link-fb'])[2]")).click();
+        if (driver.getCurrentUrl().contains("https://www.facebook.com/AvtoPoisk.ru.Auto"));
+        else fail("Это не страница Avtopoisk в FB");
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//a[@class='soc-link soc-link-gp'])[2]")).click();
+        if (driver.getCurrentUrl().contains("https://plus.google.com/+AvtopoiskRu"));
+        else fail("Это не страница Avtopoisk в Гугл");
+    }
+
+    @Test
+    public void checkTopCategoryInFooter(){
+        openMainPage();
+        driver.findElement(By.xpath("(//div[@class='col-md-4'])[1]"));
+        assertEquals("Продажа легковых авто в России", driver.findElement(By.xpath("//ul[@class='list-items list-reset']/li[1]/a")).getAttribute("title"));
+        String namesOfCategories = driver.findElement(By.xpath("(//ul[@class='list-items list-reset'])[1]")).getText();
+        if (namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nПрицепы\n"));
+        else fail("Не все категории выводятся в футере");
+        List<WebElement> categories = driver.findElements(By.xpath("(//ul[@class='list-items list-reset'])[1]/li"));
+        for (int i = 1; i<=categories.size(); i++){
+            driver.findElement(By.xpath("((//ul[@class='list-items list-reset'])[1]/li/a)[" + i + "]")).click();
+            driver.findElement(By.cssSelector("#searchbar"));
+            driver.navigate().back();
+        }
+    }
+
+    @Test
+    public void clickOnTextLogo(){
+        openMainPage();
+        driver.findElement(By.cssSelector(".logo-footer.link.text-uppercase")).click();
+        assertEquals("http://www.avtopoisk.ru/", driver.getCurrentUrl());
+        openMoskvaMainPage();
+        driver.findElement(By.cssSelector(".logo-footer.link.text-uppercase")).click();
+        assertEquals("http://www.avtopoisk.ru/", driver.getCurrentUrl());
+        openMoskvaMainPage();
+        driver.findElement(By.xpath("(//div[@class='col-md-4'])[2]/a")).click();
+        assertEquals("http://www.avtopoisk.ru/", driver.getCurrentUrl());
     }
 
 //    ================================================================================ тесты для блока другие услуги
@@ -233,6 +304,46 @@ public class TestsForMainPage extends BaseClass{
         clickSeeMoreCatalogButton();
         assertEquals("http://www.avtopoisk.ru/catalog.html", driver.getCurrentUrl());
         assertEquals("Каталог автомобилей по маркам на Avtopoisk.Ru в России.", driver.getTitle());
+    }
+
+//    =================================================================================== тесты для блока новостей
+    @Test
+    public void checkTitleAndClickOnArticles(){
+        openMainPage();
+        driver.findElement(By.xpath("//div[@class='wide-tiles slider-view']/a[1]")).click();
+        if (driver.getCurrentUrl().contains("http://www.avtopoisk.ru/news/article/id/"));
+        else fail("Это не страница новости");
+        driver.findElement(By.cssSelector(".content-frame.clearfix"));
+        driver.navigate().back();
+        String articleTitle = driver.findElement(By.xpath("//div[@class='wide-tiles slider-view']/a[1]")).getAttribute("title");
+        if (articleTitle.equals(""))
+        fail("Не отображаются тайтлы для новостей из блока 'Статьи' на главной");
+        driver.findElement(By.xpath("//span[contains(text(), 'еще статьи')]")).click();
+        assertEquals("http://www.avtopoisk.ru/news.html", driver.getCurrentUrl());
+    }
+
+//    ================================================================================= тесты для блока статистики
+    @Test
+    public void choiceDifferentGrafics() throws InterruptedException {
+        openMainPage();
+        for (int i=0; i<=3; i++) {
+            driver.findElement(By.xpath("//div[@class='arrows_container']/a[1]")).click();
+            Thread.sleep(1500);
+        }
+            for (int n=0; n<=2; n++){
+                driver.findElement(By.xpath("//div[@class='arrows_container']/a[2]")).click();
+                Thread.sleep(1500);
+            }
+            driver.findElement(By.cssSelector(".btn-chooser-dd.icon.icon-list-flat")).click();
+        String graficNameInList = driver.findElement(By.xpath("//ul[@class='nav nav-tabs nt__inline nt__flat nt__lg tabs__caption']/li[4]")).getText();
+        driver.findElement(By.xpath("//ul[@class='nav nav-tabs nt__inline nt__flat nt__lg tabs__caption']/li[4]")).click();
+        String graficName = driver.findElement(By.xpath("(//h2[@class='h4 text-bold'])[4]")).getText();
+        assertEquals(graficNameInList, graficName);
+        driver.findElement(By.cssSelector(".btn-chooser-dd.icon.icon-list-flat")).click();
+        String otherGraficNameInList = driver.findElement(By.xpath("//ul[@class='nav nav-tabs nt__inline nt__flat nt__lg tabs__caption']/li[5]")).getText();
+        driver.findElement(By.xpath("//ul[@class='nav nav-tabs nt__inline nt__flat nt__lg tabs__caption']/li[5]")).click();
+        String otherGraficName = driver.findElement(By.xpath("(//h2[@class='h4 text-bold'])[5]")).getText();
+        assertEquals(otherGraficNameInList, otherGraficName);
     }
 
 }

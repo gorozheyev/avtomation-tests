@@ -36,6 +36,36 @@ public class TestsForMainPage extends BaseClass{
         else fail("Тайтл страницы не совпадает");
     }
 
+    @Test
+    public void testSearchFieldWithPressedTabs(){
+        openMoskvaMainPage();
+        MainPageData car = new MainPageData();
+        car.name = "ford";
+        for (int i=2; i<=3; i++) {
+            inputValueInSearchField(car);
+            driver.findElement(By.xpath("//li[@role='presentation'][" + i + "]")).click();
+            clickOnSearchButton();
+            driver.findElement(By.cssSelector("#searchbar"));
+            String url = driver.getCurrentUrl();
+            if (url.contains("state=new") | url.contains("state=old"));
+                else fail("Открылась не та страница проверить работу табов в главном фильтре на главной странице Москвы");
+            driver.navigate().back();
+        }
+    }
+
+    @Test
+    public void searchFieldWithPressedTabsCatalog() throws InterruptedException {
+        openMainPage();
+        MainPageData car = new MainPageData();
+        car.name = "bentley";
+        driver.findElement(By.xpath("//li[@role='presentation'][4]")).click();
+        inputValueInSearchField(car);
+        Thread.sleep(1500);
+        driver.findElement(By.xpath("//ul[@class='list-reset']/li[3]")).click();
+        clickOnSearchButton();
+        driver.findElement(By.xpath("//h2[contains(text(), 'каталог моделей   Bentley')]"));
+    }
+
 //    ============================================================================= тeсты для блока "по маркам"
 //  проверка тайтла для марки из блока
     @Test
@@ -179,7 +209,9 @@ public class TestsForMainPage extends BaseClass{
         driver.findElement(By.xpath("(//div[@class='col-md-4'])[1]"));
         assertEquals("Продажа легковых авто в России", driver.findElement(By.xpath("//ul[@class='list-items list-reset']/li[1]/a")).getAttribute("title"));
         String namesOfCategories = driver.findElement(By.xpath("(//ul[@class='list-items list-reset'])[1]")).getText();
-        if (namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nПрицепы\n"));
+//        сравниваем есть ли такие категории последовательно 'нужно подумать как сделать сравнение если категории меняются местами (из-за каунтеров)'
+        if (namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nПрицепы\n") ||
+                namesOfCategories.contains("Легковые авто\nСпецтехника\nГрузовые авто\nАвтобусы\nПрицепы\n"));
         else fail("Не все категории выводятся в футере");
         List<WebElement> categories = driver.findElements(By.xpath("(//ul[@class='list-items list-reset'])[1]/li"));
         for (int i = 1; i<=categories.size(); i++){
@@ -231,7 +263,7 @@ public class TestsForMainPage extends BaseClass{
     }
 
     @Test
-    public void checkTitlesTopCategoryMoscow(){
+     public void checkTitlesTopCategoryMoscow(){
         openMoskvaMainPage();
         assertEquals("Продажа легковых авто в Москве", driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).getAttribute("title"));
         driver.findElement(By.xpath("(//a[@class='title-item'])[1]")).click();

@@ -40,7 +40,6 @@ public class BaseClass {
     }
 
     protected void inputValueInSearchField(MainPageData data) {
-        driver.findElement(By.xpath("(//input[@type='text'])[2]")).click();
         driver.findElement(By.xpath("(//input[@type='text'])[2]")).clear();
         driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys(data.getName());
     }

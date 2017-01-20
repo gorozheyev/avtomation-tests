@@ -378,4 +378,23 @@ public class TestsForMainPage extends BaseClass{
         assertEquals(otherGraficNameInList, otherGraficName);
     }
 
+    @Test
+    public void checkUpFines(){
+        openMainPage();
+        driver.findElement(By.xpath("//div[contains(text(), 'Проверка штрафов')]")).click();
+        if (driver.getCurrentUrl().equals("http://www.avtopoisk.ru/auth.html?pageRedirect=fine")){
+            WebElement email = driver.findElement(By.id("FrontendLoginForm_email"));
+            email.clear();
+            email.sendKeys("partner@test.ru");
+            WebElement password = driver.findElement(By.id("FrontendLoginForm_password"));
+            password.clear();
+            password.sendKeys("1234");
+            driver.findElement(By.xpath("//button[contains(text(), 'войти')]")).click();
+            checkFineUrlAndTabFine();
+        }
+        openMainPage();
+        driver.findElement(By.xpath("//div[contains(text(), 'Проверка штрафов')]")).click();
+        checkFineUrlAndTabFine();
+    }
+
 }

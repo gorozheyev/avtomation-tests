@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 
 /**
@@ -34,20 +35,6 @@ public class BaseClass {
             fail(verificationErrorString);
         }
     }
-
-    protected void clickOnSearchButton() {
-        driver.findElement(By.xpath("//input[@value='Найти']")).click();
-    }
-
-    protected void inputValueInSearchField(MainPageData data) {
-        driver.findElement(By.xpath("(//input[@type='text'])[2]")).clear();
-        driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys(data.getName());
-    }
-
-    protected void openMainPage() {
-        driver.get(baseUrl + "/");
-    }
-
 
     private boolean isElementPresent(By by) {
         try {
@@ -82,6 +69,19 @@ public class BaseClass {
         }
     }
 
+    protected void clickOnSearchButton() {
+        driver.findElement(By.xpath("//input[@value='Найти']")).click();
+    }
+
+    protected void inputValueInSearchField(MainPageData data) {
+        driver.findElement(By.xpath("(//input[@type='text'])[2]")).clear();
+        driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys(data.getName());
+    }
+
+    protected void openMainPage() {
+        driver.get(baseUrl + "/");
+    }
+
     protected void presenceFiveBlocksOnMainePage() {
         driver.findElement(By.xpath("(//div[@class='content-frame margin-b20'])[1]")).isDisplayed();
         driver.findElement(By.xpath("(//div[@class='content-frame margin-b20'])[2]")).isDisplayed();
@@ -113,6 +113,8 @@ public class BaseClass {
         driver.findElement(By.xpath("//div[contains(text(), 'Кредиты')]")).click();
         driver.navigate().back();
         driver.findElement(By.xpath("//div[contains(text(), 'Страхование')]")).click();
+        driver.navigate().back();
+        driver.findElement(By.xpath("//div[contains(text(), 'Проверка штрафов')]"));
     }
 
     protected void checkTitleInBlockOtherServices() {
@@ -164,5 +166,10 @@ public class BaseClass {
         driver.findElement(By.xpath("((//div[@id='panel-testdrives'])[2])/a[1]")).click();
         driver.findElement(By.cssSelector(".content-frame.margin-b15"));
         driver.navigate().back();
+    }
+
+    protected void checkFineUrlAndTabFine() {
+        assertEquals("http://www.avtopoisk.ru/fine.html", driver.getCurrentUrl());
+        driver.findElement(By.cssSelector(".table-container.table-container__columned"));
     }
 }

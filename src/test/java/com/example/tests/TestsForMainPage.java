@@ -96,141 +96,6 @@ public class TestsForMainPage extends BaseClass{
         }
     }
 
-//    ==================================================================================== тесты для хедера
-//    клик по лого и проверка возврата на главную страницу
-    @Test
-    public void checkCkickOnLogo() throws Exception {
-        openMoskvaMainPage();
-        clickOnSearchButton();
-        driver.findElement(By.xpath("//a[@class='logo']")).click();
-        String mainTitle = driver.getTitle();
-        if (mainTitle.equals("Продажа авто в России. Купить автомобиль на «Автопоиск.ру» – авторынок России")){}
-        else throw new Exception("Проверить тайтл главной страицы");
-        String url = driver.getCurrentUrl();
-        if (!url.equals("http://www.avtopoisk.ru/")){
-            throw new Exception("Это не главная страница");
-        }
-    }
-
-    @Test
-    public void ckickOnButtonAddAdvert(){
-        openMainPage();
-        assertEquals("Разместить объявление на Avtopoisk", driver.findElement(By.xpath("(//a[contains(text(), '+ разместить объявление')])[1]")).getAttribute("title"));
-        driver.findElement(By.xpath("(//a[contains(text(), '+ разместить объявление')])[1]")).click();
-        assertEquals("http://www.avtopoisk.ru/add.html", driver.getCurrentUrl());
-        assertEquals("Разместить объявление о продаже авто в России.", driver.getTitle());
-        driver.findElement(By.cssSelector(".content-frame-title>h3"));
-    }
-
-    @Test
-    public void chooseLocationInHeder(){
-        openMainPage();
-//        выбор локации из списка
-        driver.findElement(By.cssSelector(".caret-dd")).click();
-        WebElement samara = driver.findElement(By.linkText("Самара"));
-        assertEquals("Продажа автомобилей в Самаре", samara.getAttribute("title"));
-        samara.click();
-        assertEquals("http://samara.avtopoisk.ru/", driver.getCurrentUrl());
-//        выбор локации путем ввода первых трех символов
-        driver.findElement(By.cssSelector(".caret-dd")).click();
-        driver.findElement(By.xpath("//input[@placeholder='Введите город']")).sendKeys("нов");
-        driver.findElement(By.xpath("//div[@class='dropdown-menu']/ul/li[1]")).click();
-        assertEquals("http://novosibirsk.avtopoisk.ru/", driver.getCurrentUrl());
-    }
-
-    @Test
-    public void dropDownMenuHeaderFirstPart() {
-        openMainPage();
-        driver.findElement(By.id("btn-nav-categories")).click();
-        List<WebElement> categories1 = driver.findElements(By.xpath("//div[@class='col-md-2'][1]/ul/li"));
-        for (int i=1; i<=categories1.size(); i++) {
-            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][1]/ul/li/a)[" + i + "]"));
-            if (!page.getAttribute("title").equals(""));
-            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-            page.click();
-            driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.id("btn-nav-categories")).click();
-        }
-    }
-
-    @Test
-    public void dropDownMenuHeaderSecondPart() {
-        openMainPage();
-        driver.findElement(By.id("btn-nav-categories")).click();
-        List<WebElement> categories2 = driver.findElements(By.xpath("//div[@class='col-md-2'][2]/ul/li"));
-        for (int i=1; i<=categories2.size(); i++) {
-            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][2]/ul/li/a)[" + i + "]"));
-            if (!page.getAttribute("title").equals(""));
-            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-            page.click();
-            driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.id("btn-nav-categories")).click();
-        }
-    }
-
-    @Test
-    public void dropDownMenuHeaderdThirdPart() {
-        openMainPage();
-        driver.findElement(By.id("btn-nav-categories")).click();
-        List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][3]/ul/li"));
-        for (int i=1; i<=categories.size(); i++) {
-            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][3]/ul/li/a)[" + i + "]"));
-            if (!page.getAttribute("title").equals(""));
-            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-            page.click();
-            driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.id("btn-nav-categories")).click();
-        }
-    }
-
-    @Test
-    public void dropDownMenuHeaderdForthdPart() {
-        openMainPage();
-        driver.findElement(By.id("btn-nav-categories")).click();
-        List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][4]/ul/li"));
-        for (int i=1; i<=categories.size(); i++) {
-            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][4]/ul/li/a)[" + i + "]"));
-            if (!page.getAttribute("title").equals(""));
-            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-            page.click();
-            driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.id("btn-nav-categories")).click();
-        }
-    }
-
-    @Test
-    public void dropDownMenuHeaderdFifthdPart() {
-        openMainPage();
-        driver.findElement(By.id("btn-nav-categories")).click();
-        List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][5]/ul/li"));
-        for (int i=1; i<=categories.size(); i++) {
-            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][5]/ul/li/a)[" + i + "]"));
-            if (!page.getAttribute("title").equals(""));
-            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-            page.click();
-            driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.id("btn-nav-categories")).click();
-        }
-    }
-
-    @Test
-    public void dropDownMenuHeaderdSixdPart() {
-        openMainPage();
-        driver.findElement(By.id("btn-nav-categories")).click();
-        List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][6]/ul/li"));
-        for (int i=2; i<=categories.size(); i++) {
-            if (i == 14) {
-            } else {
-                WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][6]/ul/li/a)[" + i + "]"));
-                if (!page.getAttribute("title").equals("")) ;
-                else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-                page.click();
-                driver.navigate().back();
-                driver.findElement(By.id("btn-nav-categories")).click();
-            }
-        }
-    }
-
 //    проверка вывода блоков: марки,объявления,статистика,статьи,услуги на главной
     @Test
     public void presenceElementsOnMainPage() throws Exception {
@@ -515,6 +380,141 @@ public class TestsForMainPage extends BaseClass{
         driver.findElement(By.xpath("//ul[@class='nav nav-tabs nt__inline nt__flat nt__lg tabs__caption']/li[5]")).click();
         String otherGraficName = driver.findElement(By.xpath("(//h2[@class='h4 text-bold'])[5]")).getText();
         assertEquals(otherGraficNameInList, otherGraficName);
+    }
+
+    //    ==================================================================================== тесты для хедера
+//    клик по лого и проверка возврата на главную страницу
+    @Test
+    public void checkCkickOnLogo() throws Exception {
+        openMoskvaMainPage();
+        clickOnSearchButton();
+        driver.findElement(By.xpath("//a[@class='logo']")).click();
+        String mainTitle = driver.getTitle();
+        if (mainTitle.equals("Продажа авто в России. Купить автомобиль на «Автопоиск.ру» – авторынок России")){}
+        else throw new Exception("Проверить тайтл главной страицы");
+        String url = driver.getCurrentUrl();
+        if (!url.equals("http://www.avtopoisk.ru/")){
+            throw new Exception("Это не главная страница");
+        }
+    }
+
+    @Test
+    public void ckickOnButtonAddAdvert(){
+        openMainPage();
+        assertEquals("Разместить объявление на Avtopoisk", driver.findElement(By.xpath("(//a[contains(text(), '+ разместить объявление')])[1]")).getAttribute("title"));
+        driver.findElement(By.xpath("(//a[contains(text(), '+ разместить объявление')])[1]")).click();
+        assertEquals("http://www.avtopoisk.ru/add.html", driver.getCurrentUrl());
+        assertEquals("Разместить объявление о продаже авто в России.", driver.getTitle());
+        driver.findElement(By.cssSelector(".content-frame-title>h3"));
+    }
+
+    @Test
+    public void chooseLocationInHeder(){
+        openMainPage();
+//        выбор локации из списка
+        driver.findElement(By.cssSelector(".caret-dd")).click();
+        WebElement samara = driver.findElement(By.linkText("Самара"));
+        assertEquals("Продажа автомобилей в Самаре", samara.getAttribute("title"));
+        samara.click();
+        assertEquals("http://samara.avtopoisk.ru/", driver.getCurrentUrl());
+//        выбор локации путем ввода первых трех символов
+        driver.findElement(By.cssSelector(".caret-dd")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Введите город']")).sendKeys("нов");
+        driver.findElement(By.xpath("//div[@class='dropdown-menu']/ul/li[1]")).click();
+        assertEquals("http://novosibirsk.avtopoisk.ru/", driver.getCurrentUrl());
+    }
+
+    @Test
+    public void dropDownMenuHeaderFirstPart() {
+        openMainPage();
+        driver.findElement(By.id("btn-nav-categories")).click();
+        List<WebElement> categories1 = driver.findElements(By.xpath("//div[@class='col-md-2'][1]/ul/li"));
+        for (int i=1; i<=categories1.size(); i++) {
+            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][1]/ul/li/a)[" + i + "]"));
+            if (!page.getAttribute("title").equals(""));
+            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+            page.click();
+//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.findElement(By.id("btn-nav-categories")).click();
+        }
+    }
+
+    @Test
+    public void dropDownMenuHeaderSecondPart() {
+        openMainPage();
+        driver.findElement(By.id("btn-nav-categories")).click();
+        List<WebElement> categories2 = driver.findElements(By.xpath("//div[@class='col-md-2'][2]/ul/li"));
+        for (int i=1; i<=categories2.size(); i++) {
+            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][2]/ul/li/a)[" + i + "]"));
+            if (!page.getAttribute("title").equals(""));
+            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+            page.click();
+//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.findElement(By.id("btn-nav-categories")).click();
+        }
+    }
+
+    @Test
+    public void dropDownMenuHeaderdThirdPart() {
+        openMainPage();
+        driver.findElement(By.id("btn-nav-categories")).click();
+        List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][3]/ul/li"));
+        for (int i=1; i<=categories.size(); i++) {
+            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][3]/ul/li/a)[" + i + "]"));
+            if (!page.getAttribute("title").equals(""));
+            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+            page.click();
+//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.findElement(By.id("btn-nav-categories")).click();
+        }
+    }
+
+    @Test
+    public void dropDownMenuHeaderdForthdPart() {
+        openMainPage();
+        driver.findElement(By.id("btn-nav-categories")).click();
+        List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][4]/ul/li"));
+        for (int i=1; i<=categories.size(); i++) {
+            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][4]/ul/li/a)[" + i + "]"));
+            if (!page.getAttribute("title").equals(""));
+            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+            page.click();
+//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.findElement(By.id("btn-nav-categories")).click();
+        }
+    }
+
+    @Test
+    public void dropDownMenuHeaderdFifthdPart() {
+        openMainPage();
+        driver.findElement(By.id("btn-nav-categories")).click();
+        List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][5]/ul/li"));
+        for (int i=1; i<=categories.size(); i++) {
+            WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][5]/ul/li/a)[" + i + "]"));
+            if (!page.getAttribute("title").equals(""));
+            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+            page.click();
+//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.findElement(By.id("btn-nav-categories")).click();
+        }
+    }
+
+    @Test
+    public void dropDownMenuHeaderdSixdPart() {
+        openMainPage();
+        driver.findElement(By.id("btn-nav-categories")).click();
+        List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][6]/ul/li"));
+        for (int i=2; i<=categories.size(); i++) {
+            if (i == 14) {
+            } else {
+                WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][6]/ul/li/a)[" + i + "]"));
+                if (!page.getAttribute("title").equals("")) ;
+                else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+                page.click();
+                driver.navigate().back();
+                driver.findElement(By.id("btn-nav-categories")).click();
+            }
+        }
     }
 
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.example.tests.TestsForMainPage]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.example.tests.TestsForMainPage">
+        <methods>
+          <include name="dropDownMenuHeaderdForthdPart"/>
+          <include name="choiceDifferentGrafics"/>
+          <include name="checkTitlesAndGoToAllCityesPage"/>
+          <include name="checkTitleAndCklickOnServices"/>
+          <include name="goToMarkPageAndToAllBrandsPage"/>
+          <include name="checkTitlesTopCategoryMoscow"/>
+          <include name="ckickOnButtonAddAdvert"/>
+          <include name="searchFieldWithPressedTabsCatalog"/>
+          <include name="clickOnTextLogo"/>
+          <include name="tearDown"/>
+          <include name="checkTitleOnMainPage"/>
+          <include name="chooseLocationInHeder"/>
+          <include name="testSearchFieldWithPressedTabs"/>
+          <include name="setUp"/>
+          <include name="checkTitleAndClickOnArticles"/>
+          <include name="blockPartners"/>
+          <include name="checkTopCategoryInFooter"/>
+          <include name="presenceElementsOnMainPageMoskov"/>
+          <include name="presenceSeoTextInFooter"/>
+          <include name="testSearchFilterWithWalue"/>
+          <include name="checkCkickOnLogo"/>
+          <include name="checkClickAndTitlesInBlockCatalogOnMainPage"/>
+          <include name="checkUpFines"/>
+          <include name="dropDownMenuHeaderSecondPart"/>
+          <include name="presenceElementsOnMainPage"/>
+          <include name="checkClickAndTitlesInBlockTestDrivesOnMainPage"/>
+          <include name="testWithEmptySearchFilter"/>
+          <include name="checkTitlesTopCategory"/>
+        </methods>
+      </class> <!-- com.example.tests.TestsForMainPage -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.example.tests.TestsForMainPage] -->

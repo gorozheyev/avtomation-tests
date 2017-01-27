@@ -139,7 +139,7 @@ public class TestsForMainPage extends BaseClass{
     }
 
     @Test
-    public void dropDownMenuHeaderFirstPart() throws InterruptedException {
+    public void dropDownMenuHeaderFirstPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories1 = driver.findElements(By.xpath("//div[@class='col-md-2'][1]/ul/li"));
@@ -149,31 +149,27 @@ public class TestsForMainPage extends BaseClass{
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
             driver.findElement(By.cssSelector("#searchbar"));
-            driver.navigate().back();
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
 
     @Test
-    public void dropDownMenuHeaderSecondPart() throws InterruptedException {
+    public void dropDownMenuHeaderSecondPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories2 = driver.findElements(By.xpath("//div[@class='col-md-2'][2]/ul/li"));
-        System.out.println(categories2.size());
         for (int i=1; i<=categories2.size(); i++) {
             WebElement page = driver.findElement(By.xpath("(//div[@class='col-md-2'][2]/ul/li/a)[" + i + "]"));
-            System.out.println(page.getAttribute("title"));
             if (!page.getAttribute("title").equals(""));
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
             driver.findElement(By.cssSelector("#searchbar"));
-            driver.navigate().back();
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
 
     @Test
-    public void dropDownMenuHeaderdThirdPart() throws InterruptedException {
+    public void dropDownMenuHeaderdThirdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][3]/ul/li"));
@@ -183,13 +179,12 @@ public class TestsForMainPage extends BaseClass{
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
             driver.findElement(By.cssSelector("#searchbar"));
-            driver.navigate().back();
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
 
     @Test
-    public void dropDownMenuHeaderdForthdPart() throws InterruptedException {
+    public void dropDownMenuHeaderdForthdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][4]/ul/li"));
@@ -199,13 +194,12 @@ public class TestsForMainPage extends BaseClass{
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
             driver.findElement(By.cssSelector("#searchbar"));
-            driver.navigate().back();
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
 
     @Test
-    public void dropDownMenuHeaderdFifthdPart() throws InterruptedException {
+    public void dropDownMenuHeaderdFifthdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][5]/ul/li"));
@@ -215,13 +209,12 @@ public class TestsForMainPage extends BaseClass{
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
             driver.findElement(By.cssSelector("#searchbar"));
-            driver.navigate().back();
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
 
     @Test
-    public void dropDownMenuHeaderdSixdPart() throws InterruptedException {
+    public void dropDownMenuHeaderdSixdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][6]/ul/li"));

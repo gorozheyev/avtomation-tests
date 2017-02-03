@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.AssertJUnit.fail;
@@ -51,6 +52,10 @@ public class TestsForMainPage extends BaseClass{
                 else fail("Открылась не та страница проверить работу табов в главном фильтре на главной странице Москвы");
             driver.navigate().back();
         }
+        driver.findElement(By.xpath("//li[@role='presentation'][4]")).click();
+        clickOnSearchButton();
+        assertEquals("http://moskva.avtopoisk.ru/catalog.html", driver.getCurrentUrl());
+        assertEquals("каталог по маркам",driver.findElement(By.xpath("//h2[@class='h3']")).getText().toLowerCase());
     }
 
     @Test
@@ -195,13 +200,13 @@ public class TestsForMainPage extends BaseClass{
         String namesOfCategories = driver.findElement(By.xpath("(//ul[@class='list-items list-reset'])[1]")).getText();
 //        сравниваем есть ли такие категории последовательно 'нужно подумать как сделать сравнение если категории меняются местами (из-за каунтеров)'
         if (namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nПрицепы\n") ||
-                namesOfCategories.contains("Легковые авто\nСпецтехника\nГрузовые авто\nАвтобусы\nПрицепы\n"));
-        else fail("Не все категории выводятся в футере");
+                namesOfCategories.contains("Легковые авто\nСпецтехника\nГрузовые авто\nАвтобусы\nПрицепы\n") ||
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nМото\n"));
+        else fail("Проверить категории авто в футере");
         List<WebElement> categories = driver.findElements(By.xpath("(//ul[@class='list-items list-reset'])[1]/li"));
         for (int i = 1; i<=categories.size(); i++){
             driver.findElement(By.xpath("((//ul[@class='list-items list-reset'])[1]/li/a)[" + i + "]")).click();
             driver.findElement(By.cssSelector("#searchbar"));
-            driver.navigate().back();
         }
     }
 
@@ -434,7 +439,8 @@ public class TestsForMainPage extends BaseClass{
             if (!page.getAttribute("title").equals(""));
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
-//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+            driver.findElement(By.cssSelector("#searchbar"));
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
@@ -449,7 +455,8 @@ public class TestsForMainPage extends BaseClass{
             if (!page.getAttribute("title").equals(""));
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
-//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+            driver.findElement(By.cssSelector("#searchbar"));
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
@@ -464,7 +471,8 @@ public class TestsForMainPage extends BaseClass{
             if (!page.getAttribute("title").equals(""));
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
-//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+            driver.findElement(By.cssSelector("#searchbar"));
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
@@ -479,7 +487,8 @@ public class TestsForMainPage extends BaseClass{
             if (!page.getAttribute("title").equals(""));
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
-//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+            driver.findElement(By.cssSelector("#searchbar"));
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }
@@ -494,7 +503,8 @@ public class TestsForMainPage extends BaseClass{
             if (!page.getAttribute("title").equals(""));
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
-//            driver.findElement(By.cssSelector("#searchbar"));
+            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+            driver.findElement(By.cssSelector("#searchbar"));
             driver.findElement(By.id("btn-nav-categories")).click();
         }
     }

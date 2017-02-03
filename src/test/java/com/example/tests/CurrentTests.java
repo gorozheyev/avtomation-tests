@@ -31,7 +31,7 @@ public class CurrentTests extends BaseClass{
         counterWalue = counterWalue.replaceAll(" ", "");
         int counters;
         counters = Integer.parseInt(counterWalue);
-        if (counters > 390000){
+        if (counters > 360000){
             System.out.println("Объявлений на выдаче достаточно - "+ counters + " штук.");
         }
             else {

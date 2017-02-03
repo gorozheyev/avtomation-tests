@@ -201,7 +201,8 @@ public class TestsForMainPage extends BaseClass{
 //        сравниваем есть ли такие категории последовательно 'нужно подумать как сделать сравнение если категории меняются местами (из-за каунтеров)'
         if (namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nПрицепы\n") ||
                 namesOfCategories.contains("Легковые авто\nСпецтехника\nГрузовые авто\nАвтобусы\nПрицепы\n") ||
-                namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nМото\n"));
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nМото\n") ||
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nМото\nАвтобусы\nСпецтехника\n"));
         else fail("Проверить категории авто в футере");
         List<WebElement> categories = driver.findElements(By.xpath("(//ul[@class='list-items list-reset'])[1]/li"));
         for (int i = 1; i<=categories.size(); i++){

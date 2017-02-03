@@ -172,4 +172,10 @@ public class BaseClass {
         assertEquals("http://www.avtopoisk.ru/fine.html", driver.getCurrentUrl());
         driver.findElement(By.cssSelector(".table-container.table-container__columned"));
     }
+
+    protected void openCustomCategoryInTabs() {
+        driver.findElement(By.xpath("//a[contains(text(), 'Быстрые фильтры')]")).click();
+        driver.findElement(By.xpath("//a[@class='btn-chooser-dd']")).click();
+        driver.findElement(By.xpath("//a[contains(text(), 'Каталог машин по типам')]")).click();
+    }
 }

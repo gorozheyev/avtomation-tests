@@ -109,7 +109,7 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void seoForCastomLinksInTabs() {
-        driver.get("http://www.avtopoisk.ru/car");
+        openSearchPageCar("www", "");
         openCustomCategoryInTabs(); //по типам авто
         List<WebElement> customLinks = driver.findElements(By.xpath("(//ul[@class='nav-list list-unstyled'])[13]/li/a"));
         for (WebElement link : customLinks) {

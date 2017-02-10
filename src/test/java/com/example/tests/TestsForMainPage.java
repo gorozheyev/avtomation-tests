@@ -172,7 +172,7 @@ public class TestsForMainPage extends BaseClass{
     }
 
     @Test
-    public void presenceIconsOfSocialNetworks(){
+    public void presenceIconsOfSocialNetworks() throws InterruptedException {
         openMainPage();
         driver.findElement(By.cssSelector(".col-md-3.col-social"));
         driver.findElement(By.xpath("(//a[@class='soc-link soc-link-vk'])[2]")).click();
@@ -188,6 +188,7 @@ public class TestsForMainPage extends BaseClass{
         else fail("Это не страница Avtopoisk в FB");
         driver.navigate().back();
         driver.findElement(By.xpath("(//a[@class='soc-link soc-link-gp'])[2]")).click();
+        Thread.sleep(3500);
         if (driver.getCurrentUrl().contains("https://plus.google.com/+AvtopoiskRu"));
         else fail("Это не страница Avtopoisk в Гугл");
     }
@@ -202,7 +203,8 @@ public class TestsForMainPage extends BaseClass{
         if (namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nПрицепы\n") ||
                 namesOfCategories.contains("Легковые авто\nСпецтехника\nГрузовые авто\nАвтобусы\nПрицепы\n") ||
                 namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nМото\n") ||
-                namesOfCategories.contains("Легковые авто\nГрузовые авто\nМото\nАвтобусы\nСпецтехника\n"));
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nМото\nАвтобусы\nСпецтехника\n")||
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nАвтобусы\nМото\nСпецтехника\n"));
         else fail("Проверить категории авто в футере");
         List<WebElement> categories = driver.findElements(By.xpath("(//ul[@class='list-items list-reset'])[1]/li"));
         for (int i = 1; i<=categories.size(); i++){

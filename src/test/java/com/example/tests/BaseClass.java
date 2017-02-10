@@ -178,4 +178,8 @@ public class BaseClass {
         driver.findElement(By.xpath("//a[@class='btn-chooser-dd']")).click();
         driver.findElement(By.xpath("//a[contains(text(), 'Каталог машин по типам')]")).click();
     }
+
+    protected void openSearchPageCar(String s, String s1) {
+        driver.get("http://"+s+".avtopoisk.ru/car/" + s1);
+    }
 }

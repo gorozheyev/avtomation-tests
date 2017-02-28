@@ -204,7 +204,8 @@ public class TestsForMainPage extends BaseClass{
                 namesOfCategories.contains("Легковые авто\nСпецтехника\nГрузовые авто\nАвтобусы\nПрицепы\n") ||
                 namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nМото\n") ||
                 namesOfCategories.contains("Легковые авто\nГрузовые авто\nМото\nАвтобусы\nСпецтехника\n")||
-                namesOfCategories.contains("Легковые авто\nГрузовые авто\nАвтобусы\nМото\nСпецтехника\n"));
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nАвтобусы\nМото\nСпецтехника\n")||
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nМото\nСпецтехника\nАвтобусы\n"));
         else fail("Проверить категории авто в футере");
         List<WebElement> categories = driver.findElements(By.xpath("(//ul[@class='list-items list-reset'])[1]/li"));
         for (int i = 1; i<=categories.size(); i++){
@@ -432,7 +433,7 @@ public class TestsForMainPage extends BaseClass{
         assertEquals("http://novosibirsk.avtopoisk.ru/", driver.getCurrentUrl());
     }
 
-    @Test
+    @Test(priority = 2)
     public void dropDownMenuHeaderFirstPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
@@ -448,7 +449,7 @@ public class TestsForMainPage extends BaseClass{
         }
     }
 
-    @Test
+    @Test(priority = 2)
     public void dropDownMenuHeaderSecondPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
@@ -464,7 +465,7 @@ public class TestsForMainPage extends BaseClass{
         }
     }
 
-    @Test
+    @Test(priority = 2)
     public void dropDownMenuHeaderdThirdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
@@ -480,7 +481,7 @@ public class TestsForMainPage extends BaseClass{
         }
     }
 
-    @Test
+    @Test(priority = 2)
     public void dropDownMenuHeaderdForthdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
@@ -496,7 +497,7 @@ public class TestsForMainPage extends BaseClass{
         }
     }
 
-    @Test
+    @Test(priority = 2)
     public void dropDownMenuHeaderdFifthdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
@@ -512,7 +513,7 @@ public class TestsForMainPage extends BaseClass{
         }
     }
 
-    @Test
+    @Test(priority = 2)
     public void dropDownMenuHeaderdSixdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();

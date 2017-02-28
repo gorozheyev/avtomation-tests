@@ -111,13 +111,13 @@ public class SeoRequirementsTests extends BaseClass {
     public void seoForCastomLinksInTabs() {
         openSearchPageCar("www", "");
         openCustomCategoryInTabs(); //по типам авто
-        List<WebElement> customLinks = driver.findElements(By.xpath("(//ul[@class='nav-list list-unstyled'])[13]/li/a"));
+        List<WebElement> customLinks = driver.findElements(By.xpath("(//div[@id='propositionsByCities'])[3]/div/ul/li/a"));
         for (WebElement link : customLinks) {
             if (link.getAttribute("title").equals(""))
                 fail("Нет тайтлов в в кастом линках 'по типам авто'");
         }
         for (int i = 1; i <= customLinks.size(); i++) {
-            driver.findElement(By.xpath("((//ul[@class='nav-list list-unstyled'])[13]/li/a)[" + i + "]")).click();
+            driver.findElement(By.xpath("((//div[@id='propositionsByCities'])[3]/div/ul/li/a)["+ i+ "]")).click();
             assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
             driver.findElement(By.cssSelector("#searchbar"));
             if (i != customLinks.size()) {
@@ -128,7 +128,7 @@ public class SeoRequirementsTests extends BaseClass {
     }
 
     @Test
-    public void seoMetaOnCastomLinkPages() {
+    public void seoMetaOnCustomLinkPages() {
 //        для кастом линок 'каталог автомобилей по странам'
         driver.get("http://www.avtopoisk.ru/usa-cars");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));

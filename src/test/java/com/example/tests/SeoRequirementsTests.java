@@ -96,7 +96,10 @@ public class SeoRequirementsTests extends BaseClass {
         urls[5] = "http://krasnojarsk.avtopoisk.ru/car";
         for (int i = 0; i <= urls.length - 1; i++) {
             driver.get(urls[i]);
-            assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload'])[2]/a")).getAttribute("rel"));
+            WebElement advertPicture = driver.findElement(By.xpath("(//div[@class='photos-container upload'])[2]/a"));
+            if(advertPicture.getAttribute("href").contains("avtopoisk.ru/search/adpage/"));
+                else fail("Клик по картинке объявления должен вести на адпейдж");
+            assertEquals("_blank", advertPicture.getAttribute("target"));
             assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])[2]/a")).getAttribute("rel"));
             assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])[2]/a")).getAttribute("rel"));
             assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[2]//..")).getAttribute("rel"));

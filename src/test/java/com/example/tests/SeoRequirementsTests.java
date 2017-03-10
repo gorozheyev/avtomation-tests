@@ -96,16 +96,18 @@ public class SeoRequirementsTests extends BaseClass {
         urls[5] = "http://krasnojarsk.avtopoisk.ru/car";
         for (int i = 0; i <= urls.length - 1; i++) {
             driver.get(urls[i]);
-            WebElement advertPicture = driver.findElement(By.xpath("(//div[@class='photos-container upload'])[2]/a"));
-            if(advertPicture.getAttribute("href").contains("avtopoisk.ru/search/adpage/"));
-                else fail("Клик по картинке объявления должен вести на адпейдж");
-            assertEquals("_blank", advertPicture.getAttribute("target"));
-            assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])[2]/a")).getAttribute("rel"));
-            assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])[2]/a")).getAttribute("rel"));
-            assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[2]//..")).getAttribute("rel"));
-            String more = (driver.findElement(By.xpath("(//div[@class='description'])[2]")).getText());
-            if (more.contains("подробнее")) {
-                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='description'])[2]/div/a")).getAttribute("rel"));
+            if (driver.findElements(By.xpath("//div[@class='mark-status new ']")).size() == 0) {
+                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload'])[4]/a")).getAttribute("rel"));
+                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])[4]/a")).getAttribute("rel"));
+                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])[4]/a")).getAttribute("rel"));
+                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[4]//..")).getAttribute("rel"));
+                String more = (driver.findElement(By.xpath("(//div[@class='description'])[4]")).getText());
+                if (more.contains("подробнее")) {
+                    WebElement goToAdpage = driver.findElement(By.xpath("(//div[@class='margin-tb05'])[4]/a"));
+                    if (goToAdpage.getAttribute("href").toString().contains("avtopoisk.ru/search/adpage/"));
+                    else fail("Ссылка подробнее должна вести на адпейдж");
+                    assertEquals("_blank", goToAdpage.getAttribute("target"));
+                }
             }
         }
     }
@@ -216,7 +218,7 @@ public class SeoRequirementsTests extends BaseClass {
         driver.findElement(By.xpath("//div[@class=\"form-content\"]/a")).click();
         assertEquals("noindex, follow", driver.findElement(By.xpath("//meta[@name='robots'][1]")).getAttribute("content"));
         assertEquals("Продажа Audi A4 (Ауди а4) в Ростове-на-Дону.", driver.findElement(By.xpath("(//h1)[1]")).getText());
-        List<WebElement> adverts = driver.findElements(By.xpath("//div[@class='proposition listing-item hover']"));
+        List<WebElement> adverts = driver.findElements(By.xpath("//div[@class='proposition listing-item hover ']"));
         if (adverts.size()!=0 && adverts.size()<=15);
         else fail("На странице 'ничего не найдено' нет блока 'объявления близкие к указанному запросу' либо в нем больше 15 объявлений");
     }

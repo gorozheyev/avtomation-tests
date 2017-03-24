@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" verbose="0" name="Failed suite [com.example.tests.TestsForMainPage]" parallel="classes">
+<suite thread-count="2" verbose="0" name="Failed suite [Command line suite]" parallel="classes">
   <test name="Command line test(failed)" parallel="classes">
     <classes>
       <class name="com.example.tests.TestsForMainPage">
@@ -9,6 +9,7 @@
           <include name="dropDownMenuHeaderFirstPart"/>
           <include name="choiceDifferentGrafics"/>
           <include name="dropDownMenuHeaderdSixdPart"/>
+          <include name="checkClickAndTitleOnLastAdverts"/>
           <include name="checkTitlesAndGoToAllCityesPage"/>
           <include name="checkTitleAndCklickOnServices"/>
           <include name="dropDownMenuHeaderdThirdPart"/>
@@ -28,6 +29,7 @@
           <include name="presenceElementsOnMainPageMoskov"/>
           <include name="presenceSeoTextInFooter"/>
           <include name="testSearchFilterWithWalue"/>
+          <include name="checkCkickOnLogo"/>
           <include name="checkClickAndTitlesInBlockCatalogOnMainPage"/>
           <include name="checkUpFines"/>
           <include name="dropDownMenuHeaderSecondPart"/>
@@ -40,4 +42,4 @@
       </class> <!-- com.example.tests.TestsForMainPage -->
     </classes>
   </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [com.example.tests.TestsForMainPage] -->
+</suite> <!-- Failed suite [Command line suite] -->

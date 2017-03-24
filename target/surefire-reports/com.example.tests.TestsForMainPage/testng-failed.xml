@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [com.example.tests.TestsForMainPage]">
-  <test name="Command line test(failed)">
+<suite thread-count="2" verbose="0" name="Failed suite [com.example.tests.TestsForMainPage]" parallel="classes">
+  <test name="Command line test(failed)" parallel="classes">
     <classes>
       <class name="com.example.tests.TestsForMainPage">
         <methods>
           <include name="dropDownMenuHeaderdForthdPart"/>
+          <include name="dropDownMenuHeaderFirstPart"/>
           <include name="choiceDifferentGrafics"/>
+          <include name="dropDownMenuHeaderdSixdPart"/>
           <include name="checkTitlesAndGoToAllCityesPage"/>
           <include name="checkTitleAndCklickOnServices"/>
+          <include name="dropDownMenuHeaderdThirdPart"/>
           <include name="goToMarkPageAndToAllBrandsPage"/>
           <include name="checkTitlesTopCategoryMoscow"/>
           <include name="ckickOnButtonAddAdvert"/>
@@ -20,15 +23,15 @@
           <include name="testSearchFieldWithPressedTabs"/>
           <include name="setUp"/>
           <include name="checkTitleAndClickOnArticles"/>
-          <include name="blockPartners"/>
           <include name="checkTopCategoryInFooter"/>
+          <include name="presenceIconsOfSocialNetworks"/>
           <include name="presenceElementsOnMainPageMoskov"/>
           <include name="presenceSeoTextInFooter"/>
           <include name="testSearchFilterWithWalue"/>
-          <include name="checkCkickOnLogo"/>
           <include name="checkClickAndTitlesInBlockCatalogOnMainPage"/>
           <include name="checkUpFines"/>
           <include name="dropDownMenuHeaderSecondPart"/>
+          <include name="dropDownMenuHeaderdFifthdPart"/>
           <include name="presenceElementsOnMainPage"/>
           <include name="checkClickAndTitlesInBlockTestDrivesOnMainPage"/>
           <include name="testWithEmptySearchFilter"/>

@@ -18,8 +18,7 @@ public class SearchPage extends BaseClass{
     @Test
     public void countAdvertsOnSearchPage(){
         openSearchPageCar("www","");
-        if (driver.findElements(By.xpath("//img[@class='photo lazy-load']")).size() +
-                driver.findElements(By.xpath("//div[@class='photo-frame brazzerCarusel brazzers-daddy']")).size() != 30)
+        if (driver.findElements(By.xpath("//div[@class='favorite-link liked ']")).size() != 30)
             fail("Проверить кол-во объявлений на выдаче, их долно быть 30 штук");
 //        проверка наличия элементов хедера
         driver.findElement(By.cssSelector(".logo"));

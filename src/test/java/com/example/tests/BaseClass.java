@@ -65,7 +65,7 @@ public class BaseClass {
             }
             return alertText;
         } finally {
-            acceptNextAlert = true;
+                acceptNextAlert = true;
         }
     }
 

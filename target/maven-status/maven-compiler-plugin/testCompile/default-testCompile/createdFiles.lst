@@ -2,4 +2,5 @@ com\example\tests\BaseClass.class
 com\example\tests\MainPageData.class
 com\example\tests\SeoRequirementsTests.class
 com\example\tests\TestsForMainPage.class
+com\example\tests\SearchPage.class
 com\example\tests\CurrentTests.class

@@ -18,8 +18,9 @@ public class SearchPage extends BaseClass{
     @Test
     public void countAdvertsOnSearchPage(){
         openSearchPageCar("www","");
-        if (driver.findElements(By.xpath("//div[@class='favorite-link liked ']")).size() != 30)
-            fail("Проверить кол-во объявлений на выдаче, их долно быть 30 штук");
+        List<WebElement> adverts = driver.findElements(By.xpath("//div[@class='favorite-link liked ']"));
+        if (adverts.size() != 30)
+            fail("Проверить кол-во объявлений на выдаче, сейчас их-" + adverts.size()+ ", а должно быть 30 штук");
 //        проверка наличия элементов хедера
         driver.findElement(By.cssSelector(".logo"));
         driver.findElement(By.cssSelector("#btn-nav-categories")).click();

@@ -102,7 +102,8 @@ public class BaseClass {
 
     protected void clickOnElementsFromOtherServices() {
         driver.findElement(By.xpath("//div[contains(text(), 'Продажа авто')]")).click();
-        driver.findElement(By.xpath("//div/h3[contains(text(), 'Размещение объявления')]"));
+        if(driver.getCurrentUrl().contains("avtopoisk.ru/proposition"));
+        else fail("Ссылка 'Продать авто' должна вести на страницу добавления объявления");
         driver.navigate().back();
         driver.findElement(By.xpath("//div[contains(text(), 'Автосалоны')]")).click();
         driver.navigate().back();
@@ -181,5 +182,28 @@ public class BaseClass {
 
     protected void openSearchPageCar(String s, String s1) {
         driver.get("http://"+s+".avtopoisk.ru/car/" + s1);
+    }
+
+    public void clickOnFilterButtons(String s) {
+        if(driver.findElement(By.xpath("//div[@class='modal-dialog ']")).isDisplayed()) {
+            driver.findElement(By.cssSelector(".btn-close-cross__dk.btn-rnd.btn-md.closeSubscribe")).click();
+            try {
+                Thread.sleep(1500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            driver.findElement(By.xpath(s)).click();
+            driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
+        } else{
+            driver.findElement(By.xpath(s)).click();
+            driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();}
+    }
+
+    public int getCountAdvertsOnSearchPage() {
+        WebElement counter = driver.findElement(By.xpath("//*[@class='subtitle text-gray']"));
+        String text = counter.getText();
+        String counterWalue = text.substring("Найдено ".length(), text.length() - "проедложений".length());
+        counterWalue = counterWalue.replaceAll(" ", "");
+        return Integer.parseInt(counterWalue);
     }
 }

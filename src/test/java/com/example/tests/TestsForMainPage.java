@@ -145,8 +145,8 @@ public class TestsForMainPage extends BaseClass{
     public void presenceSeoTextInFooter() throws Exception {
         openMainPage();
         String seoText = getFooterSeoText();
-        if (!seoText.equals("") & seoText.contains("Наиболее простой и комфортный поиск автомобилей")){}
-        else {throw new Exception("Пропали сео тексты в футере");}
+        if (!seoText.equals("") & seoText.contains("Наиболее простой и комфортный поиск автомобилей"));
+        else throw new Exception("Пропали сео тексты в футере");
     }
 
     @Test
@@ -466,7 +466,7 @@ public class TestsForMainPage extends BaseClass{
     }
 
     @Test(priority = 2)
-    public void dropDownMenuHeaderdThirdPart() {
+    public void dropDownMenuHeaderThirdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][3]/ul/li"));
@@ -482,7 +482,7 @@ public class TestsForMainPage extends BaseClass{
     }
 
     @Test(priority = 2)
-    public void dropDownMenuHeaderdForthdPart() {
+    public void dropDownMenuHeaderForthdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][4]/ul/li"));
@@ -498,7 +498,7 @@ public class TestsForMainPage extends BaseClass{
     }
 
     @Test(priority = 2)
-    public void dropDownMenuHeaderdFifthdPart() {
+    public void dropDownMenuHeaderFifthdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][5]/ul/li"));
@@ -514,7 +514,7 @@ public class TestsForMainPage extends BaseClass{
     }
 
     @Test(priority = 2)
-    public void dropDownMenuHeaderdSixdPart() {
+    public void dropDownMenuHeaderSixdPart() {
         openMainPage();
         driver.findElement(By.id("btn-nav-categories")).click();
         List<WebElement> categories = driver.findElements(By.xpath("//div[@class='col-md-2'][6]/ul/li"));

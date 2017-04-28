@@ -59,8 +59,8 @@ public class SearchFilterTests extends BaseClass{
             if(element.getText().length()!=0) {
                 String s = element.getText().substring(0, element.getText().length() - " руб.".length());
                 int a = Integer.parseInt(s.replaceAll(" ", ""));
-                if(a<500000)
-                fail("Цены на выдаче должны быть больше 500 000 руб.");
+                if(a<495000)
+                fail("Цены на выдаче - "+a+" , а должна быть больше 500 000 руб.");
             }
         }
     }
@@ -118,7 +118,7 @@ public class SearchFilterTests extends BaseClass{
     }
 
     @Test
-    public void checknoxHasPhoto() throws InterruptedException {
+    public void checkboxHasPhoto() throws InterruptedException {
         openSearchPageCar("www", "");
         driver.findElement(By.id("cbWithPhoto")).click();
         assertTrue(driver.findElement(By.id("cbWithPhoto")).isSelected());
@@ -127,6 +127,59 @@ public class SearchFilterTests extends BaseClass{
         int b = getCountAdvertsOnSearchPage();
         if(a>b);
         else fail("Кол-во объявлений с фото "+b+" должно быть меньше чем кол-во объявлений всего "+a);
+    }
+
+    @Test
+    public void yearFrom(){
+        openSearchPageCar("www", "");
+        driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[4]")).click();
+        driver.findElement(By.xpath("(//li/a/span[contains(text(), '2016')])[1]")).click();
+        driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
+        assertTrue(driver.getCurrentUrl().contains("yearfrom/2016"));
+        List<WebElement> year = driver.findElements(By.xpath("//div[@class='title']/span"));
+        for(WebElement element : year) {
+            if (element.getText().length() != 0) {
+                int a = Integer.parseInt(element.getText());
+                if (a >= 2016) ;
+                else fail("На выдаче авто " + a + " года, а должны быть с годом выпуска больше либо равно 2016");
+            }
+        }
+    }
+
+    @Test
+    public void yearTo(){
+        openSearchPageCar("moskva", "");
+        driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[5]")).click();
+        driver.findElement(By.xpath("(//li/a/span[contains(text(), '2000')])[2]")).click();
+        driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
+        assertTrue(driver.getCurrentUrl().contains("yearto/2000"));
+        List<WebElement> year = driver.findElements(By.xpath("//div[@class='title']/span"));
+        for(WebElement element : year) {
+            if (element.getText().length() != 0) {
+                int a = Integer.parseInt(element.getText());
+                if (a <= 2000) ;
+                else fail("На выдаче авто " + a + " года, а должны быть с годом выпуска больше либо равно 2016");
+            }
+        }
+    }
+
+    @Test
+    public void yearFromYearTo(){
+        openSearchPageCar("www", "");
+        driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[4]")).click();
+        driver.findElement(By.xpath("(//li/a/span[contains(text(), '2010')])[1]")).click();
+        driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[5]")).click();
+        driver.findElement(By.xpath("(//li/a/span[contains(text(), '2016')])[2]")).click();
+        driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
+        assertTrue(driver.getCurrentUrl().contains("yearfrom/2010/yearto/2016"));
+        List<WebElement> year = driver.findElements(By.xpath("//div[@class='title']/span"));
+        for(WebElement element : year) {
+            if (element.getText().length() != 0) {
+                int a = Integer.parseInt(element.getText());
+                if (a >= 2010 && a <=2016);
+                else fail("На выдаче авто " + a + " года, а должны быть с годом выпуска больше либо равно 2016");
+            }
+        }
     }
 
 }

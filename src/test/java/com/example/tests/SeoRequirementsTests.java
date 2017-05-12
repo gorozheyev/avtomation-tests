@@ -96,19 +96,16 @@ public class SeoRequirementsTests extends BaseClass {
         urls[5] = "http://krasnojarsk.avtopoisk.ru/car";
         for (int i = 0; i <= urls.length - 1; i++) {
             driver.get(urls[i]);
-            if (driver.findElements(By.xpath("//div[@class='mark-status new ']")).size() == 0) {
+            if (driver.findElements(By.xpath("//div[@class='mark-status new ']")).isEmpty()) {
                 assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload'])[5]/a")).getAttribute("rel"));
                 assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])[5]/a")).getAttribute("rel"));
                 assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])[5]/a")).getAttribute("rel"));
                 assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[5]//..")).getAttribute("rel"));
-                String more = (driver.findElement(By.xpath("(//div[@class='description'])[5]")).getText());
-                if (more.contains("подробнее")) {
-                    WebElement goToAdpage = driver.findElement(By.xpath("(//div[@class='margin-tb05'])[5]/a"));
+                    WebElement goToAdpage = driver.findElement(By.xpath("//span[@class='link']//.."));
                     if (goToAdpage.getAttribute("href").toString().contains("avtopoisk.ru/search/adpage/"));
                     else fail("Ссылка подробнее должна вести на адпейдж");
                     assertEquals("_blank", goToAdpage.getAttribute("target"));
                 }
-            }
         }
     }
 

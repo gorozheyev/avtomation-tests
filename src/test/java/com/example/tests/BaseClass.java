@@ -22,6 +22,8 @@ public class BaseClass {
     @BeforeTest
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
+//        System.setProperty("webdriver.opera.driver", "C:\\operadriver_win64\\operadriver.exe");
+//        driver = new OperaDriver();
         driver.manage().window().maximize();
         baseUrl = "http://www.avtopoisk.ru/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

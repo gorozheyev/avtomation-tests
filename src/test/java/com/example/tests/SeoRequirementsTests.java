@@ -97,13 +97,19 @@ public class SeoRequirementsTests extends BaseClass {
         for (int i = 0; i <= urls.length - 1; i++) {
             driver.get(urls[i]);
             if (driver.findElements(By.xpath("//div[@class='mark-status new ']")).isEmpty()) {
-                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload'])[5]/a")).getAttribute("rel"));
-                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])[5]/a")).getAttribute("rel"));
-                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])[5]/a")).getAttribute("rel"));
-                assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[5]//..")).getAttribute("rel"));
+                for (int j = 5; j < 7; j++) {
+                    if (!driver.findElement(By.xpath("(//div[@class='partner'])[5]/a")).getText().isEmpty()) {
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload'])["+j+"]/a")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])["+j+"]/a")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])["+j+"]/a")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])["+j+"]//..")).getAttribute("rel"));
+                    } else {
+                        j++;
+                    }
+                }
                     WebElement goToAdpage = driver.findElement(By.xpath("//span[@class='link']//.."));
-                    if (goToAdpage.getAttribute("href").toString().contains("avtopoisk.ru/search/adpage/"));
-                    else fail("Ссылка подробнее должна вести на адпейдж");
+                    if (goToAdpage.getAttribute("href").toString().contains("avtopoisk.ru/search/adpage/")) ;
+                    else fail("На странице " + driver.getCurrentUrl() + " ссылка подробнее должна вести на адпейдж");
                     assertEquals("_blank", goToAdpage.getAttribute("target"));
                 }
         }

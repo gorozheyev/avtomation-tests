@@ -182,4 +182,28 @@ public class SearchFilterTests extends BaseClass{
         }
     }
 
+    @Test
+    public void mileageFrom() {
+        openSearchPageCar("omsk", "");
+        driver.findElement(By.id("mileageFrom")).sendKeys("20000");
+        driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
+        assertTrue(driver.getCurrentUrl().contains("http://omsk.avtopoisk.ru/car/mileagefrom/20000"));
+        List<WebElement> elements = driver.findElements(By.xpath("//div[@class='description']/strong/i"));
+        List<WebElement> otherElements = driver.findElements(By.xpath("//div[@class='table-cell'][contains(text(), 'км')]"));
+            if (!otherElements.isEmpty()) {
+                for (WebElement mileage2 : otherElements) {
+                    int b = Integer.parseInt(mileage2.getText().substring(0, 6).replaceAll(" ", ""));
+                    if (b < 20000) {
+                        fail("Пробег должен быть от 20000, а найдено объявление с пробегом " + b + "км");
+                    }
+                }
+            }
+        for (WebElement mileage : elements) {
+                        int a = Integer.parseInt(mileage.getText().substring(0, 6).replaceAll(" ", ""));
+                        if (a < 20000) {
+                            fail("Пробег должен быть от 20000, а найдено объявление с пробегом " + a + "км");
+                        }
+        }
+    }
+
 }

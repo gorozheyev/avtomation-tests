@@ -176,11 +176,13 @@ public class TestsForMainPage extends BaseClass{
         openMainPage();
         driver.findElement(By.cssSelector(".col-md-3.col-social"));
         driver.findElement(By.xpath("(//a[@class='soc-link soc-link-vk'])[2]")).click();
-        if (driver.getCurrentUrl().contains("https://vk.com/public"));
-            else fail("Это не страница Avtopoisk в VK");
+        Thread.sleep(3000);
+        if (driver.getCurrentUrl().contains("vk.com/"));
+            else fail("Это не страница Avtopoisk в VK - "+ driver.getCurrentUrl());
         driver.navigate().back();
         driver.findElement(By.xpath("(//a[@class='soc-link soc-link-ok'])[2]")).click();
-        if (driver.getCurrentUrl().contains("https://ok.ru/group/"));
+        Thread.sleep(2500);
+        if (driver.getCurrentUrl().contains("odnoklassniki.ru"));
         else fail("Это не страница Avtopoisk в ОК");
         driver.navigate().back();
         driver.findElement(By.xpath("(//a[@class='soc-link soc-link-fb'])[2]")).click();
@@ -211,20 +213,21 @@ public class TestsForMainPage extends BaseClass{
         for (int i = 1; i<=categories.size(); i++){
             driver.findElement(By.xpath("((//ul[@class='list-items list-reset'])[1]/li/a)[" + i + "]")).click();
             driver.findElement(By.cssSelector("#searchbar"));
+            if(i < categories.size()) {
+                driver.navigate().back();
+            } else break;
         }
     }
 
     @Test
     public void clickOnTextLogo(){
         openMainPage();
-        driver.findElement(By.cssSelector(".logo-footer.link.text-uppercase")).click();
-        assertEquals("http://www.avtopoisk.ru/", driver.getCurrentUrl());
+        assertEquals("javascript:void(0)", driver.findElement(By.cssSelector(".logo-footer.link.text-uppercase")).getAttribute("href"));
         openMoskvaMainPage();
-        driver.findElement(By.cssSelector(".logo-footer.link.text-uppercase")).click();
+        assertEquals("javascript:void(0)", driver.findElement(By.cssSelector(".logo-footer.link.text-uppercase")).getAttribute("href"));
+        driver.findElement(By.xpath("//a[@class='logo']")).click();
         assertEquals("http://www.avtopoisk.ru/", driver.getCurrentUrl());
-        openMoskvaMainPage();
-        driver.findElement(By.xpath("(//div[@class='col-md-4'])[2]/a")).click();
-        assertEquals("http://www.avtopoisk.ru/", driver.getCurrentUrl());
+        assertEquals("javascript:void(0);", driver.findElement(By.xpath("//a[@class='logo']")).getAttribute("href"));
     }
 
 //    ================================================================================ тесты для блока другие услуги

@@ -2,6 +2,7 @@ package com.example.tests;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -18,6 +19,7 @@ public class BaseClass {
     private static String baseUrl;
     private static boolean acceptNextAlert = true;
     private static StringBuffer verificationErrors = new StringBuffer();
+    protected static WebDriverWait wait;
 
     @BeforeTest
     public void setUp() throws Exception {
@@ -27,6 +29,8 @@ public class BaseClass {
         driver.manage().window().maximize();
         baseUrl = "http://www.avtopoisk.ru/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver, 10);
+
     }
 
     @AfterTest

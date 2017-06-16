@@ -5,39 +5,17 @@
     <classes>
       <class name="com.example.tests.TestsForMainPage">
         <methods>
-          <include name="dropDownMenuHeaderFirstPart"/>
-          <include name="choiceDifferentGrafics"/>
-          <include name="checkClickAndTitleOnLastAdverts"/>
-          <include name="checkTitlesAndGoToAllCityesPage"/>
-          <include name="checkTitleAndCklickOnServices"/>
-          <include name="dropDownMenuHeaderForthdPart"/>
-          <include name="goToMarkPageAndToAllBrandsPage"/>
-          <include name="checkTitlesTopCategoryMoscow"/>
-          <include name="ckickOnButtonAddAdvert"/>
-          <include name="searchFieldWithPressedTabsCatalog"/>
-          <include name="clickOnTextLogo"/>
-          <include name="dropDownMenuHeaderThirdPart"/>
-          <include name="checkTitleOnMainPage"/>
-          <include name="chooseLocationInHeder"/>
-          <include name="testSearchFieldWithPressedTabs"/>
           <include name="setUp"/>
-          <include name="dropDownMenuHeaderSixdPart"/>
-          <include name="checkTitleAndClickOnArticles"/>
-          <include name="blockPartners"/>
+          <include name="checkClickAndTitlesInBlockCatalogOnMainPage"/>
+          <include name="clickOnTextLogo"/>
+          <include name="tearDown"/>
           <include name="checkTopCategoryInFooter"/>
           <include name="presenceIconsOfSocialNetworks"/>
-          <include name="presenceElementsOnMainPageMoskov"/>
-          <include name="dropDownMenuHeaderFifthdPart"/>
-          <include name="presenceSeoTextInFooter"/>
-          <include name="testSearchFilterWithWalue"/>
-          <include name="checkCkickOnLogo"/>
-          <include name="checkClickAndTitlesInBlockCatalogOnMainPage"/>
-          <include name="checkUpFines"/>
-          <include name="dropDownMenuHeaderSecondPart"/>
-          <include name="presenceElementsOnMainPage"/>
+          <include name="checkTitleAndCklickOnServices"/>
+          <include name="checkTitleOnMainPage"/>
           <include name="checkClickAndTitlesInBlockTestDrivesOnMainPage"/>
-          <include name="testWithEmptySearchFilter"/>
-          <include name="checkTitlesTopCategory"/>
+          <include name="goToMarkPageAndToAllBrandsPage"/>
+          <include name="checkCkickOnLogo"/>
         </methods>
       </class> <!-- com.example.tests.TestsForMainPage -->
     </classes>

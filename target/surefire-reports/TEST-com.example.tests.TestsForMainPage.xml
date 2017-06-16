@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="34" failures="1" name="com.example.tests.TestsForMainPage" time="2.957" errors="0" skipped="33">
+<testsuite tests="32" failures="9" name="com.example.tests.TestsForMainPage" time="6,982.685" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_77\jre\bin"/>
     <property name="java.vm.version" value="25.77-b03"/>
     <property name="user.country.format" value="UA"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\avtomation-tests"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Program Files (x86)\Jenkins\workspace\avtomation tests"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,12 +17,12 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\avtomation-tests"/>
+    <property name="user.dir" value="C:\Program Files (x86)\Jenkins\workspace\avtomation tests"/>
     <property name="java.runtime.version" value="1.8.0_77-b03"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_77\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\GOROZH~1\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -30,22 +30,22 @@
     <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="C:\Maven\apache-maven-3.3.9\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_77\bin;C:\Program Files\Git\cmd;C:\Maven\apache-maven-3.3.9\bin;C:\Program Files (x86)\Skype\Phone\;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_77\bin;C:\Program Files\Git\cmd;C:\Maven\apache-maven-3.3.9\bin;C:\Program Files (x86)\Skype\Phone\;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="6.1"/>
-    <property name="user.home" value="C:\Users\gorozheyevd"/>
+    <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
     <property name="user.timezone" value="Europe/Helsinki"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1251"/>
-    <property name="user.name" value="gorozheyevd"/>
+    <property name="user.name" value="GOROZHEYEV$"/>
     <property name="java.class.path" value="C:\Maven\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_77\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -f C:\avtomation-tests clean test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="ru"/>
     <property name="user.language.format" value="uk"/>
@@ -54,219 +54,239 @@
     <property name="java.version" value="1.8.0_77"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_77\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_77\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_77\jre\classes"/>
-    <property name="sun.stderr.encoding" value="cp866"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\Maven\apache-maven-3.3.9\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.stdout.encoding" value="cp866"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.tests.TestsForMainPage" name="setUp" time="2.946">
-    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+  <testcase classname="com.example.tests.TestsForMainPage" name="blockPartners" time="413.516"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkCkickOnLogo" time="247.994">
+    <failure message="Element is not clickable at point (118.5, 39). Other element would receive the click: &lt;div style=&quot;display: block; padding-right: 17px;&quot; class=&quot;modal modalSubscribe fade bs-example-modal-sm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 81 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: Element is not clickable at point (118.5, 39). Other element would receive the click: &lt;div style=&quot;display: block; padding-right: 17px;&quot; class=&quot;modal modalSubscribe fade bs-example-modal-sm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 81 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:148)
-	at com.example.tests.BaseClass.setUp(BaseClass.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 36 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 49 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 36 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 49 more
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.TestsForMainPage.checkCkickOnLogo(TestsForMainPage.java:400)
 </failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@3b192d32
-</system-out>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="blockPartners" time="0">
-    <skipped/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkClickAndTitleOnLastAdverts" time="223.602"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkClickAndTitlesInBlockCatalogOnMainPage" time="293.898">
+    <failure message="Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.06 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c" type="org.openqa.selenium.ElementNotVisibleException">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.06 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.BaseClass.clickSeeMoreCatalogButton(BaseClass.java:153)
+	at com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage(TestsForMainPage.java:349)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</failure>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkCkickOnLogo" time="0">
-    <skipped/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkClickAndTitlesInBlockTestDrivesOnMainPage" time="314.603">
+    <failure message="Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.05 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c" type="org.openqa.selenium.ElementNotVisibleException">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.05 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.BaseClass.clickOnSeeMoreTestDrivesButton(BaseClass.java:131)
+	at com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage(TestsForMainPage.java:337)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</failure>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkClickAndTitleOnLastAdverts" time="0">
-    <skipped/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitleAndCklickOnServices" time="2,638.292">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(), &apos;Проверка штрафов&apos;)]&quot;}
+Command duration or timeout: 41.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+*** Element info: {Using=xpath, value=//div[contains(text(), &apos;Проверка штрафов&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(), &apos;Проверка штрафов&apos;)]&quot;}
+Command duration or timeout: 41.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+*** Element info: {Using=xpath, value=//div[contains(text(), &apos;Проверка штрафов&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.example.tests.BaseClass.clickOnElementsFromOtherServices(BaseClass.java:120)
+	at com.example.tests.TestsForMainPage.checkTitleAndCklickOnServices(TestsForMainPage.java:236)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(), &apos;Проверка штрафов&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</failure>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkClickAndTitlesInBlockCatalogOnMainPage" time="0">
-    <skipped/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitleAndClickOnArticles" time="197.751"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitleOnMainPage" time="23.132">
+    <failure message="Пропали тайтлы у марок на главной странице" type="java.lang.AssertionError">java.lang.AssertionError: Пропали тайтлы у марок на главной странице
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.checkTitleOnMainPage(TestsForMainPage.java:84)
+</failure>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkClickAndTitlesInBlockTestDrivesOnMainPage" time="0">
-    <skipped/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitlesAndGoToAllCityesPage" time="87.122"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitlesTopCategory" time="274.731"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitlesTopCategoryMoscow" time="150.795"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkTopCategoryInFooter" time="345.81">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]&quot;}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+*** Element info: {Using=xpath, value=((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]&quot;}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+*** Element info: {Using=xpath, value=((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.example.tests.TestsForMainPage.checkTopCategoryInFooter(TestsForMainPage.java:212)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</failure>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitleAndCklickOnServices" time="0">
-    <skipped/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="checkUpFines" time="11.868"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="choiceDifferentGrafics" time="18.14"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="chooseLocationInHeder" time="17.683"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="ckickOnButtonAddAdvert" time="6.673"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="clickOnTextLogo" time="11.144">
+    <failure message="expected [http://moskva.avtopoisk.ru/] but found [http://www.avtopoisk.ru/]" type="java.lang.AssertionError">java.lang.AssertionError: expected [http://moskva.avtopoisk.ru/] but found [http://www.avtopoisk.ru/]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.example.tests.TestsForMainPage.clickOnTextLogo(TestsForMainPage.java:224)
+</failure>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitleAndClickOnArticles" time="0">
-    <skipped/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="goToMarkPageAndToAllBrandsPage" time="27.388">
+    <failure message="Не отображаются тайтлы марок на странице Всех марок" type="java.lang.AssertionError">java.lang.AssertionError: Не отображаются тайтлы марок на странице Всех марок
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage(TestsForMainPage.java:100)
+</failure>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitleOnMainPage" time="0">
-    <skipped/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="presenceElementsOnMainPage" time="5.14"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="presenceElementsOnMainPageMoskov" time="11.692"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="presenceIconsOfSocialNetworks" time="5.455">
+    <failure message="Это не страница Avtopoisk в VK" type="java.lang.AssertionError">java.lang.AssertionError: Это не страница Avtopoisk в VK
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.presenceIconsOfSocialNetworks(TestsForMainPage.java:180)
+</failure>
   </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitlesAndGoToAllCityesPage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitlesTopCategory" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkTitlesTopCategoryMoscow" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkTopCategoryInFooter" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="checkUpFines" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="choiceDifferentGrafics" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="chooseLocationInHeder" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="ckickOnButtonAddAdvert" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="clickOnTextLogo" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="goToMarkPageAndToAllBrandsPage" time="0.006">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="presenceElementsOnMainPage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="presenceElementsOnMainPageMoskov" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="presenceIconsOfSocialNetworks" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="presenceSeoTextInFooter" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="searchFieldWithPressedTabsCatalog" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="testSearchFieldWithPressedTabs" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="testSearchFilterWithWalue" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="testWithEmptySearchFilter" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderFifthdPart" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderFirstPart" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderForthdPart" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderSecondPart" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderSixdPart" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderThirdPart" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.example.tests.TestsForMainPage" name="tearDown" time="0.004">
-    <skipped/>
-  </testcase>
+  <testcase classname="com.example.tests.TestsForMainPage" name="presenceSeoTextInFooter" time="12.678"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="searchFieldWithPressedTabsCatalog" time="8.187"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="testSearchFieldWithPressedTabs" time="53.488"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="testSearchFilterWithWalue" time="19.122"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="testWithEmptySearchFilter" time="17.508"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderFifthdPart" time="236.426"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderFirstPart" time="253.714"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderForthdPart" time="263.407"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderSecondPart" time="267.541"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderSixdPart" time="178.89"/>
+  <testcase classname="com.example.tests.TestsForMainPage" name="dropDownMenuHeaderThirdPart" time="345.295"/>
 </testsuite>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/32</td>
+<td>Tests passed/Failed/Skipped:</td><td>23/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 25 10:08:05 EEST 2017</td>
+<td>Started on:</td><td>Tue Jun 13 12:22:00 EEST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2633 ms)</td>
+<tr><td>Total time:</td><td>7027 seconds (7027125 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,149 +68,469 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.tests.TestsForMainPage.setUp()'><b>setUp</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<td title='com.example.tests.TestsForMainPage.checkCkickOnLogo()'><b>checkCkickOnLogo</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (118.5, 39). Other element would receive the click: &lt;div style=&quot;display: block; padding-right: 17px;&quot; class=&quot;modal modalSubscribe fade bs-example-modal-sm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 81 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:148)
-	at com.example.tests.BaseClass.setUp(BaseClass.java:39)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 36 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 49 more
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1896828359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1896828359'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.TestsForMainPage.checkCkickOnLogo(TestsForMainPage.java:400)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2143619330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2143619330'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (118.5, 39). Other element would receive the click: &lt;div style=&quot;display: block; padding-right: 17px;&quot; class=&quot;modal modalSubscribe fade bs-example-modal-sm in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 81 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:148)
-	at com.example.tests.BaseClass.setUp(BaseClass.java:39)
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.TestsForMainPage.checkCkickOnLogo(TestsForMainPage.java:400)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>247</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
+<tr>
+<td title='com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage()'><b>checkClickAndTitlesInBlockCatalogOnMainPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.06 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.BaseClass.clickSeeMoreCatalogButton(BaseClass.java:153)
+	at com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage(TestsForMainPage.java:349)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1170084556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170084556'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.06 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.BaseClass.clickSeeMoreCatalogButton(BaseClass.java:153)
+	at com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage(TestsForMainPage.java:349)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 36 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 49 more
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
 </pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>293</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
-<td title='com.example.tests.TestsForMainPage.tearDown()'><b>tearDown</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>null</td></tr>
+<td title='com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage()'><b>checkClickAndTitlesInBlockTestDrivesOnMainPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.05 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.BaseClass.clickOnSeeMoreTestDrivesButton(BaseClass.java:131)
+	at com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage(TestsForMainPage.java:337)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace324477563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace324477563'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.05 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.BaseClass.clickOnSeeMoreTestDrivesButton(BaseClass.java:131)
+	at com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage(TestsForMainPage.java:337)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>314</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
+<tr>
+<td title='com.example.tests.TestsForMainPage.checkTitleAndCklickOnServices()'><b>checkTitleAndCklickOnServices</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(), &apos;Проверка штрафов&apos;)]&quot;}
+Command duration or timeout: 41.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+*** Element info: {Using=xpath, value=//div[contains(text(), &apos;Проверка штрафов&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.example.tests.BaseClass.clickOnElementsFromOtherServices(BaseClass.java:120)
+	at com.example.tests.TestsForMainPage.checkTitleAndCklickOnServices(TestsForMainPage.java:236)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(), &apos;Проверка штрафов&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace268821266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace268821266'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(), &apos;Проверка штрафов&apos;)]&quot;}
+Command duration or timeout: 41.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+*** Element info: {Using=xpath, value=//div[contains(text(), &apos;Проверка штрафов&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.example.tests.BaseClass.clickOnElementsFromOtherServices(BaseClass.java:120)
+	at com.example.tests.TestsForMainPage.checkTitleAndCklickOnServices(TestsForMainPage.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(), &apos;Проверка штрафов&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>2638</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
+<tr>
+<td title='com.example.tests.TestsForMainPage.checkTitleOnMainPage()'><b>checkTitleOnMainPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>java.lang.AssertionError: Пропали тайтлы у марок на главной странице
+	at com.example.tests.TestsForMainPage.checkTitleOnMainPage(TestsForMainPage.java:84)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace292577756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292577756'><pre>java.lang.AssertionError: Пропали тайтлы у марок на главной странице
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.checkTitleOnMainPage(TestsForMainPage.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>23</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
+<tr>
+<td title='com.example.tests.TestsForMainPage.checkTopCategoryInFooter()'><b>checkTopCategoryInFooter</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]&quot;}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+*** Element info: {Using=xpath, value=((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.example.tests.TestsForMainPage.checkTopCategoryInFooter(TestsForMainPage.java:212)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503982006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503982006'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]&quot;}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a16479d7-5c40-47ca-9b57-6b3720653d3c
+*** Element info: {Using=xpath, value=((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.example.tests.TestsForMainPage.checkTopCategoryInFooter(TestsForMainPage.java:212)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//ul[@class=&apos;list-items list-reset&apos;])[1]/li/a)[12]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;gorozheyev&apos;, ip: &apos;192.168.171.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Windows/TEMP/anonymous6911553449374843181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>345</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
+<tr>
+<td title='com.example.tests.TestsForMainPage.clickOnTextLogo()'><b>clickOnTextLogo</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>java.lang.AssertionError: expected [http://moskva.avtopoisk.ru/] but found [http://www.avtopoisk.ru/]
+	at com.example.tests.TestsForMainPage.clickOnTextLogo(TestsForMainPage.java:224)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2008528648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2008528648'><pre>java.lang.AssertionError: expected [http://moskva.avtopoisk.ru/] but found [http://www.avtopoisk.ru/]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.example.tests.TestsForMainPage.clickOnTextLogo(TestsForMainPage.java:224)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>11</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
+<tr>
+<td title='com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage()'><b>goToMarkPageAndToAllBrandsPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>java.lang.AssertionError: Не отображаются тайтлы марок на странице Всех марок
+	at com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage(TestsForMainPage.java:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2080573435", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2080573435'><pre>java.lang.AssertionError: Не отображаются тайтлы марок на странице Всех марок
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage(TestsForMainPage.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>27</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
+<tr>
+<td title='com.example.tests.TestsForMainPage.presenceIconsOfSocialNetworks()'><b>presenceIconsOfSocialNetworks</b><br>Test class: com.example.tests.TestsForMainPage</td>
+<td><div><pre>java.lang.AssertionError: Это не страница Avtopoisk в VK
+	at com.example.tests.TestsForMainPage.presenceIconsOfSocialNetworks(TestsForMainPage.java:180)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1319117655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1319117655'><pre>java.lang.AssertionError: Это не страница Avtopoisk в VK
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.presenceIconsOfSocialNetworks(TestsForMainPage.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>5</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -219,163 +539,118 @@ Caused by: java.net.ConnectException: Connection refused: connect
 <tr>
 <td title='com.example.tests.TestsForMainPage.blockPartners()'><b>blockPartners</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.checkCkickOnLogo()'><b>checkCkickOnLogo</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>413</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.checkClickAndTitleOnLastAdverts()'><b>checkClickAndTitleOnLastAdverts</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockCatalogOnMainPage()'><b>checkClickAndTitlesInBlockCatalogOnMainPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.checkClickAndTitlesInBlockTestDrivesOnMainPage()'><b>checkClickAndTitlesInBlockTestDrivesOnMainPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.checkTitleAndCklickOnServices()'><b>checkTitleAndCklickOnServices</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>223</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.checkTitleAndClickOnArticles()'><b>checkTitleAndClickOnArticles</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.checkTitleOnMainPage()'><b>checkTitleOnMainPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>197</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.checkTitlesAndGoToAllCityesPage()'><b>checkTitlesAndGoToAllCityesPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>87</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.checkTitlesTopCategory()'><b>checkTitlesTopCategory</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>274</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.checkTitlesTopCategoryMoscow()'><b>checkTitlesTopCategoryMoscow</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.checkTopCategoryInFooter()'><b>checkTopCategoryInFooter</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>150</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.checkUpFines()'><b>checkUpFines</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>11</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.choiceDifferentGrafics()'><b>choiceDifferentGrafics</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>18</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.chooseLocationInHeder()'><b>chooseLocationInHeder</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>17</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.ckickOnButtonAddAdvert()'><b>ckickOnButtonAddAdvert</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.clickOnTextLogo()'><b>clickOnTextLogo</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>6</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.dropDownMenuHeaderFifthdPart()'><b>dropDownMenuHeaderFifthdPart</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>236</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.dropDownMenuHeaderFirstPart()'><b>dropDownMenuHeaderFirstPart</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>253</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.dropDownMenuHeaderForthdPart()'><b>dropDownMenuHeaderForthdPart</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>263</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.dropDownMenuHeaderSecondPart()'><b>dropDownMenuHeaderSecondPart</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>267</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.dropDownMenuHeaderSixdPart()'><b>dropDownMenuHeaderSixdPart</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>178</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.dropDownMenuHeaderThirdPart()'><b>dropDownMenuHeaderThirdPart</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage()'><b>goToMarkPageAndToAllBrandsPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>345</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.presenceElementsOnMainPage()'><b>presenceElementsOnMainPage</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>5</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.presenceElementsOnMainPageMoskov()'><b>presenceElementsOnMainPageMoskov</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
-<tr>
-<td title='com.example.tests.TestsForMainPage.presenceIconsOfSocialNetworks()'><b>presenceIconsOfSocialNetworks</b><br>Test class: com.example.tests.TestsForMainPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>11</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.presenceSeoTextInFooter()'><b>presenceSeoTextInFooter</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>12</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.searchFieldWithPressedTabsCatalog()'><b>searchFieldWithPressedTabsCatalog</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>8</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.testSearchFieldWithPressedTabs()'><b>testSearchFieldWithPressedTabs</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>53</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.testSearchFilterWithWalue()'><b>testSearchFilterWithWalue</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>19</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 <tr>
 <td title='com.example.tests.TestsForMainPage.testWithEmptySearchFilter()'><b>testWithEmptySearchFilter</b><br>Test class: com.example.tests.TestsForMainPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.TestsForMainPage@366e2eef</td></tr>
+<td>17</td>
+<td>com.example.tests.TestsForMainPage@67b6d4ae</td></tr>
 </table><p>
 </body>
 </html>

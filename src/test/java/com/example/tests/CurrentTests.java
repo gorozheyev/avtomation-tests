@@ -48,4 +48,5 @@ public class CurrentTests extends BaseClass{
         driver.findElement(By.xpath("html/body/section/div[2]/div/div[3]/div[1]/nav/ul/li[2]/a")).click();
         driver.findElement(By.cssSelector(".btn.btn-lg.btn-blue.w-fluid.buttonSubscribe")).click();
     }
+
 }

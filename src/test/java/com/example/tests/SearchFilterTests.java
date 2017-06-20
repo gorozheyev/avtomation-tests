@@ -298,13 +298,16 @@ public class SearchFilterTests extends BaseClass{
         }
         driver.findElement(By.xpath("//li[@class='next']/a")).click();
         assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car?page=3"));
-        driver.findElement(By.xpath("//div[@class='form-content']/a")).click();
+        if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
+            driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
         driver.findElement(By.xpath("//li[@class='previous']/a")).click();
         assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car?page=2"));
-        driver.findElement(By.xpath("//div[@class='form-content']/a")).click();
+        if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
+            driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
         driver.findElement(By.xpath("//li/a[contains(text(), '>>')]")).click();
         driver.findElement(By.xpath("//div[@class='title h4']"));
-        driver.findElement(By.xpath("//div[@class='form-content']/a")).click();
+        if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
+            driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
         driver.findElement(By.xpath("//li/a[contains(text(), '<<')]")).click();
         assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car"));
     }

@@ -30,8 +30,14 @@ public class BaseClass {
         baseUrl = "http://www.avtopoisk.ru/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 10);
-
     }
+
+    //    раскоментировать если нужно получить названия тестов
+//    @AfterMethod
+//    public void nameAfter(Method method)
+//    {
+//        System.out.println("Test name: " + method.getName());
+//    }
 
     @AfterTest
     public void tearDown() throws Exception {

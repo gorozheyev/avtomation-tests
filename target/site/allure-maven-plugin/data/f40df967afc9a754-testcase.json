@@ -1,0 +1,41 @@
+{
+  "uid" : "f40df967afc9a754",
+  "name" : "clickOnSubscriptionButton",
+  "title" : "Click on subscription button",
+  "time" : {
+    "start" : 1498028086821,
+    "stop" : 1498028097276,
+    "duration" : 10455
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "4bd45bc62ae2ec73",
+    "name" : "Default Suite",
+    "title" : "Default Suite : AvtomationTestsAvtopoisk"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Default Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Default Suite : AvtomationTestsAvtopoisk"
+  } ],
+  "parameters" : [ ]
+}

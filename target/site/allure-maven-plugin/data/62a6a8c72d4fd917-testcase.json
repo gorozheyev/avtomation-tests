@@ -1,0 +1,41 @@
+{
+  "uid" : "62a6a8c72d4fd917",
+  "name" : "presenceTabsAndClickThem",
+  "title" : "Presence tabs and click them",
+  "time" : {
+    "start" : 1498028150332,
+    "stop" : 1498028159956,
+    "duration" : 9624
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "4bd45bc62ae2ec73",
+    "name" : "Default Suite",
+    "title" : "Default Suite : AvtomationTestsAvtopoisk"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Default Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Default Suite : AvtomationTestsAvtopoisk"
+  } ],
+  "parameters" : [ ]
+}

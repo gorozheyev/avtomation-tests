@@ -1,0 +1,41 @@
+{
+  "uid" : "603a1cc77e79044d",
+  "name" : "mileageFromTo",
+  "title" : "Mileage from to",
+  "time" : {
+    "start" : 1498027741169,
+    "stop" : 1498027789171,
+    "duration" : 48002
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "4bd45bc62ae2ec73",
+    "name" : "Default Suite",
+    "title" : "Default Suite : AvtomationTestsAvtopoisk"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Default Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Default Suite : AvtomationTestsAvtopoisk"
+  } ],
+  "parameters" : [ ]
+}

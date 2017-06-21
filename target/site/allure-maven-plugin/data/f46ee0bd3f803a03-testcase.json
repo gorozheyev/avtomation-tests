@@ -1,0 +1,41 @@
+{
+  "uid" : "f46ee0bd3f803a03",
+  "name" : "presenceElementsOnMainPageMoskov",
+  "title" : "Presence elements on main page moskov",
+  "time" : {
+    "start" : 1498029467900,
+    "stop" : 1498029484159,
+    "duration" : 16259
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "4bd45bc62ae2ec73",
+    "name" : "Default Suite",
+    "title" : "Default Suite : AvtomationTestsAvtopoisk"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Default Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Default Suite : AvtomationTestsAvtopoisk"
+  } ],
+  "parameters" : [ ]
+}

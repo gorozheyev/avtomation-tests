@@ -1,0 +1,41 @@
+{
+  "uid" : "6a126f84c7e5e10c",
+  "name" : "checkTopCategoryInFooter",
+  "title" : "Check top category in footer",
+  "time" : {
+    "start" : 1498029202157,
+    "stop" : 1498029346596,
+    "duration" : 144439
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "4bd45bc62ae2ec73",
+    "name" : "Default Suite",
+    "title" : "Default Suite : AvtomationTestsAvtopoisk"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Default Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Default Suite : AvtomationTestsAvtopoisk"
+  } ],
+  "parameters" : [ ]
+}

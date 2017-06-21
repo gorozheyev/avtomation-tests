@@ -22,7 +22,7 @@ public class CurrentTests extends BaseClass{
 
     @Test
     //    проверка каунтеров на выдаче
-    public void checkCountAdverts () throws Exception {
+    public void checkCountAdverts() throws Exception {
         openMainPage();
         clickOnSearchButton();
         int counters = getCountAdvertsOnSearchPage();

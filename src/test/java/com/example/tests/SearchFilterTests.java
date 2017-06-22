@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ import static org.testng.Assert.fail;
 /**
  * Created by gorozheyevd on 06.04.2017.
  */
+@Title("Тесты для фильтра поиска")
 public class SearchFilterTests extends BaseClass{
 
     @Test
@@ -60,7 +62,7 @@ public class SearchFilterTests extends BaseClass{
             if(element.getText().length()!=0) {
                 String s = element.getText().substring(0, element.getText().length() - " руб.".length());
                 int a = Integer.parseInt(s.replaceAll(" ", ""));
-                if(a<495000)
+                if(a<490000)
                 fail("Цены на выдаче - "+a+" , а должна быть больше 500 000 руб.");
             }
         }

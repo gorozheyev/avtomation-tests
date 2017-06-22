@@ -3,9 +3,9 @@ package com.example.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
@@ -13,6 +13,7 @@ import static org.testng.Assert.fail;
 /**
  * Created by gorozheyevd on 23.01.2017.
  */
+@Title("Тесты по требованиям СЕО")
 public class SeoRequirementsTests extends BaseClass {
 
     @Test
@@ -75,7 +76,6 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void seoOnSearchPageOtherCategories() {
-        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
         driver.get("http://www.avtopoisk.ru/gruzovye");
         assertEquals("Грузовые автомобили с пробегом в России. Купля-продажа грузовых автомобилей б/у: цены, фото", driver.getTitle());
         assertEquals("Возможность купить грузовик с пробегом в России на сайте Avtopoisk.Ru. Продажа подержанных грузовых машин в России: цены, описания и фото смотрите на сайте.",

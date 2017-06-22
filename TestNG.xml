@@ -1,0 +1,39 @@
+<!--При такой конфигурации файла брайзер открывается и закрывается для каждого класса-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1" parallel="classes" thread-count="3">
+    <test name="Parallel Tests">
+        <classes>
+            <class name="com.example.tests.ClickOnAllLinksInMainMenuHeader" />
+            <class name="com.example.tests.TestsForMainPage" />
+            <class name="com.example.tests.SearchFilterTests" />
+            <class name="com.example.tests.SearchPage" />
+            <class name="com.example.tests.SeoRequirementsTests" />
+            <class name="com.example.tests.CurrentTests" />
+        </classes>
+    </test>
+</suite>
+
+
+<!--При такой конфигурации файла тесты запустытся в три потока, в каждом потоке сатранет два класса-->
+        <!--и для каждого потока браузер откроется и закроется один раз -->
+        <!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >-->
+<!--<suite name="Suite" verbose="1" parallel="tests" thread-count="3">-->
+<!--<test name="Parallel Tests">-->
+    <!--<classes>-->
+        <!--<class name="com.example.tests.ClickOnAllLinksInMainMenuHeader" />-->
+        <!--<class name="com.example.tests.TestsForMainPage" />-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Parallel Tests part 2">-->
+        <!--<classes>-->
+        <!--<class name="com.example.tests.SearchFilterTests" />-->
+        <!--<class name="com.example.tests.SearchPage" />-->
+        <!--</classes>-->
+    <!--</test>-->
+        <!--<test name="Parallel Tests part 3">-->
+            <!--<classes>-->
+        <!--<class name="com.example.tests.SeoRequirementsTests" />-->
+        <!--<class name="com.example.tests.CurrentTests" />-->
+            <!--</classes>-->
+        <!--</test>-->
+<!--</suite>-->

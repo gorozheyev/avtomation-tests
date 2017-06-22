@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import static org.testng.Assert.fail;
 /**
  * Created by gorozheyevd on 07.02.2017.
  */
+@Title("Тесты для страницы выдачи")
 public class SearchPage extends BaseClass{
 
     @Test

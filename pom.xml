@@ -78,9 +78,12 @@
                     -Dcucumber.options=" --plugin ru.yandex.qatools.allure.cucumberjvm.AllureReporter"
                 </argLine>
                 <testFailureIgnore>true</testFailureIgnore>
+                <suiteXmlFiles>
+                    <suiteXmlFile>TestNG.xml</suiteXmlFile>
+                </suiteXmlFiles>
                 <parallel>classes</parallel>
                 <perCoreThreadCount>true</perCoreThreadCount>
-                <threadCount>2</threadCount>
+                <threadCount>3</threadCount>
             </configuration>
             <dependencies>
                 <dependency>

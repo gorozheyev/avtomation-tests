@@ -6,9 +6,10 @@ package com.example.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import static org.testng.Assert.assertEquals;
-
+@Title("Сопутствующие тесты")
 public class CurrentTests extends BaseClass{
 
     @Test

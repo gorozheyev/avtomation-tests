@@ -3,8 +3,8 @@ package com.example.tests;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,13 +15,13 @@ import static org.testng.Assert.fail;
  * Created by gorozheyevd on 13.12.2016.
  */
 public class BaseClass {
-    protected static WebDriver driver;
-    private static String baseUrl;
-    private static boolean acceptNextAlert = true;
-    private static StringBuffer verificationErrors = new StringBuffer();
-    protected static WebDriverWait wait;
+    protected  WebDriver driver;
+    private  String baseUrl;
+    private  boolean acceptNextAlert = true;
+    private  StringBuffer verificationErrors = new StringBuffer();
+    protected  WebDriverWait wait;
 
-    @BeforeTest
+    @BeforeClass
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
 //        System.setProperty("webdriver.opera.driver", "C:\\operadriver_win64\\operadriver.exe");
@@ -39,7 +39,7 @@ public class BaseClass {
 //        System.out.println("Test name: " + method.getName());
 //    }
 
-    @AfterTest
+    @AfterClass
     public void tearDown() throws Exception {
         driver.quit();
         String verificationErrorString = verificationErrors.toString();

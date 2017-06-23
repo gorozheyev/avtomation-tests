@@ -2,183 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3e1a924-b8cb-4d5b-87d2-1c5562b9a43d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/0f459c4d-138a-4f46-a66c-6fc4b77d4b60-testsuite.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/17d95771009815ff-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/1cebfe1b983faf1b-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/215d1e7baa01f499-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/227c2b4d94004674-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/24bd9966706c6276-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/26cd413d33b48529-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/27b99d1834f93314-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/2d4026613bf97923-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/2f3a69a48def4781-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/2fe07535acfd53b9-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/34c36fea3735c45b-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/38721dee62519f96-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/39dea17a390adb9b-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/3a1b400a2d0cf44b-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/3e786bf3cf2ed5cc-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/42df831e59941781-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/49804748dbaf5541-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/4f3d5c8d1b14d36-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/54d368580279cb5-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/5918e4f59ec09193-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/5d3be502e252da34-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/6019797610c54cd6-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/603a1cc77e79044d-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/62a6a8c72d4fd917-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/62ad42ec010ab3b2-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/6379e1d9408682f9-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/64d34ee236d56fde-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/6a126f84c7e5e10c-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/6db3caacd2642dd6-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/70f059e828bf537a-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/729e5cc1767eb981-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/73605c66fc02c648-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/740d1462acb9149-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/76591b31813c1986-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/76d254e7f9ceb052-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/8175907c527364fc-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/824cff84a223c5de-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/88d3aa226e6948b7-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/97885cf393f255ff-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/987dfa693edb2bc4-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/9ea4684076c1cda-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/a1e80f7816337a08-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/aa963d9aaf059a6d-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/ada112ab52956e7f-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/ae0eea3f30f23558-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/af7b2b846bce90f8-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/afd96db8f424ad6a-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/b83faa8dcd406530-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/bc82658008e111e0-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/c041ab2d835d0ea4-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/c31ab2d02c484a21-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/c82fa0d3a35f91be-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/ce1d6ffe7a39d12c-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/cf32f37043ebc758-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/d2a31c104a17de8e-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/d2f8aaaca0fddb30-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/d42bbb2a8c1502b7-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/d7d4e2e6fbebba0b-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/da49051e25d6a6a3-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/dd6ef9ad620797b4-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/e1004fab021a3d4-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/e5fa5dc976ceac39-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/e7d738eb07b7512b-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/f0801d928d9d1dc5-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/f14bafcde482bf0e-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/f24ecfc70ed74011-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/f393438dfe6c3b2f-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/f40df967afc9a754-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/f46ee0bd3f803a03-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/f4cdef8a52a6aca8-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/fa65114b12195ecd-testcase.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/ClickOnAllLinksInMainMenuHeader.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/ClickOnAllLinksInMainMenuHeader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/SearchFilterTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/SearchFilterTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/SearchPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/SearchPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/SeoRequirementsTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/SeoRequirementsTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/css/app.css" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/behaviors.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/behaviors.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/defects.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/defects.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/environment.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/environment.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/graph.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/graph.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/report.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/report.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/timeline.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/timeline.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/total.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/total.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/widgets.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/widgets.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/xunit.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/xunit.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/index.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/app.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/charts.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/charts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/duration.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/duration.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/pie.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/severityMap.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/severityMap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/timeline.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/timeline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/controllers.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/directives.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/filters.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/filters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/overview/widgets.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/overview/widgets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/pane/pane.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/pane/pane.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/pluginApi.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/pluginApi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/scrollfix/scrollfix.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/scrollfix/scrollfix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/services.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/table/table.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/table/table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/list.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/provider.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/statusSwitcher.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/statusSwitcher.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/testcase.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/testcase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/en.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/en.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/ptbr.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/ptbr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/ru.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/script.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/tab.tpl.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/tab.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/en.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/en.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/ptbr.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/ptbr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/ru.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/script.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/tab.tpl.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/tab.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/environment/script.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/environment/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/en.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/en.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/ptbr.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/ptbr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/ru.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/script.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/tab.tpl.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/tab.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/en.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/en.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/ptbr.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/ptbr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/ru.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/script.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/tab.tpl.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/tab.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/total/script.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/total/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/en.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/en.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/ptbr.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/ptbr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/ru.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/script.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/tab.tpl.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/tab.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/testrun.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/testrun.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/testsuite.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/testsuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/defects.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/defects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/keyValue.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/keyValue.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/statistics.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/statistics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/total.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/total.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/table/table.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/table/table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/attachment.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/attachment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/list.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/status-switcher.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/status-switcher.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/testcase.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/testcase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/testcaseView.html" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/testcaseView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/en.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/en.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/ptbr.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/ptbr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/ru.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/filesize.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/filesize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/localstorageprovider.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/localstorageprovider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/en.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/ptbr.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/ptbr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/ru.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/Sortable/1.2.0/Sortable.min.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/Sortable/1.2.0/Sortable.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/Sortable/1.2.0/ng-sortable.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/Sortable/1.2.0/ng-sortable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-loading-bar/0.6.0/loading-bar.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-loading-bar/0.6.0/loading-bar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate-interpolation-messageformat/0.1.2/angular-translate-interpolation-messageformat.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate-interpolation-messageformat/0.1.2/angular-translate-interpolation-messageformat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate-loader-partial/2.6.0/angular-translate-loader-partial.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate-loader-partial/2.6.0/angular-translate-loader-partial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate/2.6.0/angular-translate.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate/2.6.0/angular-translate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-ui-router/0.2.13/angular-ui-router.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-ui-router/0.2.13/angular-ui-router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angularjs/1.2.26/angular-animate.min.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angularjs/1.2.26/angular-animate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angularjs/1.2.26/angular.min.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angularjs/1.2.26/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/d3js/3.4.11/d3.min.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/d3js/3.4.11/d3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/jquery/2.1.1/jquery.min.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/jquery/2.1.1/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/messageformat.js/0.1.4/messageformat.js" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/messageformat.js/0.1.4/messageformat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" afterPath="$PROJECT_DIR$/target/site/css/maven-base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/css/print.css" afterPath="$PROJECT_DIR$/target/site/css/print.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/project-reports.html" afterPath="$PROJECT_DIR$/target/site/project-reports.html" />
     </list>
     <ignored path="AvtomationTestsAvtopoisk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -209,112 +39,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestsForMainPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPageData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/MainPageData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ClickOnAllLinksInMainMenuHeader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/ClickOnAllLinksInMainMenuHeader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/SearchPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeoRequirementsTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SeoRequirementsTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/SeoRequirementsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="87" column="19" lean-forward="false" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+            <state relative-caret-position="1520">
+              <caret line="87" column="19" lean-forward="false" selection-start-line="85" selection-start-column="3" selection-end-line="87" selection-end-column="19" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CurrentTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="83" column="33" lean-forward="false" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestNG.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNG.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchFilterTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/SearchFilterTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -388,11 +128,11 @@
         <option value="$PROJECT_DIR$/TestNG.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/SeoRequirementsTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/SearchPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/SearchFilterTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/ClickOnAllLinksInMainMenuHeader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/SearchPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/SeoRequirementsTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java" />
       </list>
     </option>
   </component>
@@ -442,6 +182,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -482,8 +224,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -512,8 +252,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/avtomation-tests/TestNG.xml">
-    <configuration default="false" name="TestsForMainPage.testSearchFilterWithWalue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SeoRequirementsTests.outclicksOnAdvert">
+    <configuration default="false" name="SeoRequirementsTests.markPlusAuxiliaryFiltersPageSeo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.example.tests.*" />
@@ -525,8 +265,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.example.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.TestsForMainPage" />
-      <option name="METHOD_NAME" value="testSearchFilterWithWalue" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.SeoRequirementsTests" />
+      <option name="METHOD_NAME" value="markPlusAuxiliaryFiltersPageSeo" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -546,17 +286,22 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="C:/avtomation-tests/TestNG.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="false" name="SeoRequirementsTests.markPlusModelPageSeo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="AvtomationTestsAvtopoisk" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.example.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.SeoRequirementsTests" />
+      <option name="METHOD_NAME" value="markPlusModelPageSeo" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -574,7 +319,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="SearchFilterTests.priceFrom" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SeoRequirementsTests.markPlusModePlusAuxiliaryFilterslPageSeo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.example.tests.*" />
@@ -586,8 +331,41 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.example.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.SearchFilterTests" />
-      <option name="METHOD_NAME" value="priceFrom" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.SeoRequirementsTests" />
+      <option name="METHOD_NAME" value="markPlusModePlusAuxiliaryFilterslPageSeo" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="SeoRequirementsTests.adpageSeo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AvtomationTestsAvtopoisk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.example.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.SeoRequirementsTests" />
+      <option name="METHOD_NAME" value="adpageSeo" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -623,39 +401,6 @@
       <option name="METHOD_NAME" value="outclicksOnAdvert" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="ClickOnAllLinksInMainMenuHeader" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.example.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="AvtomationTestsAvtopoisk" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.example.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.ClickOnAllLinksInMainMenuHeader" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -907,19 +652,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.com.example.tests" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.testSearchFilterWithWalue" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/avtomation-tests/TestNG.xml" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.SearchFilterTests.priceFrom" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.outclicksOnAdvert" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.ClickOnAllLinksInMainMenuHeader" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.markPlusAuxiliaryFiltersPageSeo" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.markPlusModelPageSeo" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.markPlusModePlusAuxiliaryFilterslPageSeo" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.adpageSeo" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.outclicksOnAdvert" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/avtomation-tests/TestNG.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.ClickOnAllLinksInMainMenuHeader" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.SearchFilterTests.priceFrom" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.outclicksOnAdvert" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestsForMainPage.testSearchFilterWithWalue" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.outclicksOnAdvert" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.adpageSeo" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.markPlusModePlusAuxiliaryFilterslPageSeo" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.markPlusModelPageSeo" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.SeoRequirementsTests.markPlusAuxiliaryFiltersPageSeo" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -967,35 +712,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__avtomation-tests_TestNG_xml - 2017.06.22 at 10h 27m 41s.xml">
-      <configuration name="C:/avtomation-tests/TestNG.xml" configurationId="TestNG" />
+    <history-entry file="SeoRequirementsTests_adpageSeo - 2017.06.23 at 12h 51m 06s.xml">
+      <configuration name="SeoRequirementsTests.adpageSeo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__avtomation-tests_TestNG_xml - 2017.06.22 at 13h 14m 05s.xml">
-      <configuration name="C:/avtomation-tests/TestNG.xml" configurationId="TestNG" />
+    <history-entry file="SeoRequirementsTests_markPageSeo - 2017.06.23 at 12h 48m 24s.xml">
+      <configuration name="SeoRequirementsTests.markPageSeo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__avtomation-tests_TestNG_xml - 2017.06.22 at 13h 58m 15s.xml">
-      <configuration name="C:/avtomation-tests/TestNG.xml" configurationId="TestNG" />
+    <history-entry file="SeoRequirementsTests_markPlusAuxiliaryFiltersPageSeo - 2017.06.23 at 12h 49m 01s.xml">
+      <configuration name="SeoRequirementsTests.markPlusAuxiliaryFiltersPageSeo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__avtomation-tests_TestNG_xml - 2017.06.22 at 13h 59m 14s.xml">
-      <configuration name="C:/avtomation-tests/TestNG.xml" configurationId="TestNG" />
+    <history-entry file="SeoRequirementsTests_markPlusModePlusAuxiliaryFilterslPageSeo - 2017.06.23 at 12h 50m 38s.xml">
+      <configuration name="SeoRequirementsTests.markPlusModePlusAuxiliaryFilterslPageSeo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__avtomation-tests_TestNG_xml - 2017.06.22 at 14h 28m 01s.xml">
-      <configuration name="C:/avtomation-tests/TestNG.xml" configurationId="TestNG" />
+    <history-entry file="SeoRequirementsTests_markPlusModelPageSeo - 2017.06.23 at 12h 49m 37s.xml">
+      <configuration name="SeoRequirementsTests.markPlusModelPageSeo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ClickOnAllLinksInMainMenuHeader - 2017.06.22 at 13h 55m 58s.xml">
-      <configuration name="ClickOnAllLinksInMainMenuHeader" configurationId="TestNG" />
+    <history-entry file="SeoRequirementsTests_markPlusModelPageSeo - 2017.06.23 at 12h 50m 06s.xml">
+      <configuration name="SeoRequirementsTests.markPlusModelPageSeo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchFilterTests_priceFrom - 2017.06.22 at 11h 12m 34s.xml">
-      <configuration name="SearchFilterTests.priceFrom" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchFilterTests_priceFrom - 2017.06.22 at 11h 13m 56s.xml">
-      <configuration name="SearchFilterTests.priceFrom" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchFilterTests_priceFrom - 2017.06.22 at 11h 16m 10s.xml">
-      <configuration name="SearchFilterTests.priceFrom" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SeoRequirementsTests_outclicksOnAdvert - 2017.06.22 at 11h 16m 48s.xml">
+    <history-entry file="SeoRequirementsTests_outclicksOnAdvert - 2017.06.23 at 12h 52m 15s.xml">
       <configuration name="SeoRequirementsTests.outclicksOnAdvert" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SeoRequirementsTests_outclicksOnAdvert - 2017.06.23 at 13h 50m 51s.xml">
+      <configuration name="SeoRequirementsTests.outclicksOnAdvert" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SeoRequirementsTests_outclicksOnAdvert - 2017.06.23 at 13h 55m 30s.xml">
+      <configuration name="SeoRequirementsTests.outclicksOnAdvert" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SeoRequirementsTests_seoMetaOnCustomLinkPages - 2017.06.23 at 12h 47m 41s.xml">
+      <configuration name="SeoRequirementsTests.seoMetaOnCustomLinkPages" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1018,15 +763,15 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.478145" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27951002" sideWeight="0.37420043" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27951002" sideWeight="0.6337953" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27951002" sideWeight="0.6257996" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.521855" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5026652" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20469083" sideWeight="0.47449768" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20895523" sideWeight="0.47449768" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="725" y="198" width="469" height="644" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1114,7 +859,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1314,99 +1059,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/TestNG1.xml">
+    <entry file="file://$PROJECT_DIR$/target/TestNG1.xml" />
+    <entry file="file://$PROJECT_DIR$/TestNG1.xml" />
+    <entry file="file://$PROJECT_DIR$/TestNG1.xml" />
+    <entry file="file://$PROJECT_DIR$/TestNG2.xml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1444">
+          <caret line="87" column="19" lean-forward="false" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG1.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/SearchPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="114">
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG1.xml">
+    <entry file="file://$PROJECT_DIR$/TestNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="5" selection-end-column="63" />
+        <state relative-caret-position="247">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="83" column="33" lean-forward="false" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="33" />
+        <state relative-caret-position="1862">
+          <caret line="98" column="6" lean-forward="false" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/SearchFilterTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/CurrentTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="133">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/SeoRequirementsTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="-57">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/SearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/ClickOnAllLinksInMainMenuHeader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1418,21 +1129,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/ClickOnAllLinksInMainMenuHeader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="87" column="19" lean-forward="false" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+        <state relative-caret-position="133">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/TestsForMainPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/SeoRequirementsTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1520">
+          <caret line="87" column="19" lean-forward="false" selection-start-line="85" selection-start-column="3" selection-end-line="87" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 71, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1,538.531 sec <<< FAILURE! - in TestSuite
+checkTitleOnMainPage(com.example.tests.TestsForMainPage)  Time elapsed: 6.371 sec  <<< FAILURE!
+java.lang.AssertionError: Пропали тайтлы у марок на главной странице
+	at com.example.tests.TestsForMainPage.checkTitleOnMainPage(TestsForMainPage.java:85)
+
+goToMarkPageAndToAllBrandsPage(com.example.tests.TestsForMainPage)  Time elapsed: 1.913 sec  <<< FAILURE!
+java.lang.AssertionError: Не отображаются тайтлы марок на странице Всех марок
+	at com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage(TestsForMainPage.java:101)
+

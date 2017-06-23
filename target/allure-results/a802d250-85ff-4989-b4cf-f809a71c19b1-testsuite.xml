@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1498209585582" stop="1498209605067" version="1.4.3">
+    <name>Default Suite</name>
+    <title>Default Suite : AvtomationTestsAvtopoisk</title>
+    <test-cases>
+        <test-case start="1498209593775" stop="1498209604074" status="passed">
+            <name>seoOnLocationSearchPageCar</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

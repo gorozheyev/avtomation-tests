@@ -3,7 +3,6 @@ package com.example.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
@@ -13,7 +12,6 @@ import static org.testng.AssertJUnit.fail;
  * Created by gorozheyevd on 22.06.2017.
  */
 
-@Title("Переходы по всем линкам из главного меню в хедере")
 public class ClickOnAllLinksInMainMenuHeader extends BaseClass{
 
     @Test

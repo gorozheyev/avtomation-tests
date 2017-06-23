@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1498207880692" stop="1498208288331" version="1.4.3">
+    <name>Default Suite</name>
+    <title>Default Suite : AvtomationTestsAvtopoisk</title>
+    <test-cases>
+        <test-case start="1498207888206" stop="1498207920101" status="passed">
+            <name>checkTypeOfCurrency</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498207920241" stop="1498207935493" status="passed">
+            <name>checkboxHasPhoto</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498207935495" stop="1498207980490" status="passed">
+            <name>choiceMarkAndModel</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498207980492" stop="1498208019688" status="passed">
+            <name>choiceModelWithoutMark</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208019692" stop="1498208046727" status="passed">
+            <name>countInTooltipAndInH1</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208046729" stop="1498208065081" status="passed">
+            <name>mileageFrom</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208065082" stop="1498208112560" status="passed">
+            <name>mileageFromTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208112561" stop="1498208168877" status="passed">
+            <name>openAdditionalFilters</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208168879" stop="1498208187441" status="passed">
+            <name>priceFrom</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208187442" stop="1498208208752" status="passed">
+            <name>priceFromTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208208755" stop="1498208226756" status="passed">
+            <name>priceTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208226757" stop="1498208246433" status="passed">
+            <name>yearFrom</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208246437" stop="1498208268128" status="passed">
+            <name>yearFromYearTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208268129" stop="1498208285262" status="passed">
+            <name>yearTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

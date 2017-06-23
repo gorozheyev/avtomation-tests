@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="71" passed="69">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1535738" started-at="2017-06-23T07:42:59Z" finished-at="2017-06-23T08:08:35Z">
+    <groups>
+    </groups>
+    <test name="Parallel Tests" duration-ms="1535738" started-at="2017-06-23T07:42:59Z" finished-at="2017-06-23T08:08:35Z">
+      <class name="com.example.tests.TestsForMainPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="setUp" is-config="true" duration-ms="8621" started-at="2017-06-23T10:42:59Z" finished-at="2017-06-23T10:43:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="blockPartners()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="blockPartners" duration-ms="48158" started-at="2017-06-23T10:43:07Z" finished-at="2017-06-23T10:43:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockPartners -->
+        <test-method status="PASS" signature="checkCkickOnLogo()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkCkickOnLogo" duration-ms="30852" started-at="2017-06-23T10:43:56Z" finished-at="2017-06-23T10:44:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCkickOnLogo -->
+        <test-method status="PASS" signature="checkClickAndTitleOnLastAdverts()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkClickAndTitleOnLastAdverts" duration-ms="20297" started-at="2017-06-23T10:44:27Z" finished-at="2017-06-23T10:44:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickAndTitleOnLastAdverts -->
+        <test-method status="PASS" signature="checkClickAndTitlesInBlockCatalogOnMainPage()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkClickAndTitlesInBlockCatalogOnMainPage" duration-ms="50635" started-at="2017-06-23T10:44:47Z" finished-at="2017-06-23T10:45:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickAndTitlesInBlockCatalogOnMainPage -->
+        <test-method status="PASS" signature="checkClickAndTitlesInBlockTestDrivesOnMainPage()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkClickAndTitlesInBlockTestDrivesOnMainPage" duration-ms="56331" started-at="2017-06-23T10:45:38Z" finished-at="2017-06-23T10:46:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickAndTitlesInBlockTestDrivesOnMainPage -->
+        <test-method status="PASS" signature="checkTitleAndCklickOnServices()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkTitleAndCklickOnServices" duration-ms="173691" started-at="2017-06-23T10:46:34Z" finished-at="2017-06-23T10:49:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleAndCklickOnServices -->
+        <test-method status="PASS" signature="checkTitleAndClickOnArticles()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkTitleAndClickOnArticles" duration-ms="27062" started-at="2017-06-23T10:49:28Z" finished-at="2017-06-23T10:49:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleAndClickOnArticles -->
+        <test-method status="FAIL" signature="checkTitleOnMainPage()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkTitleOnMainPage" duration-ms="6288" started-at="2017-06-23T10:49:55Z" finished-at="2017-06-23T10:50:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Пропали тайтлы у марок на главной странице]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Пропали тайтлы у марок на главной странице
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.checkTitleOnMainPage(TestsForMainPage.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleOnMainPage -->
+        <test-method status="PASS" signature="checkTitlesAndGoToAllCityesPage()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkTitlesAndGoToAllCityesPage" duration-ms="13970" started-at="2017-06-23T10:50:01Z" finished-at="2017-06-23T10:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitlesAndGoToAllCityesPage -->
+        <test-method status="PASS" signature="checkTitlesTopCategory()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkTitlesTopCategory" duration-ms="28573" started-at="2017-06-23T10:50:15Z" finished-at="2017-06-23T10:50:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitlesTopCategory -->
+        <test-method status="PASS" signature="checkTitlesTopCategoryMoscow()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkTitlesTopCategoryMoscow" duration-ms="42911" started-at="2017-06-23T10:50:44Z" finished-at="2017-06-23T10:51:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitlesTopCategoryMoscow -->
+        <test-method status="PASS" signature="checkTopCategoryInFooter()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkTopCategoryInFooter" duration-ms="175676" started-at="2017-06-23T10:51:27Z" finished-at="2017-06-23T10:54:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTopCategoryInFooter -->
+        <test-method status="PASS" signature="checkUpFines()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="checkUpFines" duration-ms="24153" started-at="2017-06-23T10:54:22Z" finished-at="2017-06-23T10:54:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUpFines -->
+        <test-method status="PASS" signature="choiceDifferentGrafics()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="choiceDifferentGrafics" duration-ms="21368" started-at="2017-06-23T10:54:47Z" finished-at="2017-06-23T10:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choiceDifferentGrafics -->
+        <test-method status="PASS" signature="chooseLocationInHeder()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="chooseLocationInHeder" duration-ms="19499" started-at="2017-06-23T10:55:08Z" finished-at="2017-06-23T10:55:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseLocationInHeder -->
+        <test-method status="PASS" signature="ckickOnButtonAddAdvert()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="ckickOnButtonAddAdvert" duration-ms="12974" started-at="2017-06-23T10:55:27Z" finished-at="2017-06-23T10:55:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ckickOnButtonAddAdvert -->
+        <test-method status="PASS" signature="clickOnTextLogo()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="clickOnTextLogo" duration-ms="24396" started-at="2017-06-23T10:55:40Z" finished-at="2017-06-23T10:56:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnTextLogo -->
+        <test-method status="FAIL" signature="goToMarkPageAndToAllBrandsPage()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="goToMarkPageAndToAllBrandsPage" duration-ms="40161" started-at="2017-06-23T10:56:05Z" finished-at="2017-06-23T10:56:45Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Не отображаются тайтлы марок на странице Всех марок]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Не отображаются тайтлы марок на странице Всех марок
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage(TestsForMainPage.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMarkPageAndToAllBrandsPage -->
+        <test-method status="PASS" signature="presenceElementsOnMainPage()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="presenceElementsOnMainPage" duration-ms="6651" started-at="2017-06-23T10:56:45Z" finished-at="2017-06-23T10:56:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presenceElementsOnMainPage -->
+        <test-method status="PASS" signature="presenceElementsOnMainPageMoskov()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="presenceElementsOnMainPageMoskov" duration-ms="20021" started-at="2017-06-23T10:56:52Z" finished-at="2017-06-23T10:57:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presenceElementsOnMainPageMoskov -->
+        <test-method status="PASS" signature="presenceIconsOfSocialNetworks()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="presenceIconsOfSocialNetworks" duration-ms="42035" started-at="2017-06-23T10:57:12Z" finished-at="2017-06-23T10:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presenceIconsOfSocialNetworks -->
+        <test-method status="PASS" signature="presenceSeoTextInFooter()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="presenceSeoTextInFooter" duration-ms="5965" started-at="2017-06-23T10:57:54Z" finished-at="2017-06-23T10:58:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presenceSeoTextInFooter -->
+        <test-method status="PASS" signature="searchFieldWithPressedTabsCatalog()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="searchFieldWithPressedTabsCatalog" duration-ms="14381" started-at="2017-06-23T10:58:00Z" finished-at="2017-06-23T10:58:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFieldWithPressedTabsCatalog -->
+        <test-method status="PASS" signature="testSearchFieldWithPressedTabs()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="testSearchFieldWithPressedTabs" duration-ms="53321" started-at="2017-06-23T10:58:14Z" finished-at="2017-06-23T10:59:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFieldWithPressedTabs -->
+        <test-method status="PASS" signature="testSearchFilterWithWalue()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="testSearchFilterWithWalue" duration-ms="18243" started-at="2017-06-23T10:59:07Z" finished-at="2017-06-23T10:59:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFilterWithWalue -->
+        <test-method status="PASS" signature="testWithEmptySearchFilter()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="testWithEmptySearchFilter" duration-ms="19484" started-at="2017-06-23T10:59:26Z" finished-at="2017-06-23T10:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithEmptySearchFilter -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.TestsForMainPage@150ede8b]" name="tearDown" is-config="true" duration-ms="3542" started-at="2017-06-23T10:59:45Z" finished-at="2017-06-23T10:59:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.TestsForMainPage -->
+      <class name="com.example.tests.SearchPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="setUp" is-config="true" duration-ms="24517" started-at="2017-06-23T10:54:40Z" finished-at="2017-06-23T10:55:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="breadCrumbs()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="breadCrumbs" duration-ms="18697" started-at="2017-06-23T10:55:05Z" finished-at="2017-06-23T10:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breadCrumbs -->
+        <test-method status="PASS" signature="breadCrumbsWithMark()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="breadCrumbsWithMark" duration-ms="29478" started-at="2017-06-23T10:55:23Z" finished-at="2017-06-23T10:55:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breadCrumbsWithMark -->
+        <test-method status="PASS" signature="breadCrumbsWithMarkAndModel()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="breadCrumbsWithMarkAndModel" duration-ms="26103" started-at="2017-06-23T10:55:53Z" finished-at="2017-06-23T10:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breadCrumbsWithMarkAndModel -->
+        <test-method status="PASS" signature="clickOnSubscriptionButton()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="clickOnSubscriptionButton" duration-ms="12100" started-at="2017-06-23T10:56:19Z" finished-at="2017-06-23T10:56:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSubscriptionButton -->
+        <test-method status="PASS" signature="countAdvertsOnSearchPage()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="countAdvertsOnSearchPage" duration-ms="12103" started-at="2017-06-23T10:56:31Z" finished-at="2017-06-23T10:56:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countAdvertsOnSearchPage -->
+        <test-method status="PASS" signature="customLinksUnderTabs()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="customLinksUnderTabs" duration-ms="50084" started-at="2017-06-23T10:56:43Z" finished-at="2017-06-23T10:57:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customLinksUnderTabs -->
+        <test-method status="PASS" signature="presenceTabsAndClickThem()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="presenceTabsAndClickThem" duration-ms="13031" started-at="2017-06-23T10:57:33Z" finished-at="2017-06-23T10:57:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presenceTabsAndClickThem -->
+        <test-method status="PASS" signature="sortingBy()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="sortingBy" duration-ms="107475" started-at="2017-06-23T10:57:46Z" finished-at="2017-06-23T10:59:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortingBy -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.SearchPage@4d8286c4]" name="tearDown" is-config="true" duration-ms="3724" started-at="2017-06-23T10:59:34Z" finished-at="2017-06-23T10:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.SearchPage -->
+      <class name="com.example.tests.SeoRequirementsTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="setUp" is-config="true" duration-ms="11801" started-at="2017-06-23T10:59:37Z" finished-at="2017-06-23T10:59:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="adpageSeo()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="adpageSeo" duration-ms="11334" started-at="2017-06-23T10:59:49Z" finished-at="2017-06-23T11:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adpageSeo -->
+        <test-method status="PASS" signature="markPageSeo()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="markPageSeo" duration-ms="10335" started-at="2017-06-23T11:00:00Z" finished-at="2017-06-23T11:00:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markPageSeo -->
+        <test-method status="PASS" signature="markPlusAuxiliaryFiltersPageSeo()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="markPlusAuxiliaryFiltersPageSeo" duration-ms="10696" started-at="2017-06-23T11:00:11Z" finished-at="2017-06-23T11:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markPlusAuxiliaryFiltersPageSeo -->
+        <test-method status="PASS" signature="markPlusModePlusAuxiliaryFilterslPageSeo()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="markPlusModePlusAuxiliaryFilterslPageSeo" duration-ms="11184" started-at="2017-06-23T11:00:22Z" finished-at="2017-06-23T11:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markPlusModePlusAuxiliaryFilterslPageSeo -->
+        <test-method status="PASS" signature="markPlusModelPageSeo()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="markPlusModelPageSeo" duration-ms="11911" started-at="2017-06-23T11:00:33Z" finished-at="2017-06-23T11:00:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markPlusModelPageSeo -->
+        <test-method status="PASS" signature="nofollowOnMainPage()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="nofollowOnMainPage" duration-ms="18133" started-at="2017-06-23T11:00:45Z" finished-at="2017-06-23T11:01:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nofollowOnMainPage -->
+        <test-method status="PASS" signature="outclicksOnAdvert()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="outclicksOnAdvert" duration-ms="242290" started-at="2017-06-23T11:01:03Z" finished-at="2017-06-23T11:05:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outclicksOnAdvert -->
+        <test-method status="PASS" signature="seoForCastomLinksInTabs()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="seoForCastomLinksInTabs" duration-ms="126011" started-at="2017-06-23T11:05:05Z" finished-at="2017-06-23T11:07:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seoForCastomLinksInTabs -->
+        <test-method status="PASS" signature="seoMetaOnCustomLinkPages()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="seoMetaOnCustomLinkPages" duration-ms="23810" started-at="2017-06-23T11:07:11Z" finished-at="2017-06-23T11:07:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seoMetaOnCustomLinkPages -->
+        <test-method status="PASS" signature="seoMetaOnMainPage()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="seoMetaOnMainPage" duration-ms="33073" started-at="2017-06-23T11:07:35Z" finished-at="2017-06-23T11:08:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seoMetaOnMainPage -->
+        <test-method status="PASS" signature="seoOnLocationSearchPageCar()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="seoOnLocationSearchPageCar" duration-ms="7982" started-at="2017-06-23T11:08:08Z" finished-at="2017-06-23T11:08:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seoOnLocationSearchPageCar -->
+        <test-method status="PASS" signature="seoOnMainSearchPageCar()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="seoOnMainSearchPageCar" duration-ms="8313" started-at="2017-06-23T11:08:16Z" finished-at="2017-06-23T11:08:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seoOnMainSearchPageCar -->
+        <test-method status="PASS" signature="seoOnSearchPageOtherCategories()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="seoOnSearchPageOtherCategories" duration-ms="7558" started-at="2017-06-23T11:08:24Z" finished-at="2017-06-23T11:08:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seoOnSearchPageOtherCategories -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.SeoRequirementsTests@790a251b]" name="tearDown" is-config="true" duration-ms="2731" started-at="2017-06-23T11:08:32Z" finished-at="2017-06-23T11:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.SeoRequirementsTests -->
+      <class name="com.example.tests.ClickOnAllLinksInMainMenuHeader">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ClickOnAllLinksInMainMenuHeader@acdcf71]" name="setUp" is-config="true" duration-ms="14949" started-at="2017-06-23T10:42:59Z" finished-at="2017-06-23T10:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dropDownMenuHeaderFifthdPart()[pri:0, instance:com.example.tests.ClickOnAllLinksInMainMenuHeader@acdcf71]" name="dropDownMenuHeaderFifthdPart" duration-ms="216256" started-at="2017-06-23T10:43:14Z" finished-at="2017-06-23T10:46:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownMenuHeaderFifthdPart -->
+        <test-method status="PASS" signature="dropDownMenuHeaderFirstPart()[pri:0, instance:com.example.tests.ClickOnAllLinksInMainMenuHeader@acdcf71]" name="dropDownMenuHeaderFirstPart" duration-ms="210332" started-at="2017-06-23T10:46:50Z" finished-at="2017-06-23T10:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownMenuHeaderFirstPart -->
+        <test-method status="PASS" signature="dropDownMenuHeaderForthdPart()[pri:0, instance:com.example.tests.ClickOnAllLinksInMainMenuHeader@acdcf71]" name="dropDownMenuHeaderForthdPart" duration-ms="250838" started-at="2017-06-23T10:50:20Z" finished-at="2017-06-23T10:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownMenuHeaderForthdPart -->
+        <test-method status="PASS" signature="dropDownMenuHeaderSecondPart()[pri:0, instance:com.example.tests.ClickOnAllLinksInMainMenuHeader@acdcf71]" name="dropDownMenuHeaderSecondPart" duration-ms="230729" started-at="2017-06-23T10:54:31Z" finished-at="2017-06-23T10:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownMenuHeaderSecondPart -->
+        <test-method status="PASS" signature="dropDownMenuHeaderSixdPart()[pri:0, instance:com.example.tests.ClickOnAllLinksInMainMenuHeader@acdcf71]" name="dropDownMenuHeaderSixdPart" duration-ms="192476" started-at="2017-06-23T10:58:22Z" finished-at="2017-06-23T11:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownMenuHeaderSixdPart -->
+        <test-method status="PASS" signature="dropDownMenuHeaderThirdPart()[pri:0, instance:com.example.tests.ClickOnAllLinksInMainMenuHeader@acdcf71]" name="dropDownMenuHeaderThirdPart" duration-ms="192590" started-at="2017-06-23T11:01:34Z" finished-at="2017-06-23T11:04:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownMenuHeaderThirdPart -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ClickOnAllLinksInMainMenuHeader@acdcf71]" name="tearDown" is-config="true" duration-ms="6758" started-at="2017-06-23T11:04:47Z" finished-at="2017-06-23T11:04:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.ClickOnAllLinksInMainMenuHeader -->
+      <class name="com.example.tests.SearchFilterTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="setUp" is-config="true" duration-ms="22243" started-at="2017-06-23T10:42:59Z" finished-at="2017-06-23T10:43:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkTypeOfCurrency()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="checkTypeOfCurrency" duration-ms="41503" started-at="2017-06-23T10:43:21Z" finished-at="2017-06-23T10:44:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTypeOfCurrency -->
+        <test-method status="PASS" signature="checkboxHasPhoto()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="checkboxHasPhoto" duration-ms="27719" started-at="2017-06-23T10:44:03Z" finished-at="2017-06-23T10:44:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxHasPhoto -->
+        <test-method status="PASS" signature="choiceMarkAndModel()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="choiceMarkAndModel" duration-ms="69387" started-at="2017-06-23T10:44:30Z" finished-at="2017-06-23T10:45:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choiceMarkAndModel -->
+        <test-method status="PASS" signature="choiceModelWithoutMark()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="choiceModelWithoutMark" duration-ms="49180" started-at="2017-06-23T10:45:40Z" finished-at="2017-06-23T10:46:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choiceModelWithoutMark -->
+        <test-method status="PASS" signature="countInTooltipAndInH1()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="countInTooltipAndInH1" duration-ms="43862" started-at="2017-06-23T10:46:29Z" finished-at="2017-06-23T10:47:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countInTooltipAndInH1 -->
+        <test-method status="PASS" signature="mileageFrom()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="mileageFrom" duration-ms="36839" started-at="2017-06-23T10:47:13Z" finished-at="2017-06-23T10:47:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mileageFrom -->
+        <test-method status="PASS" signature="mileageFromTo()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="mileageFromTo" duration-ms="56815" started-at="2017-06-23T10:47:50Z" finished-at="2017-06-23T10:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mileageFromTo -->
+        <test-method status="PASS" signature="openAdditionalFilters()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="openAdditionalFilters" duration-ms="96228" started-at="2017-06-23T10:48:46Z" finished-at="2017-06-23T10:50:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAdditionalFilters -->
+        <test-method status="PASS" signature="paginationTest()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="paginationTest" duration-ms="79800" started-at="2017-06-23T10:50:23Z" finished-at="2017-06-23T10:51:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paginationTest -->
+        <test-method status="PASS" signature="priceFrom()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="priceFrom" duration-ms="28432" started-at="2017-06-23T10:51:42Z" finished-at="2017-06-23T10:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceFrom -->
+        <test-method status="PASS" signature="priceFromTo()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="priceFromTo" duration-ms="30666" started-at="2017-06-23T10:52:11Z" finished-at="2017-06-23T10:52:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceFromTo -->
+        <test-method status="PASS" signature="priceTo()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="priceTo" duration-ms="28351" started-at="2017-06-23T10:52:42Z" finished-at="2017-06-23T10:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceTo -->
+        <test-method status="PASS" signature="yearFrom()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="yearFrom" duration-ms="27247" started-at="2017-06-23T10:53:10Z" finished-at="2017-06-23T10:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yearFrom -->
+        <test-method status="PASS" signature="yearFromYearTo()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="yearFromYearTo" duration-ms="27601" started-at="2017-06-23T10:53:37Z" finished-at="2017-06-23T10:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yearFromYearTo -->
+        <test-method status="PASS" signature="yearTo()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="yearTo" duration-ms="25684" started-at="2017-06-23T10:54:05Z" finished-at="2017-06-23T10:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yearTo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.SearchFilterTests@3e17a0a1]" name="tearDown" is-config="true" duration-ms="9574" started-at="2017-06-23T10:54:30Z" finished-at="2017-06-23T10:54:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.SearchFilterTests -->
+      <class name="com.example.tests.CurrentTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.CurrentTests@161f6623]" name="setUp" is-config="true" duration-ms="8245" started-at="2017-06-23T10:59:49Z" finished-at="2017-06-23T10:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkCountAdverts()[pri:0, instance:com.example.tests.CurrentTests@161f6623]" name="checkCountAdverts" duration-ms="19399" started-at="2017-06-23T10:59:57Z" finished-at="2017-06-23T11:00:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCountAdverts -->
+        <test-method status="PASS" signature="initPopapOnFirstAndSecondSearchPages()[pri:0, instance:com.example.tests.CurrentTests@161f6623]" name="initPopapOnFirstAndSecondSearchPages" duration-ms="58322" started-at="2017-06-23T11:00:16Z" finished-at="2017-06-23T11:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPopapOnFirstAndSecondSearchPages -->
+        <test-method status="PASS" signature="openStoOnMainPage()[pri:0, instance:com.example.tests.CurrentTests@161f6623]" name="openStoOnMainPage" duration-ms="14900" started-at="2017-06-23T11:01:15Z" finished-at="2017-06-23T11:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openStoOnMainPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.CurrentTests@161f6623]" name="tearDown" is-config="true" duration-ms="1410" started-at="2017-06-23T11:01:29Z" finished-at="2017-06-23T11:01:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.CurrentTests -->
+    </test> <!-- Parallel Tests -->
+  </suite> <!-- Suite -->
+</testng-results>

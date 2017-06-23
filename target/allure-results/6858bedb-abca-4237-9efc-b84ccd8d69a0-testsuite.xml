@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1498207757665" stop="1498207855647" version="1.4.3">
+    <name>Default Suite</name>
+    <title>Default Suite : AvtomationTestsAvtopoisk</title>
+    <test-cases>
+        <test-case start="1498207767011" stop="1498207784018" status="passed">
+            <name>checkCountAdverts</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498207784109" stop="1498207839321" status="passed">
+            <name>initPopapOnFirstAndSecondSearchPages</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498207839324" stop="1498207852959" status="passed">
+            <name>openStoOnMainPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

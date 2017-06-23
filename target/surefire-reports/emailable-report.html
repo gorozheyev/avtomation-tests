@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Parallel Tests</td><td class="numi">69</td><td class="numi">69</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">1 535,7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Parallel Tests &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.example.tests.TestsForMainPage</td><td><a href="#m1"><b>checkTitleOnMainPage</b>  </a></td><td class="numi">1</td><td>1498204195349</td><td class="numi">6288</td></tr><tr class="failedodd"><td><a href="#m2"><b>goToMarkPageAndToAllBrandsPage</b>  </a></td><td class="numi">1</td><td>1498204565263</td><td class="numi">40161</td></tr>
+<tr><th colspan="4">Parallel Tests &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.TestsForMainPage</td><td><a href="#m3"><b>blockPartners</b>  </a></td><td class="numi">1</td><td>1498203787963</td><td class="numi">48158</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.ClickOnAllLinksInMainMenuHeader</td><td><a href="#m4"><b>dropDownMenuHeaderFifthdPart</b>  </a></td><td class="numi">1</td><td>1498203794288</td><td class="numi">216256</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.SearchFilterTests</td><td><a href="#m5"><b>checkTypeOfCurrency</b>  </a></td><td class="numi">1</td><td>1498203801582</td><td class="numi">41503</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.TestsForMainPage</td><td><a href="#m6"><b>checkCkickOnLogo</b>  </a></td><td class="numi">1</td><td>1498203836470</td><td class="numi">30852</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.SearchFilterTests</td><td><a href="#m7"><b>checkboxHasPhoto</b>  </a></td><td class="numi">1</td><td>1498203843099</td><td class="numi">27719</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.TestsForMainPage</td><td><a href="#m8"><b>checkClickAndTitleOnLastAdverts</b>  </a></td><td class="numi">1</td><td>1498203867325</td><td class="numi">20297</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.SearchFilterTests</td><td><a href="#m9"><b>choiceMarkAndModel</b>  </a></td><td class="numi">1</td><td>1498203870822</td><td class="numi">69387</td></tr>
+<tr class="passedeven"><td rowspan="2">com.example.tests.TestsForMainPage</td><td><a href="#m10"><b>checkClickAndTitlesInBlockCatalogOnMainPage</b>  </a></td><td class="numi">1</td><td>1498203887623</td><td class="numi">50635</td></tr><tr class="passedeven"><td><a href="#m11"><b>checkClickAndTitlesInBlockTestDrivesOnMainPage</b>  </a></td><td class="numi">1</td><td>1498203938260</td><td class="numi">56331</td></tr>
+<tr class="passedodd"><td rowspan="2">com.example.tests.SearchFilterTests</td><td><a href="#m12"><b>choiceModelWithoutMark</b>  </a></td><td class="numi">1</td><td>1498203940211</td><td class="numi">49180</td></tr><tr class="passedodd"><td><a href="#m13"><b>countInTooltipAndInH1</b>  </a></td><td class="numi">1</td><td>1498203989392</td><td class="numi">43862</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.TestsForMainPage</td><td><a href="#m14"><b>checkTitleAndCklickOnServices</b>  </a></td><td class="numi">1</td><td>1498203994592</td><td class="numi">173691</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.ClickOnAllLinksInMainMenuHeader</td><td><a href="#m15"><b>dropDownMenuHeaderFirstPart</b>  </a></td><td class="numi">1</td><td>1498204010548</td><td class="numi">210332</td></tr>
+<tr class="passedeven"><td rowspan="3">com.example.tests.SearchFilterTests</td><td><a href="#m16"><b>mileageFrom</b>  </a></td><td class="numi">1</td><td>1498204033256</td><td class="numi">36839</td></tr><tr class="passedeven"><td><a href="#m17"><b>mileageFromTo</b>  </a></td><td class="numi">1</td><td>1498204070097</td><td class="numi">56815</td></tr><tr class="passedeven"><td><a href="#m18"><b>openAdditionalFilters</b>  </a></td><td class="numi">1</td><td>1498204126913</td><td class="numi">96228</td></tr>
+<tr class="passedodd"><td rowspan="3">com.example.tests.TestsForMainPage</td><td><a href="#m19"><b>checkTitleAndClickOnArticles</b>  </a></td><td class="numi">1</td><td>1498204168285</td><td class="numi">27062</td></tr><tr class="passedodd"><td><a href="#m20"><b>checkTitlesAndGoToAllCityesPage</b>  </a></td><td class="numi">1</td><td>1498204201723</td><td class="numi">13970</td></tr><tr class="passedodd"><td><a href="#m21"><b>checkTitlesTopCategory</b>  </a></td><td class="numi">1</td><td>1498204215695</td><td class="numi">28573</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.ClickOnAllLinksInMainMenuHeader</td><td><a href="#m22"><b>dropDownMenuHeaderForthdPart</b>  </a></td><td class="numi">1</td><td>1498204220882</td><td class="numi">250838</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.SearchFilterTests</td><td><a href="#m23"><b>paginationTest</b>  </a></td><td class="numi">1</td><td>1498204223142</td><td class="numi">79800</td></tr>
+<tr class="passedeven"><td rowspan="2">com.example.tests.TestsForMainPage</td><td><a href="#m24"><b>checkTitlesTopCategoryMoscow</b>  </a></td><td class="numi">1</td><td>1498204244276</td><td class="numi">42911</td></tr><tr class="passedeven"><td><a href="#m25"><b>checkTopCategoryInFooter</b>  </a></td><td class="numi">1</td><td>1498204287188</td><td class="numi">175676</td></tr>
+<tr class="passedodd"><td rowspan="6">com.example.tests.SearchFilterTests</td><td><a href="#m26"><b>priceFrom</b>  </a></td><td class="numi">1</td><td>1498204302944</td><td class="numi">28432</td></tr><tr class="passedodd"><td><a href="#m27"><b>priceFromTo</b>  </a></td><td class="numi">1</td><td>1498204331377</td><td class="numi">30666</td></tr><tr class="passedodd"><td><a href="#m28"><b>priceTo</b>  </a></td><td class="numi">1</td><td>1498204362044</td><td class="numi">28351</td></tr><tr class="passedodd"><td><a href="#m29"><b>yearFrom</b>  </a></td><td class="numi">1</td><td>1498204390396</td><td class="numi">27247</td></tr><tr class="passedodd"><td><a href="#m30"><b>yearFromYearTo</b>  </a></td><td class="numi">1</td><td>1498204417644</td><td class="numi">27601</td></tr><tr class="passedodd"><td><a href="#m31"><b>yearTo</b>  </a></td><td class="numi">1</td><td>1498204445248</td><td class="numi">25684</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.TestsForMainPage</td><td><a href="#m32"><b>checkUpFines</b>  </a></td><td class="numi">1</td><td>1498204462865</td><td class="numi">24153</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.ClickOnAllLinksInMainMenuHeader</td><td><a href="#m33"><b>dropDownMenuHeaderSecondPart</b>  </a></td><td class="numi">1</td><td>1498204471722</td><td class="numi">230729</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.TestsForMainPage</td><td><a href="#m34"><b>choiceDifferentGrafics</b>  </a></td><td class="numi">1</td><td>1498204487019</td><td class="numi">21368</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.SearchPage</td><td><a href="#m35"><b>breadCrumbs</b>  </a></td><td class="numi">1</td><td>1498204505024</td><td class="numi">18697</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.TestsForMainPage</td><td><a href="#m36"><b>chooseLocationInHeder</b>  </a></td><td class="numi">1</td><td>1498204508389</td><td class="numi">19499</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.SearchPage</td><td><a href="#m37"><b>breadCrumbsWithMark</b>  </a></td><td class="numi">1</td><td>1498204523723</td><td class="numi">29478</td></tr>
+<tr class="passedeven"><td rowspan="2">com.example.tests.TestsForMainPage</td><td><a href="#m38"><b>ckickOnButtonAddAdvert</b>  </a></td><td class="numi">1</td><td>1498204527890</td><td class="numi">12974</td></tr><tr class="passedeven"><td><a href="#m39"><b>clickOnTextLogo</b>  </a></td><td class="numi">1</td><td>1498204540866</td><td class="numi">24396</td></tr>
+<tr class="passedodd"><td rowspan="4">com.example.tests.SearchPage</td><td><a href="#m40"><b>breadCrumbsWithMarkAndModel</b>  </a></td><td class="numi">1</td><td>1498204553202</td><td class="numi">26103</td></tr><tr class="passedodd"><td><a href="#m41"><b>clickOnSubscriptionButton</b>  </a></td><td class="numi">1</td><td>1498204579306</td><td class="numi">12100</td></tr><tr class="passedodd"><td><a href="#m42"><b>countAdvertsOnSearchPage</b>  </a></td><td class="numi">1</td><td>1498204591407</td><td class="numi">12103</td></tr><tr class="passedodd"><td><a href="#m43"><b>customLinksUnderTabs</b>  </a></td><td class="numi">1</td><td>1498204603512</td><td class="numi">50084</td></tr>
+<tr class="passedeven"><td rowspan="3">com.example.tests.TestsForMainPage</td><td><a href="#m44"><b>presenceElementsOnMainPage</b>  </a></td><td class="numi">1</td><td>1498204605424</td><td class="numi">6651</td></tr><tr class="passedeven"><td><a href="#m45"><b>presenceElementsOnMainPageMoskov</b>  </a></td><td class="numi">1</td><td>1498204612076</td><td class="numi">20021</td></tr><tr class="passedeven"><td><a href="#m46"><b>presenceIconsOfSocialNetworks</b>  </a></td><td class="numi">1</td><td>1498204632098</td><td class="numi">42035</td></tr>
+<tr class="passedodd"><td rowspan="2">com.example.tests.SearchPage</td><td><a href="#m47"><b>presenceTabsAndClickThem</b>  </a></td><td class="numi">1</td><td>1498204653598</td><td class="numi">13031</td></tr><tr class="passedodd"><td><a href="#m48"><b>sortingBy</b>  </a></td><td class="numi">1</td><td>1498204666630</td><td class="numi">107475</td></tr>
+<tr class="passedeven"><td rowspan="3">com.example.tests.TestsForMainPage</td><td><a href="#m49"><b>presenceSeoTextInFooter</b>  </a></td><td class="numi">1</td><td>1498204674135</td><td class="numi">5965</td></tr><tr class="passedeven"><td><a href="#m50"><b>searchFieldWithPressedTabsCatalog</b>  </a></td><td class="numi">1</td><td>1498204680101</td><td class="numi">14381</td></tr><tr class="passedeven"><td><a href="#m51"><b>testSearchFieldWithPressedTabs</b>  </a></td><td class="numi">1</td><td>1498204694483</td><td class="numi">53321</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.ClickOnAllLinksInMainMenuHeader</td><td><a href="#m52"><b>dropDownMenuHeaderSixdPart</b>  </a></td><td class="numi">1</td><td>1498204702453</td><td class="numi">192476</td></tr>
+<tr class="passedeven"><td rowspan="2">com.example.tests.TestsForMainPage</td><td><a href="#m53"><b>testSearchFilterWithWalue</b>  </a></td><td class="numi">1</td><td>1498204747805</td><td class="numi">18243</td></tr><tr class="passedeven"><td><a href="#m54"><b>testWithEmptySearchFilter</b>  </a></td><td class="numi">1</td><td>1498204766049</td><td class="numi">19484</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.SeoRequirementsTests</td><td><a href="#m55"><b>adpageSeo</b>  </a></td><td class="numi">1</td><td>1498204789632</td><td class="numi">11334</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.CurrentTests</td><td><a href="#m56"><b>checkCountAdverts</b>  </a></td><td class="numi">1</td><td>1498204797326</td><td class="numi">19399</td></tr>
+<tr class="passedodd"><td rowspan="2">com.example.tests.SeoRequirementsTests</td><td><a href="#m57"><b>markPageSeo</b>  </a></td><td class="numi">1</td><td>1498204800967</td><td class="numi">10335</td></tr><tr class="passedodd"><td><a href="#m58"><b>markPlusAuxiliaryFiltersPageSeo</b>  </a></td><td class="numi">1</td><td>1498204811303</td><td class="numi">10696</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.CurrentTests</td><td><a href="#m59"><b>initPopapOnFirstAndSecondSearchPages</b>  </a></td><td class="numi">1</td><td>1498204816727</td><td class="numi">58322</td></tr>
+<tr class="passedodd"><td rowspan="4">com.example.tests.SeoRequirementsTests</td><td><a href="#m60"><b>markPlusModePlusAuxiliaryFilterslPageSeo</b>  </a></td><td class="numi">1</td><td>1498204822001</td><td class="numi">11184</td></tr><tr class="passedodd"><td><a href="#m61"><b>markPlusModelPageSeo</b>  </a></td><td class="numi">1</td><td>1498204833187</td><td class="numi">11911</td></tr><tr class="passedodd"><td><a href="#m62"><b>nofollowOnMainPage</b>  </a></td><td class="numi">1</td><td>1498204845100</td><td class="numi">18133</td></tr><tr class="passedodd"><td><a href="#m63"><b>outclicksOnAdvert</b>  </a></td><td class="numi">1</td><td>1498204863233</td><td class="numi">242290</td></tr>
+<tr class="passedeven"><td rowspan="1">com.example.tests.CurrentTests</td><td><a href="#m64"><b>openStoOnMainPage</b>  </a></td><td class="numi">1</td><td>1498204875050</td><td class="numi">14900</td></tr>
+<tr class="passedodd"><td rowspan="1">com.example.tests.ClickOnAllLinksInMainMenuHeader</td><td><a href="#m65"><b>dropDownMenuHeaderThirdPart</b>  </a></td><td class="numi">1</td><td>1498204894930</td><td class="numi">192590</td></tr>
+<tr class="passedeven"><td rowspan="6">com.example.tests.SeoRequirementsTests</td><td><a href="#m66"><b>seoForCastomLinksInTabs</b>  </a></td><td class="numi">1</td><td>1498205105523</td><td class="numi">126011</td></tr><tr class="passedeven"><td><a href="#m67"><b>seoMetaOnCustomLinkPages</b>  </a></td><td class="numi">1</td><td>1498205231537</td><td class="numi">23810</td></tr><tr class="passedeven"><td><a href="#m68"><b>seoMetaOnMainPage</b>  </a></td><td class="numi">1</td><td>1498205255348</td><td class="numi">33073</td></tr><tr class="passedeven"><td><a href="#m69"><b>seoOnLocationSearchPageCar</b>  </a></td><td class="numi">1</td><td>1498205288421</td><td class="numi">7982</td></tr><tr class="passedeven"><td><a href="#m70"><b>seoOnMainSearchPageCar</b>  </a></td><td class="numi">1</td><td>1498205296404</td><td class="numi">8313</td></tr><tr class="passedeven"><td><a href="#m71"><b>seoOnSearchPageOtherCategories</b>  </a></td><td class="numi">1</td><td>1498205304718</td><td class="numi">7558</td></tr>
+</table>
+<h1>Parallel Tests</h1>
+<h2 id="m1">com.example.tests.TestsForMainPage:goToMarkPageAndToAllBrandsPage</h2>
+<div style="padding-left:3em">
+<p>Не отображаются тайтлы марок на странице Всех марок</p>
+org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+<br/>at com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage(TestsForMainPage.java:101)
+<br/>14 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.example.tests.TestsForMainPage:checkTitleOnMainPage</h2>
+<div style="padding-left:3em">
+<p>Пропали тайтлы у марок на главной странице</p>
+org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+<br/>at com.example.tests.TestsForMainPage.checkTitleOnMainPage(TestsForMainPage.java:85)
+<br/>14 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.example.tests.TestsForMainPage:blockPartners</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.example.tests.SearchFilterTests:choiceModelWithoutMark</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.example.tests.TestsForMainPage:presenceElementsOnMainPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.example.tests.TestsForMainPage:checkTitleAndCklickOnServices</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.example.tests.SeoRequirementsTests:outclicksOnAdvert</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.example.tests.TestsForMainPage:checkCkickOnLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.example.tests.TestsForMainPage:clickOnTextLogo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.example.tests.SearchPage:presenceTabsAndClickThem</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.example.tests.ClickOnAllLinksInMainMenuHeader:dropDownMenuHeaderFirstPart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.example.tests.CurrentTests:openStoOnMainPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.example.tests.CurrentTests:initPopapOnFirstAndSecondSearchPages</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.example.tests.SearchFilterTests:checkTypeOfCurrency</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.example.tests.SearchPage:breadCrumbsWithMarkAndModel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.example.tests.SearchPage:customLinksUnderTabs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.example.tests.SeoRequirementsTests:markPageSeo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.example.tests.TestsForMainPage:chooseLocationInHeder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.example.tests.SeoRequirementsTests:markPlusModelPageSeo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.example.tests.SearchFilterTests:paginationTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.example.tests.ClickOnAllLinksInMainMenuHeader:dropDownMenuHeaderFifthdPart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.example.tests.CurrentTests:checkCountAdverts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.example.tests.TestsForMainPage:searchFieldWithPressedTabsCatalog</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.example.tests.SearchFilterTests:yearFromYearTo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.example.tests.SeoRequirementsTests:seoForCastomLinksInTabs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.example.tests.TestsForMainPage:testWithEmptySearchFilter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.example.tests.SearchFilterTests:priceFromTo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.example.tests.SeoRequirementsTests:seoOnSearchPageOtherCategories</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.example.tests.SearchFilterTests:checkboxHasPhoto</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.example.tests.TestsForMainPage:checkTitlesAndGoToAllCityesPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.example.tests.SeoRequirementsTests:markPlusAuxiliaryFiltersPageSeo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.example.tests.TestsForMainPage:checkClickAndTitlesInBlockCatalogOnMainPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.example.tests.TestsForMainPage:checkClickAndTitleOnLastAdverts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.example.tests.TestsForMainPage:checkTitlesTopCategoryMoscow</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.example.tests.TestsForMainPage:checkClickAndTitlesInBlockTestDrivesOnMainPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.example.tests.ClickOnAllLinksInMainMenuHeader:dropDownMenuHeaderForthdPart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">com.example.tests.SeoRequirementsTests:seoMetaOnMainPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">com.example.tests.SearchFilterTests:yearTo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">com.example.tests.SearchPage:breadCrumbs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">com.example.tests.TestsForMainPage:choiceDifferentGrafics</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">com.example.tests.SearchPage:clickOnSubscriptionButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">com.example.tests.TestsForMainPage:presenceSeoTextInFooter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">com.example.tests.SearchPage:sortingBy</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">com.example.tests.ClickOnAllLinksInMainMenuHeader:dropDownMenuHeaderSixdPart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">com.example.tests.SearchFilterTests:mileageFrom</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">com.example.tests.SearchFilterTests:priceFrom</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">com.example.tests.SearchFilterTests:openAdditionalFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">com.example.tests.TestsForMainPage:checkTitlesTopCategory</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">com.example.tests.SeoRequirementsTests:seoOnMainSearchPageCar</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">com.example.tests.SearchPage:breadCrumbsWithMark</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">com.example.tests.SearchFilterTests:mileageFromTo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">com.example.tests.SeoRequirementsTests:seoOnLocationSearchPageCar</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">com.example.tests.TestsForMainPage:presenceIconsOfSocialNetworks</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">com.example.tests.TestsForMainPage:testSearchFilterWithWalue</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">com.example.tests.SeoRequirementsTests:nofollowOnMainPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">com.example.tests.SearchFilterTests:yearFrom</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">com.example.tests.SearchFilterTests:priceTo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">com.example.tests.ClickOnAllLinksInMainMenuHeader:dropDownMenuHeaderSecondPart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">com.example.tests.TestsForMainPage:checkUpFines</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">com.example.tests.SeoRequirementsTests:adpageSeo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">com.example.tests.TestsForMainPage:presenceElementsOnMainPageMoskov</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">com.example.tests.SearchFilterTests:choiceMarkAndModel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">com.example.tests.SearchFilterTests:countInTooltipAndInH1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">com.example.tests.TestsForMainPage:checkTitleAndClickOnArticles</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">com.example.tests.SeoRequirementsTests:markPlusModePlusAuxiliaryFilterslPageSeo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">com.example.tests.ClickOnAllLinksInMainMenuHeader:dropDownMenuHeaderThirdPart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">com.example.tests.TestsForMainPage:ckickOnButtonAddAdvert</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m68">com.example.tests.SearchPage:countAdvertsOnSearchPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">com.example.tests.TestsForMainPage:testSearchFieldWithPressedTabs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">com.example.tests.SeoRequirementsTests:seoMetaOnCustomLinkPages</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">com.example.tests.TestsForMainPage:checkTopCategoryInFooter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

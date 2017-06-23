@@ -3,7 +3,6 @@ package com.example.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
@@ -13,7 +12,6 @@ import static org.testng.Assert.fail;
 /**
  * Created by gorozheyevd on 23.01.2017.
  */
-@Title("Тесты по требованиям СЕО")
 public class SeoRequirementsTests extends BaseClass {
 
     @Test

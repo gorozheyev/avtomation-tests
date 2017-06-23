@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1498208315000" stop="1498209379153" version="1.4.3">
+    <name>Default Suite</name>
+    <title>Default Suite : AvtomationTestsAvtopoisk</title>
+    <test-cases>
+        <test-case start="1498208326736" stop="1498208495175" status="passed">
+            <name>dropDownMenuHeaderFifthdPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208495276" stop="1498208651512" status="passed">
+            <name>dropDownMenuHeaderFirstPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208651518" stop="1498208846330" status="passed">
+            <name>dropDownMenuHeaderForthdPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498208846332" stop="1498209023217" status="passed">
+            <name>dropDownMenuHeaderSecondPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498209023219" stop="1498209201177" status="passed">
+            <name>dropDownMenuHeaderSixdPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1498209201178" stop="1498209372759" status="passed">
+            <name>dropDownMenuHeaderThirdPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -6,14 +6,13 @@ package com.example.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.AssertJUnit.fail;
 
-@Title("Тесты по главной странице")
+
 public class TestsForMainPage extends BaseClass{
 
 //   ======================================================================================= тесты для фильтра поиска

@@ -4,17 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.fail;
+import static org.testng.Assert.*;
 
 /**
  * Created by gorozheyevd on 07.02.2017.
  */
-@Title("Тесты для страницы выдачи")
 public class SearchPage extends BaseClass{
 
     @Test
@@ -161,6 +158,31 @@ public class SearchPage extends BaseClass{
                 fail("Проверить работу 'сортировки по:...' на выдаче");
             driver.findElement(By.cssSelector(".btn-chooser-drop")).click();
         }
+    }
+
+    @Test
+    public void paginationTest(){
+        openSearchPageCar("smolensk", "");
+        driver.findElement(By.xpath("//ul[@class='pagination']/li/a[contains(text(), '2')]")).click();
+        assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car?page=2"));
+        WebElement subscription = driver.findElement(By.xpath("//div[@class='form-content']/a"));
+        if(subscription.isDisplayed()) {
+            subscription.click();
+        }
+        driver.findElement(By.xpath("//li[@class='next']/a")).click();
+        assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car?page=3"));
+        if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
+            driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
+        driver.findElement(By.xpath("//li[@class='previous']/a")).click();
+        assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car?page=2"));
+        if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
+            driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
+        driver.findElement(By.xpath("//li/a[contains(text(), '>>')]")).click();
+        driver.findElement(By.xpath("//div[@class='title h4']"));
+        if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
+            driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
+        driver.findElement(By.xpath("//li/a[contains(text(), '<<')]")).click();
+        assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car"));
     }
 
 }

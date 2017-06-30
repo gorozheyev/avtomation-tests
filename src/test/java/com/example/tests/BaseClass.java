@@ -218,4 +218,14 @@ public class BaseClass {
         counterWalue = counterWalue.replaceAll(" ", "");
         return Integer.parseInt(counterWalue);
     }
+
+    public void authorizationOnTheSite() {
+        WebElement email = driver.findElement(By.id("FrontendLoginForm_email"));
+        email.clear();
+        email.sendKeys("test@gmail.com");
+        WebElement password = driver.findElement(By.id("FrontendLoginForm_password"));
+        password.clear();
+        password.sendKeys("1234");
+        driver.findElement(By.xpath("//button[contains(text(), 'войти')]")).click();
+    }
 }

@@ -1,12 +1,16 @@
 package com.example.tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
 import static org.testng.Assert.*;
 
 /**
@@ -183,6 +187,51 @@ public class SearchPage extends BaseClass{
             driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
         driver.findElement(By.xpath("//li/a[contains(text(), '<<')]")).click();
         assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car"));
+    }
+
+    @Test
+    public void favoriteAds(){
+        openSearchPageCar("novosibirsk", "");
+        assertTrue(driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[1]/div")).getAttribute("data-count").contains("0"));
+        assertEquals("nav-item nav-item-favorites text-uppercase favorites hide",
+                driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).getAttribute("class"));
+        driver.findElement(By.xpath("(//div[@class='favorite-link liked '])[1]")).click();
+        assertTrue(driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[1]/div")).getAttribute("data-count").contains("1"));
+        assertEquals("nav-item nav-item-favorites text-uppercase favorites",
+                driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).getAttribute("class"));
+            driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[1]/div")).sendKeys(Keys.END);
+        assertTrue(driver.findElement(By.id("sticky-panel")).isEnabled());
+        driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[2]/div")).click();
+        assertThat(driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]/span")).getText(), is("2"));
+        driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).click();
+        assertEquals("http://novosibirsk.avtopoisk.ru/favorites.html", driver.getCurrentUrl());
+        assertTrue(driver.findElements(By.xpath("//div[@class='listing-item-flex']")).size() ==2);
+        driver.findElement(By.xpath("(//a[contains(text(), 'Проверка штрафов')])[2]")).click();
+        assertEquals("http://novosibirsk.avtopoisk.ru/fine", driver.getCurrentUrl());
+        driver.findElement(By.xpath("//h1[@class='h4 text-uppercase']"));
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//a[@class='option-item-del'])[1]")).click();
+        assertTrue(driver.findElements(By.xpath("//div[@class='listing-item-flex']")).size() ==1);
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[1]/div")).sendKeys(Keys.END);
+        assertThat(driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]/span")).getText(), is("1"));
+    }
+
+    @Test
+    public void subscriptionOnStyckyPanel() throws InterruptedException {
+        openSearchPageCar("voronezh","");
+        driver.findElement(By.id("searchbar")).sendKeys(Keys.END);
+        driver.findElement(By.xpath("//div[@class='nav-quick']/a[2]")).click();
+        WebElement subscribtion = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='form-modal form-modal-subscribe']")));
+        driver.findElement(By.xpath("//div[@class='form-content']/a")).click();
+        Thread.sleep(1500);
+        driver.findElement(By.xpath("//div[@class='nav-quick']/a[3]")).click();
+        assertTrue(driver.getCurrentUrl().equals("http://voronezh.avtopoisk.ru/auth.html"));
+        driver.findElement(By.xpath("//a[contains(text(), 'Регистрация')]")).click();
+        assertTrue(driver.findElement(By.xpath("(//div[@class='form-modal-caption text-center'])[2]")).getText().equals("Регистрация пользователя"));
+        driver.findElement(By.xpath("//a[contains(text(), 'Вход')]")).click();
+        authorizationOnTheSite();
+        assertTrue(driver.getCurrentUrl().equals("http://voronezh.avtopoisk.ru/user/EditProfile"));
     }
 
 }

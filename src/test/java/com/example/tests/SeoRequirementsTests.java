@@ -92,22 +92,21 @@ public class SeoRequirementsTests extends BaseClass {
         urls[3] = "http://sankt-peterburg.avtopoisk.ru/car/subbody/minivan";
         urls[4] = "http://sankt-peterburg.avtopoisk.ru/car/subbody/vnedorozhnik";
         urls[5] = "http://novosibirsk.avtopoisk.ru/car";
-        for (int i = 0; i <= urls.length - 1; i++) {
+        for (int i = 0; i < urls.length; i++) {
             driver.get(urls[i]);
                 for (int j = 5; j < 7; j++) {
-                    if (!driver.findElement(By.xpath("(//div[@class='partner'])[5]/a")).getText().isEmpty()) {
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload'])["+j+"]/a")).getAttribute("rel"));
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])["+j+"]/a")).getAttribute("rel"));
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])["+j+"]/a")).getAttribute("rel"));
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])["+j+"]//..")).getAttribute("rel"));
-                    } else {
-                        j++;
+                    if (!driver.findElement(By.xpath("(//div[@class='partner'])[" + j + "]/a")).getText().isEmpty()) {
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload'])[" + j + "]/a")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])[" + j + "]/a")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])[" + j + "]/a")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[" + j + "]//..")).getAttribute("rel"));
                     }
+                        WebElement goToAdpage = driver.findElement(By.xpath("//span[@class='link']//.."));
+                        if (goToAdpage.getAttribute("href").toString().contains("avtopoisk.ru/search/adpage/")) ;
+                        else
+                            fail("На странице " + driver.getCurrentUrl() + " ссылка подробнее должна вести на адпейдж");
+                        assertEquals("_blank", goToAdpage.getAttribute("target"));
                 }
-                    WebElement goToAdpage = driver.findElement(By.xpath("//span[@class='link']//.."));
-                    if (goToAdpage.getAttribute("href").toString().contains("avtopoisk.ru/search/adpage/")) ;
-                    else fail("На странице " + driver.getCurrentUrl() + " ссылка подробнее должна вести на адпейдж");
-                    assertEquals("_blank", goToAdpage.getAttribute("target"));
         }
     }
 

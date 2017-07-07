@@ -16,14 +16,24 @@ import static org.testng.Assert.fail;
  */
 public class BaseClass {
     protected  WebDriver driver;
+//    protected FirefoxOptions options;
     private  String baseUrl;
     private  boolean acceptNextAlert = true;
     private  StringBuffer verificationErrors = new StringBuffer();
     protected  WebDriverWait wait;
 
+
     @BeforeClass
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
+//        для запуска firefox 52esr с selenium 3.3.1
+//        options = new FirefoxOptions().setLegacy(true);
+//        driver = new FirefoxDriver(options);
+
+//        для запуска тестов в хроме
+//        System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\chromedriver.exe");
+//        driver = new ChromeDriver();
+
 //        System.setProperty("webdriver.opera.driver", "C:\\operadriver_win64\\operadriver.exe");
 //        driver = new OperaDriver();
         driver.manage().window().maximize();

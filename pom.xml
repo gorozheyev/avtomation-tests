@@ -44,6 +44,11 @@
             <version>2.53.1</version>
         </dependency>
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>21.0</version>
+        </dependency>
+        <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>3.0</version>
@@ -101,6 +106,9 @@
                     <webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>
                     <stopKey>stop</stopKey>
                     <stopPort>1234</stopPort>
+                    <httpConnector>
+                        <port>8888</port>
+                    </httpConnector>
                 </configuration>
             </plugin>
         </plugins>

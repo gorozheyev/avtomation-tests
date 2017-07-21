@@ -105,17 +105,17 @@ public class SearchFilterTests extends BaseClass{
     public void checkTypeOfCurrency(){
         openSearchPageCar("www","");
         assertTrue(driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[3]")).getText().contains("руб."));
-        assertTrue(driver.findElement(By.xpath("(//div[@class='price'])[1]")).getText().contains("руб."));
+        assertTrue(driver.findElement(By.xpath("(//div[@class='price'])[2]")).getText().contains("руб."));
         driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[3]")).click();
         driver.findElement(By.xpath("//span[contains(text(), 'USD')]")).click();
         driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
         assertTrue(driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[3]")).getText().contains("USD"));
-        assertTrue(driver.findElement(By.xpath("(//div[@class='price'])[1]")).getText().contains("USD"));
+        assertTrue(driver.findElement(By.xpath("(//div[@class='price'])[2]")).getText().contains("USD"));
         driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[3]")).click();
         driver.findElement(By.xpath("//span[contains(text(), 'EUR')]")).click();
         driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
         assertTrue(driver.findElement(By.xpath("(//span[@class='filter-option pull-left'])[3]")).getText().contains("EUR"));
-        assertTrue(driver.findElement(By.xpath("(//div[@class='price'])[1]")).getText().contains("EUR"));
+        assertTrue(driver.findElement(By.xpath("(//div[@class='price'])[2]")).getText().contains("EUR"));
     }
 
     @Test
@@ -189,7 +189,7 @@ public class SearchFilterTests extends BaseClass{
         driver.findElement(By.id("mileageFrom")).sendKeys("20000");
         driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
         assertTrue(driver.getCurrentUrl().contains("http://omsk.avtopoisk.ru/car/mileagefrom/20000"));
-        List<WebElement> elements = driver.findElements(By.xpath("//div[@class='description']/strong/i"));
+        List<WebElement> elements = driver.findElements(By.xpath("//div[@class='description']/strong"));
         List<WebElement> otherElements = driver.findElements(By.xpath("//div[@class='table-cell'][contains(text(), 'км')]"));
             if (!otherElements.isEmpty()) {
                 for (WebElement mileage2 : otherElements) {
@@ -252,7 +252,7 @@ public class SearchFilterTests extends BaseClass{
         assertTrue(driver.getCurrentUrl().contains("http://ufa.avtopoisk.ru/car/transmission/mech/enginetype/benzin"));
         driver.findElement(By.xpath("//div[@class='filter-group'][1]")).click();
         driver.findElement(By.xpath("//label[contains(text(), 'красный')]")).click();
-        driver.findElement(By.id("filterFloatSubmit")).click();
+        driver.findElement(By.xpath("//div[@class='panel-submit']/button")).click();
         assertTrue(driver.getCurrentUrl().contains("http://ufa.avtopoisk.ru/car/transmission/mech/enginetype/benzin/color/red"));
         driver.findElement(By.xpath("//div[@class='filter-group'][1]")).click();
         driver.findElement(By.xpath("//label[contains(text(), 'Седан')]")).click();

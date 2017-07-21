@@ -232,7 +232,7 @@ public class BaseClass {
     public void authorizationOnTheSite() {
         WebElement email = driver.findElement(By.id("FrontendLoginForm_email"));
         email.clear();
-        email.sendKeys("test@gmail.com");
+        email.sendKeys("test@yopmail.com");
         WebElement password = driver.findElement(By.id("FrontendLoginForm_password"));
         password.clear();
         password.sendKeys("1234");

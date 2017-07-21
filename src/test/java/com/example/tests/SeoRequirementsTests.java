@@ -95,10 +95,10 @@ public class SeoRequirementsTests extends BaseClass {
         for (int i = 0; i < urls.length; i++) {
             driver.get(urls[i]);
                 for (int j = 5; j < 7; j++) {
-                    if (!driver.findElement(By.xpath("(//div[@class='partner'])[" + j + "]/a")).getText().isEmpty()) {
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload'])[" + j + "]/a")).getAttribute("rel"));
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info'])[" + j + "]/a")).getAttribute("rel"));
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner'])[" + j + "]/a")).getAttribute("rel"));
+                    if (!driver.findElement(By.xpath("(//div[@class='partner']/a)["+ j+ "]")).getText().isEmpty()) {
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload']/a)[" + j + "]")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info']/a)[" + j + "]")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner']/a)[" + j + "]")).getAttribute("rel"));
                         assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[" + j + "]//..")).getAttribute("rel"));
                     }
                         WebElement goToAdpage = driver.findElement(By.xpath("//span[@class='link']//.."));

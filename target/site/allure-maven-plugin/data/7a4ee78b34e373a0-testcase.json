@@ -1,0 +1,41 @@
+{
+  "uid" : "7a4ee78b34e373a0",
+  "name" : "checkCkickOnLogo",
+  "title" : "Check ckick on logo",
+  "time" : {
+    "start" : 1501830538040,
+    "stop" : 1501830570782,
+    "duration" : 32742
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "184716355c3232ef",
+    "name" : "Suite",
+    "title" : "Suite : Parallel Tests"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Parallel Tests"
+  } ],
+  "parameters" : [ ]
+}

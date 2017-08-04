@@ -1,0 +1,41 @@
+{
+  "uid" : "29e876e8dbb5022b",
+  "name" : "seoOnMainSearchPageCar",
+  "title" : "Seo on main search page car",
+  "time" : {
+    "start" : 1501832477474,
+    "stop" : 1501832484847,
+    "duration" : 7373
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "184716355c3232ef",
+    "name" : "Suite",
+    "title" : "Suite : Parallel Tests"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Parallel Tests"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,41 @@
+{
+  "uid" : "97b96194529a003c",
+  "name" : "checkClickAndTitleOnLastAdverts",
+  "title" : "Check click and title on last adverts",
+  "time" : {
+    "start" : 1501830570784,
+    "stop" : 1501830592832,
+    "duration" : 22048
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "184716355c3232ef",
+    "name" : "Suite",
+    "title" : "Suite : Parallel Tests"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Parallel Tests"
+  } ],
+  "parameters" : [ ]
+}

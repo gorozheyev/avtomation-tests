@@ -1,0 +1,41 @@
+{
+  "uid" : "e784fcae9c5910c5",
+  "name" : "checkTitlesTopCategory",
+  "title" : "Check titles top category",
+  "time" : {
+    "start" : 1501832888363,
+    "stop" : 1501832910001,
+    "duration" : 21638
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "184716355c3232ef",
+    "name" : "Suite",
+    "title" : "Suite : Parallel Tests"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Parallel Tests"
+  } ],
+  "parameters" : [ ]
+}

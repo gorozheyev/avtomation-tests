@@ -1,0 +1,41 @@
+{
+  "uid" : "263cede8bab906b4",
+  "name" : "seoMetaOnCustomLinkPages",
+  "title" : "Seo meta on custom link pages",
+  "time" : {
+    "start" : 1501832412187,
+    "stop" : 1501832430224,
+    "duration" : 18037
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "184716355c3232ef",
+    "name" : "Suite",
+    "title" : "Suite : Parallel Tests"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Parallel Tests"
+  } ],
+  "parameters" : [ ]
+}

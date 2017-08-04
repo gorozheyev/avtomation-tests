@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1501830470969" stop="1501834393555" version="1.4.3">
+    <name>Suite</name>
+    <title>Suite : Parallel Tests</title>
+    <test-cases>
+        <test-case start="1501830482646" stop="1501830515787" status="passed">
+            <name>checkTypeOfCurrency</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830491289" stop="1501830538029" status="passed">
+            <name>blockPartners</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830506367" stop="1501831058698" status="passed">
+            <name>dropDownMenuHeaderFifthdPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830516021" stop="1501830540993" status="passed">
+            <name>checkboxHasPhoto</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830538040" stop="1501830570782" status="passed">
+            <name>checkCkickOnLogo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830540996" stop="1501830613924" status="passed">
+            <name>choiceMarkAndModel</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830570784" stop="1501830592832" status="passed">
+            <name>checkClickAndTitleOnLastAdverts</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830592834" stop="1501830642303" status="passed">
+            <name>checkClickAndTitlesInBlockCatalogOnMainPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830613927" stop="1501830657834" status="passed">
+            <name>choiceModelWithoutMark</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830642305" stop="1501830687705" status="passed">
+            <name>checkClickAndTitlesInBlockTestDrivesOnMainPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830657835" stop="1501830700632" status="passed">
+            <name>countInTooltipAndInH1</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830687707" stop="1501832850372" status="passed">
+            <name>checkTitleAndCklickOnServices</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830700633" stop="1501830719908" status="passed">
+            <name>mileageFrom</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830719909" stop="1501830802269" status="passed">
+            <name>mileageFromTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830802270" stop="1501830869240" status="passed">
+            <name>openAdditionalFilters</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830869241" stop="1501830892575" status="passed">
+            <name>priceFrom</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830892576" stop="1501830915845" status="passed">
+            <name>priceFromTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830915846" stop="1501830937766" status="passed">
+            <name>priceTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830937767" stop="1501830957179" status="passed">
+            <name>yearFrom</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830957180" stop="1501830979387" status="passed">
+            <name>yearFromYearTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501830979388" stop="1501831003137" status="passed">
+            <name>yearTo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831016870" stop="1501831034768" status="passed">
+            <name>breadCrumbs</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831034770" stop="1501831062011" status="passed">
+            <name>breadCrumbsWithMark</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831058700" stop="1501831507918" status="passed">
+            <name>dropDownMenuHeaderFirstPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831062012" stop="1501831087730" status="passed">
+            <name>breadCrumbsWithMarkAndModel</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831087731" stop="1501831101327" status="passed">
+            <name>clickOnSubscriptionButton</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831101328" stop="1501831112619" status="passed">
+            <name>countAdvertsOnSearchPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831112620" stop="1501831156631" status="passed">
+            <name>customLinksUnderTabs</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831156633" stop="1501831194459" status="passed">
+            <name>favoriteAds</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831194460" stop="1501831285658" status="passed">
+            <name>favoriteWithLoggedUser</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831285659" stop="1501831333011" status="passed">
+            <name>paginationTest</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831333015" stop="1501831345212" status="passed">
+            <name>presenceTabsAndClickThem</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831345213" stop="1501831438385" status="passed">
+            <name>sortingBy</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831438387" stop="1501831480489" status="passed">
+            <name>subscriptionOnStyckyPanel</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831493012" stop="1501831500908" status="passed">
+            <name>adpageSeo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831500909" stop="1501832176418" status="passed">
+            <name>markPageSeo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831507919" stop="1501831773345" status="passed">
+            <name>dropDownMenuHeaderForthdPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501831773346" stop="1501832817458" status="passed">
+            <name>dropDownMenuHeaderSecondPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832176419" stop="1501832184949" status="passed">
+            <name>markPlusAuxiliaryFiltersPageSeo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832184950" stop="1501832200930" status="passed">
+            <name>markPlusModePlusAuxiliaryFilterslPageSeo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832200930" stop="1501832209854" status="passed">
+            <name>markPlusModelPageSeo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832209855" stop="1501832228941" status="passed">
+            <name>nofollowOnMainPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832228942" stop="1501832287085" status="passed">
+            <name>outclicksOnAdvert</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832287087" stop="1501832412186" status="passed">
+            <name>seoForCastomLinksInTabs</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832412187" stop="1501832430224" status="passed">
+            <name>seoMetaOnCustomLinkPages</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832430226" stop="1501832465849" status="passed">
+            <name>seoMetaOnMainPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832465849" stop="1501832477473" status="passed">
+            <name>seoOnLocationSearchPageCar</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832477474" stop="1501832484847" status="passed">
+            <name>seoOnMainSearchPageCar</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832484848" stop="1501832498461" status="passed">
+            <name>seoOnSearchPageOtherCategories</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832507361" stop="1501832522941" status="passed">
+            <name>checkCountAdverts</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832522942" stop="1501832579200" status="passed">
+            <name>initPopapOnFirstAndSecondSearchPages</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832579203" stop="1501832655329" status="passed">
+            <name>openStoOnMainPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832817459" stop="1501834334787" status="passed">
+            <name>dropDownMenuHeaderSixdPart</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832850374" stop="1501832871346" status="passed">
+            <name>checkTitleAndClickOnArticles</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832871347" stop="1501832876711" status="failed">
+            <name>checkTitleOnMainPage</name>
+            <failure>
+                <message>AssertionError: Пропали тайтлы у марок на главной странице</message>
+                <stack-trace>java.lang.AssertionError: Пропали тайтлы у марок на главной странице
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.checkTitleOnMainPage(TestsForMainPage.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832876712" stop="1501832888362" status="passed">
+            <name>checkTitlesAndGoToAllCityesPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832888363" stop="1501832910001" status="passed">
+            <name>checkTitlesTopCategory</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832910002" stop="1501832937524" status="passed">
+            <name>checkTitlesTopCategoryMoscow</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501832937525" stop="1501833078331" status="passed">
+            <name>checkTopCategoryInFooter</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833078332" stop="1501833099216" status="passed">
+            <name>checkUpFines</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833099217" stop="1501833117279" status="passed">
+            <name>choiceDifferentGrafics</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833117280" stop="1501833135735" status="passed">
+            <name>chooseLocationInHeder</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833135736" stop="1501833146531" status="passed">
+            <name>ckickOnButtonAddAdvert</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833146532" stop="1501833168427" status="passed">
+            <name>clickOnTextLogo</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833168428" stop="1501833195295" status="failed">
+            <name>goToMarkPageAndToAllBrandsPage</name>
+            <failure>
+                <message>AssertionError: Не отображаются тайтлы марок на странице Всех марок</message>
+                <stack-trace>java.lang.AssertionError: Не отображаются тайтлы марок на странице Всех марок
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at com.example.tests.TestsForMainPage.goToMarkPageAndToAllBrandsPage(TestsForMainPage.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833195295" stop="1501833200897" status="passed">
+            <name>presenceElementsOnMainPage</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833200897" stop="1501833217105" status="passed">
+            <name>presenceElementsOnMainPageMoskov</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833217105" stop="1501833256591" status="passed">
+            <name>presenceIconsOfSocialNetworks</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833256592" stop="1501833261850" status="passed">
+            <name>presenceSeoTextInFooter</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833261851" stop="1501833274801" status="passed">
+            <name>searchFieldWithPressedTabsCatalog</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833274802" stop="1501833318373" status="passed">
+            <name>testSearchFieldWithPressedTabs</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833318374" stop="1501833329845" status="passed">
+            <name>testSearchFilterWithWalue</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501833329846" stop="1501833342692" status="passed">
+            <name>testWithEmptySearchFilter</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1501834334789" stop="1501834389343" status="broken">
+            <name>dropDownMenuHeaderThirdPart</name>
+            <failure>
+                <message>ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.32 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'gorozheyev', ip: '192.168.171.63', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1f06a705-d739-4067-9cc4-ef98c7f92b40</message>
+                <stack-trace>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 30.32 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'gorozheyev', ip: '192.168.171.63', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1f06a705-d739-4067-9cc4-ef98c7f92b40
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.example.tests.ClickOnAllLinksInMainMenuHeader.dropDownMenuHeaderThirdPart(ClickOnAllLinksInMainMenuHeader.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'gorozheyev', ip: '192.168.171.63', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_77'
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/GOROZH~1/AppData/Local/Temp/anonymous7347191178372466293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/GOROZH~1/AppData/Local/Temp/anonymous7347191178372466293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/GOROZH~1/AppData/Local/Temp/anonymous7347191178372466293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/GOROZH~1/AppData/Local/Temp/anonymous7347191178372466293webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

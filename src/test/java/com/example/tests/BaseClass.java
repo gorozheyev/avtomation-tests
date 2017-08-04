@@ -26,6 +26,7 @@ public class BaseClass {
     @BeforeClass
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
+
 //        для запуска firefox 52esr с selenium 3.3.1
 //        options = new FirefoxOptions().setLegacy(true);
 //        driver = new FirefoxDriver(options);

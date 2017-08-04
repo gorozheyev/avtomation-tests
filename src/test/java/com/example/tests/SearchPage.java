@@ -147,11 +147,11 @@ public class SearchPage extends BaseClass{
 
     @Test
     public void sortingBy(){
-        openSearchPageCar("orel", "");
+        openSearchPageCar("volgograd", "");
         driver.findElement(By.cssSelector(".btn-chooser-drop")).click();
         List<WebElement> sorting = driver.findElements(By.xpath("//ul[@class='nav nav-tabs nt__flat nt__md']/li"));
         if (sorting.size() ==4);
-        else fail("Сортироводолжно быть 4 типа: по цене, пробегу, году выпуска, по релевантности");
+        else fail("Сортировок должно быть 4 типа: по цене, пробегу, году выпуска, по релевантности");
         for (int i = 1; i<=sorting.size(); i++){
             driver.findElement(By.xpath("//ul[@class='nav nav-tabs nt__flat nt__md']/li[" + i + "]")).click();
             String url1 = driver.getCurrentUrl();
@@ -174,11 +174,11 @@ public class SearchPage extends BaseClass{
             subscription.click();
         }
         driver.findElement(By.xpath("//li[@class='next']/a")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car?page=3"));
+        assertTrue(driver.getCurrentUrl().contains("page=3"));
         if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
             driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
         driver.findElement(By.xpath("//li[@class='previous']/a")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car?page=2"));
+        assertTrue(driver.getCurrentUrl().contains("page=2"));
         if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
             driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
         driver.findElement(By.xpath("//li/a[contains(text(), '>>')]")).click();
@@ -220,10 +220,16 @@ public class SearchPage extends BaseClass{
     @Test
     public void subscriptionOnStyckyPanel() throws InterruptedException {
         openSearchPageCar("voronezh","");
+        if(!driver.findElements(By.xpath("//a[@id='btn-nav-user']/span")).isEmpty()){
+            driver.findElement(By.xpath("//a[@id='btn-nav-user']")).click();
+            driver.findElement(By.xpath("//a[@class='nav-user-item'][2]")).click();
+            driver.findElement(By.xpath("//div[@class='btn-panel']")).click();
+        } else {
+            driver.findElement(By.xpath("//div[@class='form-content']/a")).click();
+        }
         driver.findElement(By.id("searchbar")).sendKeys(Keys.END);
-        driver.findElement(By.xpath("//div[@class='nav-quick']/a[2]")).click();
-        WebElement subscribtion = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='form-modal form-modal-subscribe']")));
-        driver.findElement(By.xpath("//div[@class='form-content']/a")).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='nav-quick']/a[2]"))).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='form-content']/a"))).click();
         Thread.sleep(1500);
         driver.findElement(By.xpath("//div[@class='nav-quick']/a[3]")).click();
         assertTrue(driver.getCurrentUrl().equals("http://voronezh.avtopoisk.ru/auth.html"));
@@ -241,6 +247,13 @@ public class SearchPage extends BaseClass{
         driver.findElement(By.xpath("//a[@class='btn-link-header hidden-xs']")).click();
         authorizationOnTheSite();
         assertTrue(driver.getCurrentUrl().equals("http://volgograd.avtopoisk.ru/user/EditProfile"));
+        driver.findElement(By.xpath("//a[contains(text(), 'Избранное')]")).click();
+        List<WebElement> favorite = driver.findElements(By.xpath("//div[@class='item-liked']/a[1]"));
+        if(!favorite.isEmpty()){
+            for(int i=0; i< favorite.size(); i++){
+                driver.findElement(By.xpath("//div[@class='item-liked']/a[1]")).click();
+            }
+        }
         driver.findElement(By.xpath("//div[@class='btn-panel']")).click();
         driver.findElement(By.xpath("(//div[@class='favorite-link liked '])[1]")).click();
         driver.findElement(By.id("searchbar")).sendKeys(Keys.END);

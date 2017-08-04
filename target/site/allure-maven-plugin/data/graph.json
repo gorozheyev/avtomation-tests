@@ -1,0 +1,817 @@
+{
+  "testCases" : [ {
+    "uid" : "dad97eea6b7886eb",
+    "name" : "checkTypeOfCurrency",
+    "title" : "Check type of currency",
+    "time" : {
+      "start" : 1501830482646,
+      "stop" : 1501830515787,
+      "duration" : 33141
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "dc01aa9564da28af",
+    "name" : "blockPartners",
+    "title" : "Block partners",
+    "time" : {
+      "start" : 1501830491289,
+      "stop" : 1501830538029,
+      "duration" : 46740
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "80cb519f35400f8b",
+    "name" : "dropDownMenuHeaderFifthdPart",
+    "title" : "Drop down menu header fifthd part",
+    "time" : {
+      "start" : 1501830506367,
+      "stop" : 1501831058698,
+      "duration" : 552331
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "bf7b3c3e945a5473",
+    "name" : "checkboxHasPhoto",
+    "title" : "Checkbox has photo",
+    "time" : {
+      "start" : 1501830516021,
+      "stop" : 1501830540993,
+      "duration" : 24972
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "7a4ee78b34e373a0",
+    "name" : "checkCkickOnLogo",
+    "title" : "Check ckick on logo",
+    "time" : {
+      "start" : 1501830538040,
+      "stop" : 1501830570782,
+      "duration" : 32742
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "2f0a5411148a0f8a",
+    "name" : "choiceMarkAndModel",
+    "title" : "Choice mark and model",
+    "time" : {
+      "start" : 1501830540996,
+      "stop" : 1501830613924,
+      "duration" : 72928
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "97b96194529a003c",
+    "name" : "checkClickAndTitleOnLastAdverts",
+    "title" : "Check click and title on last adverts",
+    "time" : {
+      "start" : 1501830570784,
+      "stop" : 1501830592832,
+      "duration" : 22048
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "ddd65a0605552db9",
+    "name" : "checkClickAndTitlesInBlockCatalogOnMainPage",
+    "title" : "Check click and titles in block catalog on main page",
+    "time" : {
+      "start" : 1501830592834,
+      "stop" : 1501830642303,
+      "duration" : 49469
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "88bd93468aef1b34",
+    "name" : "choiceModelWithoutMark",
+    "title" : "Choice model without mark",
+    "time" : {
+      "start" : 1501830613927,
+      "stop" : 1501830657834,
+      "duration" : 43907
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "788098acd3dcffac",
+    "name" : "checkClickAndTitlesInBlockTestDrivesOnMainPage",
+    "title" : "Check click and titles in block test drives on main page",
+    "time" : {
+      "start" : 1501830642305,
+      "stop" : 1501830687705,
+      "duration" : 45400
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "4b878f5fd5126c4",
+    "name" : "countInTooltipAndInH1",
+    "title" : "Count in tooltip and in H 1",
+    "time" : {
+      "start" : 1501830657835,
+      "stop" : 1501830700632,
+      "duration" : 42797
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "270ccf2a5adcbd9f",
+    "name" : "checkTitleAndCklickOnServices",
+    "title" : "Check title and cklick on services",
+    "time" : {
+      "start" : 1501830687707,
+      "stop" : 1501832850372,
+      "duration" : 2162665
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "c061d104d930f540",
+    "name" : "mileageFrom",
+    "title" : "Mileage from",
+    "time" : {
+      "start" : 1501830700633,
+      "stop" : 1501830719908,
+      "duration" : 19275
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "af8adf83ebb31f7a",
+    "name" : "mileageFromTo",
+    "title" : "Mileage from to",
+    "time" : {
+      "start" : 1501830719909,
+      "stop" : 1501830802269,
+      "duration" : 82360
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "b62b6243b64e6041",
+    "name" : "openAdditionalFilters",
+    "title" : "Open additional filters",
+    "time" : {
+      "start" : 1501830802270,
+      "stop" : 1501830869240,
+      "duration" : 66970
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "e2305dc8e0eeca1d",
+    "name" : "priceFrom",
+    "title" : "Price from",
+    "time" : {
+      "start" : 1501830869241,
+      "stop" : 1501830892575,
+      "duration" : 23334
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "3c6091dc11f88157",
+    "name" : "priceFromTo",
+    "title" : "Price from to",
+    "time" : {
+      "start" : 1501830892576,
+      "stop" : 1501830915845,
+      "duration" : 23269
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "c25de4942f0f1b67",
+    "name" : "priceTo",
+    "title" : "Price to",
+    "time" : {
+      "start" : 1501830915846,
+      "stop" : 1501830937766,
+      "duration" : 21920
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "e86652bb7d640f71",
+    "name" : "yearFrom",
+    "title" : "Year from",
+    "time" : {
+      "start" : 1501830937767,
+      "stop" : 1501830957179,
+      "duration" : 19412
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "5449ced54689f2fe",
+    "name" : "yearFromYearTo",
+    "title" : "Year from year to",
+    "time" : {
+      "start" : 1501830957180,
+      "stop" : 1501830979387,
+      "duration" : 22207
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "4c9ac2011b48e72b",
+    "name" : "yearTo",
+    "title" : "Year to",
+    "time" : {
+      "start" : 1501830979388,
+      "stop" : 1501831003137,
+      "duration" : 23749
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "d3f6ff2a0187c82e",
+    "name" : "breadCrumbs",
+    "title" : "Bread crumbs",
+    "time" : {
+      "start" : 1501831016870,
+      "stop" : 1501831034768,
+      "duration" : 17898
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "dd0205cce221ae39",
+    "name" : "breadCrumbsWithMark",
+    "title" : "Bread crumbs with mark",
+    "time" : {
+      "start" : 1501831034770,
+      "stop" : 1501831062011,
+      "duration" : 27241
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "f0fcf37f7c7a37e1",
+    "name" : "dropDownMenuHeaderFirstPart",
+    "title" : "Drop down menu header first part",
+    "time" : {
+      "start" : 1501831058700,
+      "stop" : 1501831507918,
+      "duration" : 449218
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "557df92292e3255e",
+    "name" : "breadCrumbsWithMarkAndModel",
+    "title" : "Bread crumbs with mark and model",
+    "time" : {
+      "start" : 1501831062012,
+      "stop" : 1501831087730,
+      "duration" : 25718
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "b5a5fbe90dede492",
+    "name" : "clickOnSubscriptionButton",
+    "title" : "Click on subscription button",
+    "time" : {
+      "start" : 1501831087731,
+      "stop" : 1501831101327,
+      "duration" : 13596
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "d1dd408e872ac236",
+    "name" : "countAdvertsOnSearchPage",
+    "title" : "Count adverts on search page",
+    "time" : {
+      "start" : 1501831101328,
+      "stop" : 1501831112619,
+      "duration" : 11291
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "1dc4f7586902a1d8",
+    "name" : "customLinksUnderTabs",
+    "title" : "Custom links under tabs",
+    "time" : {
+      "start" : 1501831112620,
+      "stop" : 1501831156631,
+      "duration" : 44011
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "6a44b57af6925e6a",
+    "name" : "favoriteAds",
+    "title" : "Favorite ads",
+    "time" : {
+      "start" : 1501831156633,
+      "stop" : 1501831194459,
+      "duration" : 37826
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "a186b208f20b018a",
+    "name" : "favoriteWithLoggedUser",
+    "title" : "Favorite with logged user",
+    "time" : {
+      "start" : 1501831194460,
+      "stop" : 1501831285658,
+      "duration" : 91198
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "1878addfcd866341",
+    "name" : "paginationTest",
+    "title" : "Pagination test",
+    "time" : {
+      "start" : 1501831285659,
+      "stop" : 1501831333011,
+      "duration" : 47352
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "712ec9b32ec57f56",
+    "name" : "presenceTabsAndClickThem",
+    "title" : "Presence tabs and click them",
+    "time" : {
+      "start" : 1501831333015,
+      "stop" : 1501831345212,
+      "duration" : 12197
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "ec5525fe31c9f302",
+    "name" : "sortingBy",
+    "title" : "Sorting by",
+    "time" : {
+      "start" : 1501831345213,
+      "stop" : 1501831438385,
+      "duration" : 93172
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "2e1696984526bf62",
+    "name" : "subscriptionOnStyckyPanel",
+    "title" : "Subscription on stycky panel",
+    "time" : {
+      "start" : 1501831438387,
+      "stop" : 1501831480489,
+      "duration" : 42102
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "d5dc2550ac6f3a23",
+    "name" : "adpageSeo",
+    "title" : "Adpage seo",
+    "time" : {
+      "start" : 1501831493012,
+      "stop" : 1501831500908,
+      "duration" : 7896
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "12982881ef07b28b",
+    "name" : "markPageSeo",
+    "title" : "Mark page seo",
+    "time" : {
+      "start" : 1501831500909,
+      "stop" : 1501832176418,
+      "duration" : 675509
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "e73c8ad7404a453",
+    "name" : "dropDownMenuHeaderForthdPart",
+    "title" : "Drop down menu header forthd part",
+    "time" : {
+      "start" : 1501831507919,
+      "stop" : 1501831773345,
+      "duration" : 265426
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "44d44374a9dc59f3",
+    "name" : "dropDownMenuHeaderSecondPart",
+    "title" : "Drop down menu header second part",
+    "time" : {
+      "start" : 1501831773346,
+      "stop" : 1501832817458,
+      "duration" : 1044112
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "3758749acfd69689",
+    "name" : "markPlusAuxiliaryFiltersPageSeo",
+    "title" : "Mark plus auxiliary filters page seo",
+    "time" : {
+      "start" : 1501832176419,
+      "stop" : 1501832184949,
+      "duration" : 8530
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "ea751e5b67e6bfd4",
+    "name" : "markPlusModePlusAuxiliaryFilterslPageSeo",
+    "title" : "Mark plus mode plus auxiliary filtersl page seo",
+    "time" : {
+      "start" : 1501832184950,
+      "stop" : 1501832200930,
+      "duration" : 15980
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "34a346a839283538",
+    "name" : "markPlusModelPageSeo",
+    "title" : "Mark plus model page seo",
+    "time" : {
+      "start" : 1501832200930,
+      "stop" : 1501832209854,
+      "duration" : 8924
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "d0534f459964dbf",
+    "name" : "nofollowOnMainPage",
+    "title" : "Nofollow on main page",
+    "time" : {
+      "start" : 1501832209855,
+      "stop" : 1501832228941,
+      "duration" : 19086
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "322e7e8d9c5738fd",
+    "name" : "outclicksOnAdvert",
+    "title" : "Outclicks on advert",
+    "time" : {
+      "start" : 1501832228942,
+      "stop" : 1501832287085,
+      "duration" : 58143
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "37721684822fece7",
+    "name" : "seoForCastomLinksInTabs",
+    "title" : "Seo for castom links in tabs",
+    "time" : {
+      "start" : 1501832287087,
+      "stop" : 1501832412186,
+      "duration" : 125099
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "263cede8bab906b4",
+    "name" : "seoMetaOnCustomLinkPages",
+    "title" : "Seo meta on custom link pages",
+    "time" : {
+      "start" : 1501832412187,
+      "stop" : 1501832430224,
+      "duration" : 18037
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "662bcd75d4e56d90",
+    "name" : "seoMetaOnMainPage",
+    "title" : "Seo meta on main page",
+    "time" : {
+      "start" : 1501832430226,
+      "stop" : 1501832465849,
+      "duration" : 35623
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "fecf0338466fe60c",
+    "name" : "seoOnLocationSearchPageCar",
+    "title" : "Seo on location search page car",
+    "time" : {
+      "start" : 1501832465849,
+      "stop" : 1501832477473,
+      "duration" : 11624
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "29e876e8dbb5022b",
+    "name" : "seoOnMainSearchPageCar",
+    "title" : "Seo on main search page car",
+    "time" : {
+      "start" : 1501832477474,
+      "stop" : 1501832484847,
+      "duration" : 7373
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "769a15ef058b3b7d",
+    "name" : "seoOnSearchPageOtherCategories",
+    "title" : "Seo on search page other categories",
+    "time" : {
+      "start" : 1501832484848,
+      "stop" : 1501832498461,
+      "duration" : 13613
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "41b3d21b1dcd123d",
+    "name" : "checkCountAdverts",
+    "title" : "Check count adverts",
+    "time" : {
+      "start" : 1501832507361,
+      "stop" : 1501832522941,
+      "duration" : 15580
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "a7f161e9f8a0efb5",
+    "name" : "initPopapOnFirstAndSecondSearchPages",
+    "title" : "Init popap on first and second search pages",
+    "time" : {
+      "start" : 1501832522942,
+      "stop" : 1501832579200,
+      "duration" : 56258
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "5dbccdbad1f1a73c",
+    "name" : "openStoOnMainPage",
+    "title" : "Open sto on main page",
+    "time" : {
+      "start" : 1501832579203,
+      "stop" : 1501832655329,
+      "duration" : 76126
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "791eeeb5e75d13eb",
+    "name" : "dropDownMenuHeaderSixdPart",
+    "title" : "Drop down menu header sixd part",
+    "time" : {
+      "start" : 1501832817459,
+      "stop" : 1501834334787,
+      "duration" : 1517328
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "69436de621fe31f9",
+    "name" : "checkTitleAndClickOnArticles",
+    "title" : "Check title and click on articles",
+    "time" : {
+      "start" : 1501832850374,
+      "stop" : 1501832871346,
+      "duration" : 20972
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "41ecf0ed46934655",
+    "name" : "checkTitleOnMainPage",
+    "title" : "Check title on main page",
+    "time" : {
+      "start" : 1501832871347,
+      "stop" : 1501832876711,
+      "duration" : 5364
+    },
+    "severity" : "NORMAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "d4cd887706be7fda",
+    "name" : "checkTitlesAndGoToAllCityesPage",
+    "title" : "Check titles and go to all cityes page",
+    "time" : {
+      "start" : 1501832876712,
+      "stop" : 1501832888362,
+      "duration" : 11650
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "e784fcae9c5910c5",
+    "name" : "checkTitlesTopCategory",
+    "title" : "Check titles top category",
+    "time" : {
+      "start" : 1501832888363,
+      "stop" : 1501832910001,
+      "duration" : 21638
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "a948ffce4cf9bde2",
+    "name" : "checkTitlesTopCategoryMoscow",
+    "title" : "Check titles top category moscow",
+    "time" : {
+      "start" : 1501832910002,
+      "stop" : 1501832937524,
+      "duration" : 27522
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "a48fd1d35fbf962c",
+    "name" : "checkTopCategoryInFooter",
+    "title" : "Check top category in footer",
+    "time" : {
+      "start" : 1501832937525,
+      "stop" : 1501833078331,
+      "duration" : 140806
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "5e43d455fd486354",
+    "name" : "checkUpFines",
+    "title" : "Check up fines",
+    "time" : {
+      "start" : 1501833078332,
+      "stop" : 1501833099216,
+      "duration" : 20884
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "6a12f5ef526dda92",
+    "name" : "choiceDifferentGrafics",
+    "title" : "Choice different grafics",
+    "time" : {
+      "start" : 1501833099217,
+      "stop" : 1501833117279,
+      "duration" : 18062
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "d15b8c3c68bf896",
+    "name" : "chooseLocationInHeder",
+    "title" : "Choose location in heder",
+    "time" : {
+      "start" : 1501833117280,
+      "stop" : 1501833135735,
+      "duration" : 18455
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "ee0a16948feba6e4",
+    "name" : "ckickOnButtonAddAdvert",
+    "title" : "Ckick on button add advert",
+    "time" : {
+      "start" : 1501833135736,
+      "stop" : 1501833146531,
+      "duration" : 10795
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "5c241b16229b22ae",
+    "name" : "clickOnTextLogo",
+    "title" : "Click on text logo",
+    "time" : {
+      "start" : 1501833146532,
+      "stop" : 1501833168427,
+      "duration" : 21895
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "e7d4c18aeeef7c2a",
+    "name" : "goToMarkPageAndToAllBrandsPage",
+    "title" : "Go to mark page and to all brands page",
+    "time" : {
+      "start" : 1501833168428,
+      "stop" : 1501833195295,
+      "duration" : 26867
+    },
+    "severity" : "NORMAL",
+    "status" : "FAILED"
+  }, {
+    "uid" : "35ea4728b6918f10",
+    "name" : "presenceElementsOnMainPage",
+    "title" : "Presence elements on main page",
+    "time" : {
+      "start" : 1501833195295,
+      "stop" : 1501833200897,
+      "duration" : 5602
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "c7a039e28534d56c",
+    "name" : "presenceElementsOnMainPageMoskov",
+    "title" : "Presence elements on main page moskov",
+    "time" : {
+      "start" : 1501833200897,
+      "stop" : 1501833217105,
+      "duration" : 16208
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "5856c36ea8d902b7",
+    "name" : "presenceIconsOfSocialNetworks",
+    "title" : "Presence icons of social networks",
+    "time" : {
+      "start" : 1501833217105,
+      "stop" : 1501833256591,
+      "duration" : 39486
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "23caa995d6c54ad6",
+    "name" : "presenceSeoTextInFooter",
+    "title" : "Presence seo text in footer",
+    "time" : {
+      "start" : 1501833256592,
+      "stop" : 1501833261850,
+      "duration" : 5258
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "e35c504736c3f1a5",
+    "name" : "searchFieldWithPressedTabsCatalog",
+    "title" : "Search field with pressed tabs catalog",
+    "time" : {
+      "start" : 1501833261851,
+      "stop" : 1501833274801,
+      "duration" : 12950
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "62089f0809e78700",
+    "name" : "testSearchFieldWithPressedTabs",
+    "title" : "Test search field with pressed tabs",
+    "time" : {
+      "start" : 1501833274802,
+      "stop" : 1501833318373,
+      "duration" : 43571
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "8436edf52f2151ac",
+    "name" : "testSearchFilterWithWalue",
+    "title" : "Test search filter with walue",
+    "time" : {
+      "start" : 1501833318374,
+      "stop" : 1501833329845,
+      "duration" : 11471
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "907d8825d264c207",
+    "name" : "testWithEmptySearchFilter",
+    "title" : "Test with empty search filter",
+    "time" : {
+      "start" : 1501833329846,
+      "stop" : 1501833342692,
+      "duration" : 12846
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "455bf93879056061",
+    "name" : "dropDownMenuHeaderThirdPart",
+    "title" : "Drop down menu header third part",
+    "time" : {
+      "start" : 1501834334789,
+      "stop" : 1501834389343,
+      "duration" : 54554
+    },
+    "severity" : "NORMAL",
+    "status" : "BROKEN"
+  } ]
+}

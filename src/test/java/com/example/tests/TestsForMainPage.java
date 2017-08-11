@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.fail;
 
 
@@ -82,6 +83,8 @@ public class TestsForMainPage extends BaseClass{
         String titleName = markTitle.getAttribute("title");
         if (titleName.equals(""))
             fail("Пропали тайтлы у марок на главной странице");
+        assertTrue(!driver.findElement(By.cssSelector(".simple-tile.simple-tile__sm:nth-of-type(4) img")).getAttribute("alt").equals(""),
+                "There is no Alt for the picture");
     }
 
     @Test
@@ -95,10 +98,12 @@ public class TestsForMainPage extends BaseClass{
         String url = driver.getCurrentUrl();
         if (url.equals("http://moskva.avtopoisk.ru/all-brands.html")) {
         } else {fail("Это не страница всех марок");}
-        String markTitle = driver.findElement(By.xpath("//div[@class='simple-tile simple-tile__sm'][12]")).getAttribute("title");
+        String markTitle = driver.findElement(By.xpath("//div[@class='simple-tile simple-tile__sm'][12]/a")).getAttribute("title");
         if (markTitle.equals("")){
             fail("Не отображаются тайтлы марок на странице Всех марок");
         }
+        assertTrue(!driver.findElement(By.cssSelector(".simple-tile.simple-tile__sm:nth-of-type(5) img")).getAttribute("alt").equals(""),
+                "There is no Alt for the picture");
     }
 
 //    проверка вывода блоков: марки,объявления,статистика,статьи,услуги на главной

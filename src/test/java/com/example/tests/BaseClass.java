@@ -239,4 +239,17 @@ public class BaseClass {
         password.sendKeys("1234");
         driver.findElement(By.xpath("//button[contains(text(), 'войти')]")).click();
     }
+
+    public void checkPresenseElementsInHeader() {
+        driver.findElement(By.cssSelector(".logo"));
+        driver.findElement(By.cssSelector("#btn-nav-categories")).click();
+        if (driver.findElement(By.id("nav-categories")).isDisplayed());
+        else fail("Главное меню в хедере не отображается");
+        driver.findElement(By.cssSelector("#btn-nav-cities>span")).click();
+        if (driver.findElement(By.id("btn-nav-cities")).isDisplayed());
+        else fail("Меню выбора городов не отображается");
+        driver.findElement(By.xpath("//a[contains(text(), 'Войти')]"));
+        driver.findElement(By.xpath("//a[contains(text(), '+ разместить объявление')]"));
+        driver.findElement(By.id("searchbar"));
+    }
 }

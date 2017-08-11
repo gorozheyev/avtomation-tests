@@ -25,16 +25,7 @@ public class SearchPage extends BaseClass{
         if (adverts.size() != 30)
             fail("Проверить кол-во объявлений на выдаче, сейчас их-" + adverts.size()+ ", а должно быть 30 штук");
 //        проверка наличия элементов хедера
-        driver.findElement(By.cssSelector(".logo"));
-        driver.findElement(By.cssSelector("#btn-nav-categories")).click();
-        if (driver.findElement(By.id("nav-categories")).isDisplayed());
-        else fail("Главное меню в хедере не отображается");
-        driver.findElement(By.cssSelector("#btn-nav-cities>span")).click();
-        if (driver.findElement(By.id("btn-nav-cities")).isDisplayed());
-        else fail("Меню выбора городов не отображается");
-        driver.findElement(By.xpath("//a[contains(text(), 'Войти')]"));
-        driver.findElement(By.xpath("//a[contains(text(), '+ разместить объявление')]"));
-        driver.findElement(By.id("searchbar"));
+        checkPresenseElementsInHeader();
     }
 
     @Test

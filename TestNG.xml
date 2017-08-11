@@ -9,6 +9,7 @@
             <class name="com.example.tests.SearchPage" />
             <class name="com.example.tests.SeoRequirementsTests" />
             <class name="com.example.tests.CurrentTests" />
+            <class name="com.example.tests.AdpageTests" />
         </classes>
     </test>
 </suite>

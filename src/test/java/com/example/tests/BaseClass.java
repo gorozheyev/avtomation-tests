@@ -198,7 +198,6 @@ public class BaseClass {
     }
 
     protected void openCustomCategoryInTabs() {
-        driver.findElement(By.xpath("//a[contains(text(), 'Быстрые фильтры')]")).click();
         driver.findElement(By.xpath("//a[@class='btn-chooser-dd']")).click();
         driver.findElement(By.xpath("//a[contains(text(), 'Каталог машин по типам')]")).click();
     }
@@ -251,5 +250,11 @@ public class BaseClass {
         driver.findElement(By.xpath("//a[contains(text(), 'Войти')]"));
         driver.findElement(By.xpath("//a[contains(text(), '+ разместить объявление')]"));
         driver.findElement(By.id("searchbar"));
+    }
+
+    public void openAdpage(String region) {
+        openSearchPageCar(region, "");
+        String partOfUrl = driver.findElement(By.xpath("(//div[@class='description']//a)[3]")).getAttribute("href");
+        driver.get(partOfUrl);
     }
 }

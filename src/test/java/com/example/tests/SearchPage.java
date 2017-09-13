@@ -38,23 +38,6 @@ public class SearchPage extends BaseClass{
     }
 
     @Test
-    public void presenceTabsAndClickThem(){
-        openSearchPageCar("www", "");
-        List<WebElement> tabs = driver.findElements(By.xpath("//div[@class='tabs-menu-i clearfix']/a"));
-        String nameTabs[] = new String[5];
-        nameTabs[0] = "Продажа авто";
-        nameTabs[1] = "Быстрые фильтры";
-        nameTabs[2] = "Отзывы";
-        nameTabs[3] = "Статистика";
-        nameTabs[4] = "Новости";
-        for (int i =1; i<=tabs.size(); i++) {
-            driver.findElement(By.xpath("//div[@class='tabs-menu-i clearfix']/a[" + i + "]")).click();
-            String tab = driver.findElement(By.xpath("//div[@class='tabs-menu-i clearfix']/a[" + i + "]")).getText();
-            assertEquals(nameTabs[i-1], tab);
-        }
-    }
-
-    @Test
     public void breadCrumbs(){
         openSearchPageCar("www", "");
         assertEquals("Главная Легковые авто", driver.findElement(By.xpath("//ul[@class='breadcrumb breadcrumb_search']")).getText());
@@ -116,12 +99,7 @@ public class SearchPage extends BaseClass{
 
     @Test
     public void customLinksUnderTabs(){
-        openSearchPageCar("moskva", "");
-        driver.findElement(By.linkText("Новые авто  ")).click();
-        assertEquals("http://moskva.avtopoisk.ru/new-cars", driver.getCurrentUrl());
-        assertEquals("Продажа новых автомобилей в Москве.", driver.findElement(By.cssSelector(".h4.inline-block")).getText());
         driver.get("http://moskva.avtopoisk.ru/usa-cars");
-        driver.findElement(By.linkText("Новые авто  "));
         List<WebElement> marks = driver.findElements(By.cssSelector(".custom.fz-inc"));
         if (marks.size() <= 8);
         else fail("Моделей должно выводиться не больше шести");
@@ -129,7 +107,6 @@ public class SearchPage extends BaseClass{
             assertEquals("Продажа автомобилей " + element.getText() + " в Москве", element.getAttribute("title"));
         }
         driver.findElement(By.xpath("(//a[@class='custom fz-inc'])[1]")).click();
-
         driver.findElement(By.id("searchbar"));
         driver.navigate().back();
         driver.findElement(By.xpath("(//a[@class='custom fz-inc'])[3]")).click();
@@ -219,7 +196,7 @@ public class SearchPage extends BaseClass{
             driver.findElement(By.xpath("//div[@class='form-content']/a")).click();
         }
         driver.findElement(By.id("searchbar")).sendKeys(Keys.END);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='nav-quick']/a[2]"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='nav-quick']/a[2]"))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='form-content']/a"))).click();
         Thread.sleep(1500);
         driver.findElement(By.xpath("//div[@class='nav-quick']/a[3]")).click();

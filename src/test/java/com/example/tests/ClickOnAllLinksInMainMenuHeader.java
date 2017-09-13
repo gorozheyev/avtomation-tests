@@ -2,6 +2,7 @@ package com.example.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -85,7 +86,7 @@ public class ClickOnAllLinksInMainMenuHeader extends BaseClass{
             else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
             page.click();
             driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.id("btn-nav-categories")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("#btn-nav-categories")))).click();
         }
     }
 

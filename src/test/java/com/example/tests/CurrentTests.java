@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 
 public class CurrentTests extends BaseClass{
@@ -35,7 +36,7 @@ public class CurrentTests extends BaseClass{
         }
     }
 
-    @Test
+//    @Test
 //    проверка попапа-подписки на выдаче и при клике на пагинацию
     public void initPopapOnFirstAndSecondSearchPages() {
         openMoskvaMainPage();
@@ -44,10 +45,26 @@ public class CurrentTests extends BaseClass{
         inputField.sendKeys("kljkljkljl");
         driver.findElement(By.cssSelector(".btn.btn-lg.btn-blue.w-fluid.buttonSubscribe")).click();
         driver.findElement(By.cssSelector(".btn-close-cross__dk.btn-rnd.btn-md.closeSubscribe")).click();
-        assertEquals("Купить б/у авто с пробегом в Москве. Подержанные автомобили и цены в Москве, недорого", driver.getTitle());
+        assertEquals("Купить авто в Москве. Продажа автомобилей по низкой цене", driver.getTitle());
 //        открытие стр.2 и проверка попапа-подписки
         driver.findElement(By.xpath("html/body/section/div[2]/div/div[3]/div[1]/nav/ul/li[2]/a")).click();
         driver.findElement(By.cssSelector(".btn.btn-lg.btn-blue.w-fluid.buttonSubscribe")).click();
+    }
+
+//    @Test
+    public void redirectOnCatalogPages(){
+        driver.get("http://moskva.avtopoisk.ru/");
+        driver.findElement(By.cssSelector("#btn-nav-categories")).click();
+        driver.findElement(By.xpath("(//div[@class='col-md-2']//li/a)[5]")).click();
+        assertTrue(driver.getCurrentUrl().equals("http://www.avtopoisk.ru/catalog"),
+                "Каталог должен быть без поддомена и без .html");
+        driver.get("http://www.avtopoisk.ru/catalog/mark/ford.html");
+        assertTrue(!driver.getCurrentUrl().contains(".html"));
+        driver.get("http://moskva.avtopoisk.ru/catalog/mark/ford");
+        assertTrue(!driver.getCurrentUrl().contains("moskva"));
+        driver.get("http://moskva.avtopoisk.ru/catalog/mark/ford.html");
+        assertTrue(!driver.getCurrentUrl().contains("moskva"));
+        assertTrue(!driver.getCurrentUrl().contains(".html"));
     }
 
 }

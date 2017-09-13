@@ -51,36 +51,33 @@ public class SeoRequirementsTests extends BaseClass {
     @Test
     public void seoOnMainSearchPageCar() {
         driver.get("http://www.avtopoisk.ru/car ");
-        assertEquals("Купить б/у авто с пробегом в России. Подержанные автомобили и цены в России, недорого", driver.getTitle());  //проврка тайтла страницы
+        assertEquals("Купить авто в России. Продажа автомобилей по низкой цене", driver.getTitle());  //проврка тайтла страницы
         assertEquals("canonical", driver.findElement(By.xpath("//link[@href='http://www.avtopoisk.ru/car']")).getAttribute("rel"));//проверка canonical
-        assertEquals("Продажа б/у авто с пробегом в России. Выгодные цены на автомобили – купить подержанный, б/у автомобиль в России на сайте Avtopoisk.Ru.",
+        assertEquals("Легковые автомобили в России. Выгодная купля-продажа легковых авто в России",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
-        assertEquals("купить авто с пробегом в России, подержанные авто в России, автомобили и цены в России, продажа б/у авто в России",
-                driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
-        assertEquals("Купить б/у авто с пробегом в России.", driver.findElement(By.xpath("(//h1)[1]")).getText());//проверка Н1
+        assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
+        assertEquals("Продажа авто в России.", driver.findElement(By.xpath("(//h1)[1]")).getText());//проверка Н1
     }
 
     @Test
     public void seoOnLocationSearchPageCar() {
         driver.get("http://moskva.avtopoisk.ru/car ");
-        assertEquals("Купить б/у авто с пробегом в Москве. Подержанные автомобили и цены в Москве, недорого", driver.getTitle());  //проврка тайтла страницы
+        assertEquals("Купить авто в Москве. Продажа автомобилей по низкой цене", driver.getTitle());  //проврка тайтла страницы
         assertEquals("http://moskva.avtopoisk.ru/car", driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));//проверка canonical
-        assertEquals("Продажа б/у авто с пробегом в Москве. Выгодные цены на автомобили – купить подержанный, б/у автомобиль в Москве на сайте Avtopoisk.Ru.",
+        assertEquals("Легковые автомобили в Москве. Выгодная купля-продажа легковых авто в Москве",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
-        assertEquals("купить авто с пробегом в Москве, подержанные авто в Москве, автомобили и цены в Москве, продажа б/у авто в Москве",
-                driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
-        assertEquals("Купить б/у авто с пробегом в Москве.", driver.findElement(By.xpath("(//h1)[1]")).getText());//проверка Н1
+        assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
+        assertEquals("Продажа авто в Москве.", driver.findElement(By.xpath("(//h1)[1]")).getText());//проверка Н1
     }
 
     @Test
     public void seoOnSearchPageOtherCategories() {
         driver.get("http://www.avtopoisk.ru/gruzovye");
-        assertEquals("Грузовые автомобили с пробегом в России. Купля-продажа грузовых автомобилей б/у: цены, фото", driver.getTitle());
-        assertEquals("Возможность купить грузовик с пробегом в России на сайте Avtopoisk.Ru. Продажа подержанных грузовых машин в России: цены, описания и фото смотрите на сайте.",
+        assertEquals("Купить грузовик в России. Продажа грузовых авто по низкой цене", driver.getTitle());
+        assertEquals("Грузовые авто в России. Выгодная купля-продажа грузовиков в России ",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
-        assertEquals("грузовые автомобили в России, купить грузовик в России, продажа грузовых автомобилей в России",
-                driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
-        assertEquals("Продажа грузовых автомобилей в России.", driver.findElement(By.xpath("(//h1)[1]")).getText());//проверка Н1
+        assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
+        assertEquals("Продажа грузовиков в России.", driver.findElement(By.xpath("(//h1)[1]")).getText());//проверка Н1
     }
 
     @Test
@@ -114,7 +111,7 @@ public class SeoRequirementsTests extends BaseClass {
     public void seoForCastomLinksInTabs() {
         openSearchPageCar("www", "");
         openCustomCategoryInTabs(); //по типам авто
-        List<WebElement> customLinks = driver.findElements(By.xpath("(//div[@id='propositionsByCities'])[3]/div/ul/li/a"));
+        List<WebElement> customLinks = driver.findElements(By.xpath("(//div[@id='propositionsByCities'])[3]//a"));
         for (WebElement link : customLinks) {
             if (link.getAttribute("title").equals(""))
                 fail("Нет тайтлов в в кастом линках 'по типам авто'");
@@ -165,11 +162,10 @@ public class SeoRequirementsTests extends BaseClass {
     public void markPageSeo() {
         driver.get("http://www.avtopoisk.ru/car/chevrolet");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
-        assertEquals("Купить Chevrolet б/у в России: цены, фото, характеристики. Продажа Шевроле с пробегом", driver.getTitle());
-        assertEquals("Подержанные автомобили Chevrolet (Шевроле) с пробегом в России. Выгодная купля-продажа б/у автомобиля Chevrolet в России на сайте Avtopoisk.Ru.",
+        assertEquals("Купить Chevrolet в России. Продажа автомобилей Шевроле по низкой цене", driver.getTitle());
+        assertEquals("Автомобили Chevrolet в России. Выгодная купля-продажа Шевроле в России",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
-        assertEquals("купить Chevrolet (Шевроле) в России, продажа Chevrolet в России, б/у автомобиль Chevrolet в России",
-                driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
+        assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
         assertEquals("Продажа Chevrolet (Шевроле) в России.", driver.findElement(By.xpath("(//h1)[1]")).getText());
     }
 
@@ -177,36 +173,36 @@ public class SeoRequirementsTests extends BaseClass {
     public void markPlusAuxiliaryFiltersPageSeo() {
         driver.get("http://www.avtopoisk.ru/car/dodge/subbody/vnedorozhnik/transmission/auto");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
-        assertEquals("Купить Dodge б/у в России: цены, фото, характеристики. Продажа Додж с пробегом", driver.getTitle());
-        assertEquals("Подержанные автомобили Dodge (Додж) с пробегом в России. Выгодная купля-продажа б/у автомобиля Dodge в России на сайте Avtopoisk.Ru.",
+        assertEquals("Купить Dodge в кузове Внедорожник с автоматической коробкой передач в России", driver.getTitle());
+        assertEquals("Dodge (Додж) в кузове Внедорожник с автоматической коробкой передач в России. " +
+                        "Выгодная купля-продажа Dodge (Додж) в кузове Внедорожник с автоматической коробкой передач в России",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
-        assertEquals("купить Dodge (Додж) в России, продажа Dodge в России, б/у автомобиль Dodge в России",
-                driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
-        assertEquals("Продажа Dodge (Додж) в России.", driver.findElement(By.xpath("(//h1)[1]")).getText());
+        assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
+        assertEquals("Продажа Dodge в кузове Внедорожник с автоматической коробкой передач в России.",
+                driver.findElement(By.xpath("(//h1)[1]")).getText());
     }
 
     @Test
     public void markPlusModelPageSeo() {
         driver.get("http://jekaterinburg.avtopoisk.ru/car/ford/focus");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
-        assertEquals("Купить Ford Focus б/у в Екатеринбурге: цены, фото, характеристики. Продажа Форд фокус с пробегом", driver.getTitle());
-        assertEquals("Подержанные автомобили Ford Focus (Форд фокус) с пробегом в Екатеринбурге. Выгодная купля-продажа б/у автомобиля Ford Focus в Екатеринбурге на сайте Avtopoisk.Ru.",
+        assertEquals("Купить Ford Focus в Екатеринбурге. Продажа автомобилей Ford Focus по низкой цене", driver.getTitle());
+        assertEquals("Автомобили Ford Focus в Екатеринбурге. Выгодная купля-продажа Ford Focus в Екатеринбурге",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
-        assertEquals("купить Ford Focus (Форд фокус) в Екатеринбурге, продажа Ford Focus в Екатеринбурге, б/у автомобиль Ford Focus в Екатеринбурге",
-                driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
-        assertEquals("Продажа Ford Focus (Форд фокус) в Екатеринбурге.", driver.findElement(By.xpath("(//h1)[1]")).getText());
+        assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
+        assertEquals("Продажа Ford Focus в Екатеринбурге.", driver.findElement(By.xpath("(//h1)[1]")).getText());
     }
 
     @Test
     public void markPlusModePlusAuxiliaryFilterslPageSeo() {
         driver.get("http://samara.avtopoisk.ru/car/toyota/corolla/transmission/mech");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
-        assertEquals("Купить Toyota Corolla с механической коробкой передач в Самаре. Продажа б/у Тойота Королла с пробегом с механикой: цены, фото", driver.getTitle());
-        assertEquals("Купить автомобиль Toyota Corolla (Тойота Королла) с механикой в Самаре с пробегом. Продажа новых Toyota Corolla с механической коробкой передач в Самаре на сайте Avtopoisk.Ru.",
+        assertEquals("Купить Toyota Corolla с механической коробкой передач в Самаре", driver.getTitle());
+        assertEquals("Toyota Corolla (Тойота Королла) с механической коробкой передач в Самаре. " +
+                        "Выгодная купля-продажа Toyota Corolla (Тойота Королла) с механической коробкой передач в Самаре",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
-        assertEquals("Toyota Corolla с механической коробкой передач в Самаре, Toyota Corolla с механикой в Самаре, Toyota Corolla с механикой с пробегом в Самаре",
-                driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
-        assertEquals("Купить Toyota Corolla с механической коробкой передач в Самаре.", driver.findElement(By.xpath("(//h1)[1]")).getText());
+        assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
+        assertEquals("Продажа Toyota Corolla с механической коробкой передач в Самаре.", driver.findElement(By.xpath("(//h1)[1]")).getText());
     }
 
     @Test
@@ -215,7 +211,7 @@ public class SeoRequirementsTests extends BaseClass {
         driver.findElement(By.cssSelector(".form-modal.form-modal-subscribe"));
         driver.findElement(By.xpath("//div[@class=\"form-content\"]/a")).click();
         assertEquals("noindex, follow", driver.findElement(By.xpath("//meta[@name='robots'][1]")).getAttribute("content"));
-        assertEquals("Продажа Audi A4 (Ауди а4) в Ростове-на-Дону.", driver.findElement(By.xpath("(//h1)[1]")).getText());
+        assertEquals("Продажа Audi A4 в Ростове-на-Дону.", driver.findElement(By.xpath("(//h1)[1]")).getText());
         List<WebElement> adverts = driver.findElements(By.xpath("//div[@class='proposition listing-item hover ']"));
         if (adverts.size()!=0 && adverts.size()<=15);
         else fail("На странице 'ничего не найдено' нет блока 'объявления близкие к указанному запросу' либо в нем больше 15 объявлений");

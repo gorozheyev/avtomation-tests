@@ -25,7 +25,7 @@ public class TestsForMainPage extends BaseClass{
         inputValueInSearchField(car);
         clickOnSearchButton();
 //     проверяем тайтл открывшейся страницы
-        if (driver.getTitle().equals("Купить Toyota б/у в России: цены, фото, характеристики. Продажа Тойота с пробегом")){}
+        if (driver.getTitle().equals("Купить Toyota в России. Продажа автомобилей Тойота по низкой цене")){}
         else fail("Тайтл страницы не совпадает");
     }
 
@@ -34,7 +34,7 @@ public class TestsForMainPage extends BaseClass{
         openMainPage();
         inputValueInSearchField(new MainPageData(""));
         clickOnSearchButton();
-        if (driver.getTitle().equals("Купить б/у авто с пробегом в России. Подержанные автомобили и цены в России, недорого")){}
+        if (driver.getTitle().equals("Купить авто в России. Продажа автомобилей по низкой цене")){}
         else fail("Тайтл страницы не совпадает");
     }
 
@@ -49,13 +49,13 @@ public class TestsForMainPage extends BaseClass{
             clickOnSearchButton();
             driver.findElement(By.cssSelector("#searchbar"));
             String url = driver.getCurrentUrl();
-            if (url.contains("state=new") | url.contains("state=old"));
-                else fail("Открылась не та страница проверить работу табов в главном фильтре на главной странице Москвы");
+            if (url.contains("moskva.avtopoisk.ru/car/ford/new") | url.contains("moskva.avtopoisk.ru/car/ford/old"));
+            else fail("Открылась не та страница проверить работу табов в главном фильтре на главной странице Москвы");
             driver.navigate().back();
         }
         driver.findElement(By.xpath("//li[@role='presentation'][4]")).click();
         clickOnSearchButton();
-        assertEquals("http://moskva.avtopoisk.ru/catalog.html", driver.getCurrentUrl());
+        assertEquals("http://www.avtopoisk.ru/catalog", driver.getCurrentUrl());
         assertEquals("каталог по маркам",driver.findElement(By.xpath("//h2[@class='h3']")).getText().toLowerCase());
     }
 
@@ -117,8 +117,8 @@ public class TestsForMainPage extends BaseClass{
             throw new Exception("Проверить сео текст под хедером на главной");
         }
         presenceFiveBlocksOnMainePage();
-        List<WebElement> fiveBlocks =  driver.findElements(By.cssSelector(".content-frame"));
-        if (fiveBlocks.size() ==5){}
+        List<WebElement> blocks =  driver.findElements(By.cssSelector(".content-frame"));
+        if (blocks.size() ==6);
         else {
             throw new Exception("На главной странице не все блоки");
         }
@@ -212,7 +212,8 @@ public class TestsForMainPage extends BaseClass{
                 namesOfCategories.contains("Легковые авто\nГрузовые авто\nСпецтехника\nАвтобусы\nМото\n") ||
                 namesOfCategories.contains("Легковые авто\nГрузовые авто\nМото\nАвтобусы\nСпецтехника\n")||
                 namesOfCategories.contains("Легковые авто\nГрузовые авто\nАвтобусы\nМото\nСпецтехника\n")||
-                namesOfCategories.contains("Легковые авто\nГрузовые авто\nМото\nСпецтехника\nАвтобусы\n"));
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nМото\nСпецтехника\nАвтобусы\n")||
+                namesOfCategories.contains("Легковые авто\nГрузовые авто\nАвтобусы\nСпецтехника\nПрицепы\n"));
         else fail("Проверить категории авто в футере");
         List<WebElement> categories = driver.findElements(By.xpath("(//ul[@class='list-items list-reset'])[1]/li"));
         for (int i = 1; i<=categories.size(); i++){
@@ -322,7 +323,7 @@ public class TestsForMainPage extends BaseClass{
         else fail("Пропали тайтлы в выпадающем списке локаций на главной");
         assertEquals("Продажа автомобилей по городам ", driver.findElement(By.linkText("Все города")).getAttribute("title"));
         driver.findElement(By.linkText("Все города")).click();
-        assertEquals("http://www.avtopoisk.ru/all-cities.html", driver.getCurrentUrl());
+        assertEquals("http://www.avtopoisk.ru/all-cities", driver.getCurrentUrl());
         assertEquals("ПРОДАЖА АВТОМОБИЛЕЙ В ГОРОДАХ", driver.findElement(By.xpath("//h2[@class='h3']")).getText());
     }
 
@@ -335,7 +336,7 @@ public class TestsForMainPage extends BaseClass{
         clickOnSecondTestDriveAndGoBack();
         clickOnThirdTestDriveAndGoBack();
         clickOnSeeMoreTestDrivesButton();
-        assertEquals("http://www.avtopoisk.ru/testdrive.html", driver.getCurrentUrl());
+        assertEquals("http://www.avtopoisk.ru/testdrive", driver.getCurrentUrl());
         assertEquals("Тест-драйвы автомобилей на Avtopoisk.ru - каталог тест-драйвов авто.", driver.getTitle());
     }
 
@@ -347,8 +348,8 @@ public class TestsForMainPage extends BaseClass{
         clickOnSecondCatalogModelAndGoBack();
         clickOnThirdCatalogModelAndGoBack();
         clickSeeMoreCatalogButton();
-        assertEquals("http://www.avtopoisk.ru/catalog.html", driver.getCurrentUrl());
-        assertEquals("Каталог автомобилей по маркам на Avtopoisk.Ru в России.", driver.getTitle());
+        assertEquals("http://www.avtopoisk.ru/catalog", driver.getCurrentUrl());
+        assertEquals("Каталог автомобилей по маркам на Avtopoisk.Ru", driver.getTitle());
     }
 
 //    =================================================================================== тесты для блока новостей
@@ -360,11 +361,11 @@ public class TestsForMainPage extends BaseClass{
         else fail("Это не страница новости");
         driver.findElement(By.cssSelector(".content-frame.clearfix"));
         driver.navigate().back();
-        String articleTitle = driver.findElement(By.xpath("//div[@class='wide-tiles slider-view']/a[1]")).getAttribute("title");
+        String articleTitle = driver.findElement(By.xpath("//div[@class='wide-tiles slider-view']/a[2]")).getAttribute("title");
         if (articleTitle.equals(""))
         fail("Не отображаются тайтлы для новостей из блока 'Статьи' на главной");
         driver.findElement(By.xpath("//span[contains(text(), 'еще статьи')]")).click();
-        assertEquals("http://www.avtopoisk.ru/news.html", driver.getCurrentUrl());
+        assertEquals("http://www.avtopoisk.ru/news", driver.getCurrentUrl());
     }
 
 //    ================================================================================= тесты для блока статистики

@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
 /**
@@ -215,6 +216,53 @@ public class SeoRequirementsTests extends BaseClass {
         List<WebElement> adverts = driver.findElements(By.xpath("//div[@class='proposition listing-item hover ']"));
         if (adverts.size()!=0 && adverts.size()<=15);
         else fail("На странице 'ничего не найдено' нет блока 'объявления близкие к указанному запросу' либо в нем больше 15 объявлений");
+    }
+
+    @Test
+    public void noindexOnPages(){
+        driver.get("http://www.avtopoisk.ru/car/hasfoto/on");
+        assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
+                .getAttribute("content").contains("noindex, follow"));
+        driver.get("http://www.avtopoisk.ru/car/hasfoto/off");
+        assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
+                .getAttribute("content").contains("noindex, follow"));
+        driver.get("http://www.avtopoisk.ru/car");
+        assertTrue(driver.findElements(By.xpath("//meta[@name='robots']")).isEmpty());
+        driver.get("http://moskva.avtopoisk.ru/car/enginevolume/2000");
+        assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
+                .getAttribute("content").contains("noindex, follow"));
+        driver.get("http://www.avtopoisk.ru/car/enginevolume/6600");
+        assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
+                .getAttribute("content").contains("noindex, follow"));
+        driver.get("http://www.avtopoisk.ru/car/bmw/transmission/auto/year/2013");
+        assertTrue(driver.findElements(By.xpath("//meta[@name='robots']")).isEmpty(),
+                "Страница должна быть открыта от индексации");
+        driver.get("http://samara.avtopoisk.ru/car/toyota/enginetype/benzin/year/2014");
+        assertTrue(driver.findElements(By.xpath("//meta[@name='robots']")).isEmpty(),
+                "Страница должна быть открыта от индексации");
+        openAdpage("samara");
+        assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
+                .getAttribute("content").contains("noindex, follow"),
+                "Страница адпейдж должна быть закрыта от индексации");
+    }
+
+    @Test
+    public void noindexOnPagesWhereCountLessThenFive(){
+        openSearchPageCar("www", "");
+        driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("dfghj");
+        clickOnSearchButton();
+        assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
+                .getAttribute("content").contains("noindex, follow"),
+                "Страница 'Ничего не найдено' должна быть закрыть от индексации");
+        driver.navigate().back();
+        driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("Alfa Romeo Mito");
+        clickOnSearchButton();
+        if(getCountAdvertsOnSearchPage() >0 && getCountAdvertsOnSearchPage() <5){
+            assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
+                    .getAttribute("content").contains("noindex, follow"));
+        } else {fail("Подобрать значения так чтобы на выдаче было >0 и <5 объявлений");
+        }
+
     }
 
 }

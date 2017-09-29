@@ -158,18 +158,20 @@ public class SearchPage extends BaseClass{
     }
 
     @Test
-    public void favoriteAds(){
+    public void favoriteAds() throws InterruptedException {
         openSearchPageCar("novosibirsk", "");
         assertTrue(driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[1]/div/div[1]")).getAttribute("data-count").contains("0"));
         assertEquals("nav-item nav-item-favorites text-uppercase favorites hide",
                 driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).getAttribute("class"));
         driver.findElement(By.xpath("(//div[@class='favorite-link liked '])[1]")).click();
+        Thread.sleep(500);
         assertTrue(driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[1]/div/div[1]")).getAttribute("data-count").contains("1"));
         assertEquals("nav-item nav-item-favorites text-uppercase favorites",
                 driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).getAttribute("class"));
             driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[1]/div")).sendKeys(Keys.END);
         assertTrue(driver.findElement(By.id("sticky-panel")).isEnabled());
         driver.findElement(By.xpath("(//div[@class='proposition listing-item hover '])[2]/div/div[1]")).click();
+        Thread.sleep(700);
         assertThat(driver.findElement(By.xpath("//div[@class='nav-quick']/a/span")).getText(), is("2"));
         driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).click();
         assertEquals("http://novosibirsk.avtopoisk.ru/favorites.html", driver.getCurrentUrl());
@@ -209,7 +211,7 @@ public class SearchPage extends BaseClass{
     }
 
     @Test
-    public void favoriteWithLoggedUser(){
+    public void favoriteWithLoggedUser() {
         openSearchPageCar("volgograd", "");
         assertTrue(driver.findElement(By.xpath("(//div[@class='favorite-link liked '])[1] ")).getAttribute("title").equals("Добавить в избранное"));
         driver.findElement(By.xpath("//a[@class='btn-link-header hidden-xs']")).click();
@@ -223,11 +225,12 @@ public class SearchPage extends BaseClass{
             }
         }
         driver.findElement(By.xpath("//div[@class='btn-panel']")).click();
-        driver.findElement(By.xpath("(//div[@class='favorite-link liked '])[1]")).click();
+        driver.findElement(By.cssSelector("div[data-count]:nth-of-type(1)")).click();
         driver.findElement(By.id("searchbar")).sendKeys(Keys.END);
         driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).click();
         driver.findElement(By.xpath("//a[contains(text(), 'Избранное')]")).click();
-        assertTrue(driver.findElements(By.xpath("//div[@class='item-liked']")).size()==1);
+        assertTrue(driver.findElements(By.xpath("//div[@class='item-liked']")).size()==1,
+                "Не совпадает кол-во добавленных объявлений в избранное со счетчиком на липкой панельке");
         driver.findElement(By.xpath("(//a[@class='option-item-del'])[1]")).click();
         driver.findElement(By.xpath("//div[@class='btn-panel']")).click();
     }

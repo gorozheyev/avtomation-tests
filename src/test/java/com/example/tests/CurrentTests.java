@@ -36,7 +36,7 @@ public class CurrentTests extends BaseClass{
         }
     }
 
-//    @Test
+    @Test
 //    проверка попапа-подписки на выдаче и при клике на пагинацию
     public void initPopapOnFirstAndSecondSearchPages() {
         openMoskvaMainPage();
@@ -51,11 +51,11 @@ public class CurrentTests extends BaseClass{
         driver.findElement(By.cssSelector(".btn.btn-lg.btn-blue.w-fluid.buttonSubscribe")).click();
     }
 
-//    @Test
+    @Test
     public void redirectOnCatalogPages(){
         driver.get("http://moskva.avtopoisk.ru/");
         driver.findElement(By.cssSelector("#btn-nav-categories")).click();
-        driver.findElement(By.xpath("(//div[@class='col-md-2']//li/a)[5]")).click();
+        driver.findElement(By.xpath("(//div[@class='nav-categories-list']//li/a)[5]")).click();
         assertTrue(driver.getCurrentUrl().equals("http://www.avtopoisk.ru/catalog"),
                 "Каталог должен быть без поддомена и без .html");
         driver.get("http://www.avtopoisk.ru/catalog/mark/ford.html");

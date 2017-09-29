@@ -3,11 +3,10 @@
 <suite name="Suite" verbose="1" parallel="classes" thread-count="3">
     <test name="Parallel Tests">
         <classes>
-            <class name="com.example.tests.ClickOnAllLinksInMainMenuHeader" />
             <class name="com.example.tests.TestsForMainPage" />
             <class name="com.example.tests.SearchFilterTests" />
-            <class name="com.example.tests.SearchPage" />
             <class name="com.example.tests.SeoRequirementsTests" />
+            <class name="com.example.tests.SearchPage" />
             <class name="com.example.tests.CurrentTests" />
             <class name="com.example.tests.AdpageTests" />
         </classes>

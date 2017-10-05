@@ -94,10 +94,14 @@ public class SeoRequirementsTests extends BaseClass {
             driver.get(urls[i]);
                 for (int j = 5; j < 7; j++) {
                     if (!driver.findElement(By.xpath("(//div[@class='partner']/a)["+ j+ "]")).getText().isEmpty()) {
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload']/a)[" + j + "]")).getAttribute("rel"));
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info']/a)[" + j + "]")).getAttribute("rel"));
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner']/a)[" + j + "]")).getAttribute("rel"));
-                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[" + j + "]//..")).getAttribute("rel"));
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='photos-container upload']/a)[" + j + "]")).getAttribute("rel"),
+                                "На странице "+ driver.getCurrentUrl()+ " у объявления №"+ j + " нет атрибута nofollow");
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='info']/a)[" + j + "]")).getAttribute("rel"),
+                                "На странице "+ driver.getCurrentUrl()+ " у объявления №"+ j + " нет атрибута nofollow");
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='partner']/a)[" + j + "]")).getAttribute("rel"),
+                                "На странице "+ driver.getCurrentUrl()+ " у объявления №"+ j + " нет атрибута nofollow");
+                        assertEquals("nofollow", driver.findElement(By.xpath("(//div[@class='btn btn-md btn-blue'])[" + j + "]//..")).getAttribute("rel"),
+                                "На странице "+ driver.getCurrentUrl()+ " у объявления №"+ j + " нет атрибута nofollow");
                     }
                         WebElement goToAdpage = driver.findElement(By.xpath("//span[@class='link']//.."));
                         if (goToAdpage.getAttribute("href").toString().contains("avtopoisk.ru/search/adpage/")) ;

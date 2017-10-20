@@ -27,13 +27,31 @@ public class BaseClass {
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
 
+//        для запуска firefox 55+ with geckodriver
+//        System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Mozilla Firefox_geckodriver\\geckodriver.exe");
+//        driver = new FirefoxDriver();
+
 //        для запуска firefox 52esr с selenium 3.3.1
 //        options = new FirefoxOptions().setLegacy(true);
 //        driver = new FirefoxDriver(options);
 
+//        запуск firefox в headless режиме, версия FF-56+,geckodriver
+//        FirefoxBinary firefoxBinary = new FirefoxBinary();
+//        firefoxBinary.addCommandLineOptions("--headless");
+//        System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Mozilla Firefox_geckodriver\\geckodriver.exe");
+//        FirefoxOptions firefoxOptions = new FirefoxOptions();
+//        firefoxOptions.setBinary(firefoxBinary);
+//        FirefoxDriver driver = new FirefoxDriver(firefoxOptions);
+
 //        для запуска тестов в хроме
 //        System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\chromedriver.exe");
 //        driver = new ChromeDriver();
+
+//        запуск хрома в headless режиме
+//        System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\chromedriver.exe");
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless");
+//        driver = new ChromeDriver(options);
 
 //        System.setProperty("webdriver.opera.driver", "C:\\operadriver_win64\\operadriver.exe");
 //        driver = new OperaDriver();

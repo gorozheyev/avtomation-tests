@@ -89,7 +89,7 @@ public class SeoRequirementsTests extends BaseClass {
         urls[2] = "http://samara.avtopoisk.ru/car";
         urls[3] = "http://sankt-peterburg.avtopoisk.ru/car/subbody/minivan";
         urls[4] = "http://sankt-peterburg.avtopoisk.ru/car/subbody/vnedorozhnik";
-        urls[5] = "http://novosibirsk.avtopoisk.ru/car";
+        urls[5] = "http://krasnojarsk.avtopoisk.ru/car";
         for (int i = 0; i < urls.length; i++) {
             driver.get(urls[i]);
                 for (int j = 5; j < 7; j++) {
@@ -266,7 +266,21 @@ public class SeoRequirementsTests extends BaseClass {
                     .getAttribute("content").contains("noindex, follow"));
         } else {fail("Подобрать значения так чтобы на выдаче было >0 и <5 объявлений");
         }
+    }
 
+    @Test
+    public void noidexOnEnginevolumePages(){
+        driver.get("http://moskva.avtopoisk.ru/car/lexus/enginevolumeto/5663");
+        assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
+                        .getAttribute("content").contains("noindex, follow"),
+                "Страница по объему двигателя должна быть закрыть от индексации");
+//        убрали nofollow с пагинатора
+        driver.get(" http://moskva.avtopoisk.ru/car/mazda");
+        assertTrue(!driver.findElement(By.cssSelector(".pagination>li:nth-of-type(2)>a")).getAttribute("rel").contains("nofollow"),
+                "Пагинатор должен быть открытым для индексации");
+        driver.get(" http://avtopoisk.ru/car/volvo");
+        assertTrue(!driver.findElement(By.cssSelector(".pagination>li:nth-of-type(2)>a")).getAttribute("rel").contains("nofollow"),
+                "Пагинатор должен быть открытым для индексации");
     }
 
 }

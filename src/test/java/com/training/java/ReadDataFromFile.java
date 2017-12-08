@@ -9,7 +9,7 @@ public class ReadDataFromFile {
 
 
         public static void main(String[] args) throws IOException {
-            File file = new File("C:\\Users\\gorozheyevd\\Desktop\\DomainsAvtopoisk.txt");
+            File file = new File("C:\\Users\\Gorozheev\\Desktop\\DomainsAvtopoisk.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             int a = 0;
             String s;

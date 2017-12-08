@@ -60,7 +60,7 @@ public class SearchFilterTests extends BaseClass{
             if(element.getText().length()!=0) {
                 String s = element.getText().substring(0, element.getText().length() - " руб.".length());
                 int a = Integer.parseInt(s.replaceAll(" ", ""));
-                if(a<490000)
+                if(a<487000)
                 fail("Цены на выдаче - "+a+" , а должна быть больше 500 000 руб.");
             }
         }

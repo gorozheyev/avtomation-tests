@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aspectj.version>1.8.10</aspectj.version>
-        <allure.version>1.4.23</allure.version>
+        <!--<allure.version>1.4.23</allure.version>-->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
@@ -29,14 +29,19 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.0-BETA21</version>
+            <scope>test</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.21</version> <!-- or use LATEST -->
         </dependency>
-
-
 
         <dependency>
         <groupId>ru.yandex.qatools.allure</groupId>
@@ -96,7 +101,7 @@
                 <printSummary>true</printSummary>
                 <testFailureIgnore>false</testFailureIgnore>
                 <argLine>
-                    -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     <!-- -Dcucumber.options=" &#45;&#45;plugin ru.yandex.qatools.allure.cucumberjvm.AllureReporter"-->
                 </argLine>
                 <testFailureIgnore>true</testFailureIgnore>

@@ -12,6 +12,7 @@ import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.testng.Assert.*;
+import static org.testng.AssertJUnit.fail;
 
 /**
  * Created by gorozheyevd on 07.02.2017.
@@ -42,9 +43,9 @@ public class SearchPage extends BaseClass{
         openSearchPageCar("www", "");
         assertEquals("Главная Легковые авто", driver.findElement(By.xpath("//ul[@class='breadcrumb breadcrumb_search']")).getText());
         assertEquals("Продажа авто в России", driver.findElement(By.xpath("//ul[@class='breadcrumb breadcrumb_search']/li/a")).getAttribute("title"));
-        assertEquals("http://www.avtopoisk.ru/", driver.findElement(By.xpath("//ul[@class='breadcrumb breadcrumb_search']/li/a")).getAttribute("href"));
+        assertEquals("https://www.avtopoisk.ru/", driver.findElement(By.xpath("//ul[@class='breadcrumb breadcrumb_search']/li/a")).getAttribute("href"));
         driver.findElement(By.xpath("//ul[@class='breadcrumb breadcrumb_search']/li/a")).click();
-        assertEquals("http://www.avtopoisk.ru/", driver.getCurrentUrl());
+        assertEquals("https://www.avtopoisk.ru/", driver.getCurrentUrl());
     }
 
     @Test
@@ -52,9 +53,9 @@ public class SearchPage extends BaseClass{
         openSearchPageCar("www", "opel");
         assertEquals("Главная Легковые авто Opel", driver.findElement(By.xpath("//ul[@class='breadcrumb breadcrumb_search']")).getText());
         assertEquals("Продажа авто в России", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[1]")).getAttribute("title"));
-        assertEquals("http://www.avtopoisk.ru/", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[1]")).getAttribute("href"));
+        assertEquals("https://www.avtopoisk.ru/", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[1]")).getAttribute("href"));
         assertEquals("Продажа легковых авто в России", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[2]")).getAttribute("title"));
-        assertEquals("http://www.avtopoisk.ru/car", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[2]")).getAttribute("href"));
+        assertEquals("https://www.avtopoisk.ru/car", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[2]")).getAttribute("href"));
         Actions actions = new Actions(driver);
         WebElement element = driver.findElement(By.xpath("//div[@class='dropdown crumb-dropdown']"));
         actions.moveToElement(element).build().perform();
@@ -76,11 +77,11 @@ public class SearchPage extends BaseClass{
         openSearchPageCar("moskva", "honda/accord");
         assertEquals("Главная Легковые авто Honda\nAccord", driver.findElement(By.xpath("//ul[@class='breadcrumb breadcrumb_search']")).getText());
         assertEquals("Продажа авто в Москве", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[1]")).getAttribute("title"));
-        assertEquals("http://moskva.avtopoisk.ru/", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[1]")).getAttribute("href"));
+        assertEquals("https://moskva.avtopoisk.ru/", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[1]")).getAttribute("href"));
         assertEquals("Продажа легковых авто в Москве", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[2]")).getAttribute("title"));
-        assertEquals("http://moskva.avtopoisk.ru/car", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[2]")).getAttribute("href"));
+        assertEquals("https://moskva.avtopoisk.ru/car", driver.findElement(By.xpath("(//ul[@class='breadcrumb breadcrumb_search']/li/a)[2]")).getAttribute("href"));
         assertEquals("Продажа легковых авто Honda в Москве", driver.findElement(By.xpath("(//div[@class='dropdown crumb-dropdown'])[1]/a")).getAttribute("title"));
-        assertEquals("http://moskva.avtopoisk.ru/car/honda", driver.findElement(By.xpath("(//div[@class='dropdown crumb-dropdown'])[1]/a")).getAttribute("href"));
+        assertEquals("https://moskva.avtopoisk.ru/car/honda", driver.findElement(By.xpath("(//div[@class='dropdown crumb-dropdown'])[1]/a")).getAttribute("href"));
         Actions actions = new Actions(driver);
         WebElement element = driver.findElement(By.xpath("(//div[@class='dropdown crumb-dropdown'])[2]"));
         actions.moveToElement(element).build().perform();
@@ -99,7 +100,7 @@ public class SearchPage extends BaseClass{
 
     @Test
     public void customLinksUnderTabs(){
-        driver.get("http://moskva.avtopoisk.ru/usa-cars");
+        driver.get("https://moskva.avtopoisk.ru/usa-cars");
         List<WebElement> marks = driver.findElements(By.cssSelector(".custom.fz-inc"));
         if (marks.size() <= 8);
         else fail("Моделей должно выводиться не больше шести");
@@ -136,7 +137,7 @@ public class SearchPage extends BaseClass{
     public void paginationTest(){
         openSearchPageCar("smolensk", "");
         driver.findElement(By.xpath("//ul[@class='pagination']/li/a[contains(text(), '2')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car?page=2"));
+        assertTrue(driver.getCurrentUrl().contains("https://smolensk.avtopoisk.ru/car?page=2"));
         WebElement subscription = driver.findElement(By.xpath("//div[@class='form-content']/a"));
         if(subscription.isDisplayed()) {
             subscription.click();
@@ -154,7 +155,7 @@ public class SearchPage extends BaseClass{
         if(driver.findElement(By.xpath("//div[@class='form-content']/a")).isDisplayed()){
             driver.findElement(By.xpath("//div[@class='form-content']/a")).click();}
         driver.findElement(By.xpath("//li/a[contains(text(), '<<')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://smolensk.avtopoisk.ru/car"));
+        assertTrue(driver.getCurrentUrl().contains("https://smolensk.avtopoisk.ru/car"));
     }
 
     @Test
@@ -174,10 +175,10 @@ public class SearchPage extends BaseClass{
         Thread.sleep(700);
         assertThat(driver.findElement(By.xpath("//div[@class='nav-quick']/a/span")).getText(), is("2"));
         driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).click();
-        assertEquals("http://novosibirsk.avtopoisk.ru/favorites.html", driver.getCurrentUrl());
+        assertEquals("https://novosibirsk.avtopoisk.ru/favorites.html", driver.getCurrentUrl());
         assertTrue(driver.findElements(By.xpath("//div[@class='listing-item-flex']")).size() ==2);
         driver.findElement(By.xpath("(//a[contains(text(), 'Проверка штрафов')])[2]")).click();
-        assertEquals("http://novosibirsk.avtopoisk.ru/fine", driver.getCurrentUrl());
+        assertEquals("https://novosibirsk.avtopoisk.ru/fine", driver.getCurrentUrl());
         driver.findElement(By.xpath("//h1[@class='h4 text-uppercase']"));
         driver.navigate().back();
         driver.findElement(By.xpath("(//a[@class='option-item-del'])[1]")).click();
@@ -202,21 +203,21 @@ public class SearchPage extends BaseClass{
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='form-content']/a"))).click();
         Thread.sleep(1500);
         driver.findElement(By.xpath("//div[@class='nav-quick']/a[3]")).click();
-        assertTrue(driver.getCurrentUrl().equals("http://voronezh.avtopoisk.ru/auth.html"));
+        assertTrue(driver.getCurrentUrl().equals("https://voronezh.avtopoisk.ru/auth.html"));
         driver.findElement(By.xpath("//a[contains(text(), 'Регистрация')]")).click();
         assertTrue(driver.findElement(By.xpath("(//div[@class='form-modal-caption text-center'])[2]")).getText().equals("Регистрация пользователя"));
         driver.findElement(By.xpath("//a[contains(text(), 'Вход')]")).click();
         authorizationOnTheSite();
-        assertTrue(driver.getCurrentUrl().equals("http://voronezh.avtopoisk.ru/user/EditProfile"));
+        assertTrue(driver.getCurrentUrl().equals("https://voronezh.avtopoisk.ru/user/EditProfile"));
     }
 
     @Test
     public void favoriteWithLoggedUser() {
         openSearchPageCar("volgograd", "");
         assertTrue(driver.findElement(By.xpath("(//div[@class='favorite-link liked '])[1] ")).getAttribute("title").equals("Добавить в избранное"));
-        driver.findElement(By.xpath("//a[@class='btn-link-header hidden-xs']")).click();
+        driver.findElement(By.xpath("//div[@class='header-nav__auth']/a")).click();
         authorizationOnTheSite();
-        assertTrue(driver.getCurrentUrl().equals("http://volgograd.avtopoisk.ru/user/EditProfile"));
+        assertTrue(driver.getCurrentUrl().equals("https://volgograd.avtopoisk.ru/user/EditProfile"));
         driver.findElement(By.xpath("//a[contains(text(), 'Избранное')]")).click();
         List<WebElement> favorite = driver.findElements(By.xpath("//div[@class='item-liked']/a[1]"));
         if(!favorite.isEmpty()){
@@ -224,7 +225,7 @@ public class SearchPage extends BaseClass{
                 driver.findElement(By.xpath("//div[@class='item-liked']/a[1]")).click();
             }
         }
-        driver.findElement(By.xpath("//div[@class='btn-panel']")).click();
+        clickOnSearchButton();
         driver.findElement(By.cssSelector("div[data-count]:nth-of-type(1)")).click();
         driver.findElement(By.id("searchbar")).sendKeys(Keys.END);
         driver.findElement(By.xpath("//div[@class='nav-quick']/a[1]")).click();
@@ -232,7 +233,65 @@ public class SearchPage extends BaseClass{
         assertTrue(driver.findElements(By.xpath("//div[@class='item-liked']")).size()==1,
                 "Не совпадает кол-во добавленных объявлений в избранное со счетчиком на липкой панельке");
         driver.findElement(By.xpath("(//a[@class='option-item-del'])[1]")).click();
-        driver.findElement(By.xpath("//div[@class='btn-panel']")).click();
+        driver.findElement(By.xpath("(//div[@class='search-panel__btn'])[2]")).click();
+    }
+
+    @Test
+    public void newMenuHeaderFirstPart() {
+        openSearchPageCar("www", "");
+        driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
+        List<WebElement> categories1 = driver.findElements(By.xpath("//div[@id='collapseOne']//li"));
+        for (int i = 1; i <= categories1.size(); i++) {
+            WebElement page = driver.findElement(By.xpath("(//div[@id='collapseOne']//a)[" + i + "]"));
+            if (!page.getAttribute("title").equals("")) ;
+            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+            page.click();
+            driver.findElement(By.cssSelector("#searchbar"));
+            driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
+        }
+    }
+
+    @Test
+    public void newMenuHeaderSecondPart(){
+        openSearchPageCar("www", "");
+        driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
+        Actions actions = new Actions(driver);
+        WebElement element = driver.findElement(By.xpath("//*[@id='headingTwo']/span"));
+        actions.moveToElement(element).build().perform();
+        List<WebElement> categories1 = driver.findElements(By.xpath("//div[@id='collapseTwo']//li"));
+        for (int i = 1; i <=  categories1.size(); i++) {
+            WebElement page = driver.findElement(By.xpath("(//div[@id='collapseTwo']//a)[" + i + "]"));
+            if (!page.getAttribute("title").equals("")) ;
+            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+            page.click();
+            if(i==1) {
+                driver.navigate().back();
+            }
+            driver.findElement(By.cssSelector("#searchbar"));
+            driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
+            WebElement element2 = driver.findElement(By.xpath("//*[@id='headingTwo']/span"));
+            actions.moveToElement(element2).build().perform();
+        }
+    }
+
+    @Test
+    public void newMenuHeaderThirdPart() {
+        openSearchPageCar("www", "");
+        driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
+        Actions actions = new Actions(driver);
+        WebElement element = driver.findElement(By.xpath("//*[@id='headingThree']/span"));
+        actions.moveToElement(element).build().perform();
+        List<WebElement> categories1 = driver.findElements(By.xpath("//div[@id='collapseThree']//li"));
+        for (int i = 1; i <= categories1.size(); i++) {
+            WebElement page = driver.findElement(By.xpath("(//div[@id='collapseThree']//a)[" + i + "]"));
+            if (!page.getAttribute("title").equals("")) ;
+            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
+            page.click();
+            driver.findElement(By.cssSelector("#searchbar"));
+            driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
+            WebElement element2 = driver.findElement(By.xpath("//*[@id='headingThree']/span"));
+            actions.moveToElement(element2).build().perform();
+        }
     }
 
 }

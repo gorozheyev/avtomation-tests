@@ -51,9 +51,9 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void seoOnMainSearchPageCar() {
-        driver.get("http://www.avtopoisk.ru/car ");
+        driver.get("https://www.avtopoisk.ru/car ");
         assertEquals("Купить авто в России. Продажа автомобилей по низкой цене", driver.getTitle());  //проврка тайтла страницы
-        assertEquals("canonical", driver.findElement(By.xpath("//link[@href='http://www.avtopoisk.ru/car']")).getAttribute("rel"));//проверка canonical
+        assertEquals("canonical", driver.findElement(By.xpath("//link[@href='https://www.avtopoisk.ru/car']")).getAttribute("rel"));//проверка canonical
         assertEquals("Легковые автомобили в России. Выгодная купля-продажа легковых авто в России",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
         assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
@@ -62,9 +62,9 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void seoOnLocationSearchPageCar() {
-        driver.get("http://moskva.avtopoisk.ru/car ");
+        driver.get("https://moskva.avtopoisk.ru/car ");
         assertEquals("Купить авто в Москве. Продажа автомобилей по низкой цене", driver.getTitle());  //проврка тайтла страницы
-        assertEquals("http://moskva.avtopoisk.ru/car", driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));//проверка canonical
+        assertEquals("https://moskva.avtopoisk.ru/car", driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));//проверка canonical
         assertEquals("Легковые автомобили в Москве. Выгодная купля-продажа легковых авто в Москве",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
         assertEquals("", driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
@@ -73,7 +73,7 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void seoOnSearchPageOtherCategories() {
-        driver.get("http://www.avtopoisk.ru/gruzovye");
+        driver.get("https://www.avtopoisk.ru/gruzovye");
         assertEquals("Купить грузовик в России. Продажа грузовых авто по низкой цене", driver.getTitle());
         assertEquals("Грузовые авто в России. Выгодная купля-продажа грузовиков в России ",
                 driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content")); //проверка description
@@ -84,12 +84,12 @@ public class SeoRequirementsTests extends BaseClass {
     @Test
     public void outclicksOnAdvert() {
         String urls[] = new String[6];
-        urls[0] = "http://www.avtopoisk.ru/car";
-        urls[1] = "http://www.avtopoisk.ru/car/subbody/minivan";
-        urls[2] = "http://samara.avtopoisk.ru/car";
-        urls[3] = "http://sankt-peterburg.avtopoisk.ru/car/subbody/minivan";
-        urls[4] = "http://sankt-peterburg.avtopoisk.ru/car/subbody/vnedorozhnik";
-        urls[5] = "http://krasnojarsk.avtopoisk.ru/car";
+        urls[0] = "https://www.avtopoisk.ru/car";
+        urls[1] = "https://www.avtopoisk.ru/car/subbody/minivan";
+        urls[2] = "https://samara.avtopoisk.ru/car";
+        urls[3] = "https://sankt-peterburg.avtopoisk.ru/car/subbody/minivan";
+        urls[4] = "https://sankt-peterburg.avtopoisk.ru/car/subbody/vnedorozhnik";
+        urls[5] = "https://krasnojarsk.avtopoisk.ru/car";
         for (int i = 0; i < urls.length; i++) {
             driver.get(urls[i]);
                 for (int j = 5; j < 7; j++) {
@@ -135,7 +135,7 @@ public class SeoRequirementsTests extends BaseClass {
     @Test
     public void seoMetaOnCustomLinkPages() {
 //        для кастом линок 'каталог автомобилей по странам'
-        driver.get("http://www.avtopoisk.ru/usa-cars");
+        driver.get("https://www.avtopoisk.ru/usa-cars");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
         assertEquals("Американские автомобили в России. Купить авто из Америки, американские марки автомобилей: цены, фото", driver.getTitle());
         assertEquals("Продажа американских автомобилей в России. Выгодно купить авто из Америки в России можно на сайте Avtopoisk.Ru – каталог объявлений американских автомобилей.",
@@ -144,7 +144,7 @@ public class SeoRequirementsTests extends BaseClass {
                 driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
         assertEquals("Американские автомобили в России.", driver.findElement(By.xpath("(//h1)[1]")).getText());
 //        для кастом линок 'каталог машин по типам'
-        driver.get("http://www.avtopoisk.ru/sport-cars");
+        driver.get("https://www.avtopoisk.ru/sport-cars");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
         assertEquals("Спортивные автомобили в России. Продажа спортивных б/у автомобилей в России: фото, цены", driver.getTitle());
         assertEquals("Выгодно купить спортивный б/у автомобиль в России можно на сайте «Автопоиск». Продажа спортивных авто в России по доступным ценам: описание и фото смотрите на сайте.",
@@ -153,7 +153,7 @@ public class SeoRequirementsTests extends BaseClass {
                 driver.findElement(By.xpath("//meta[@name='keywords']")).getAttribute("content")); //проверка keywords
         assertEquals("Продажа спортивных автомобилей в России.", driver.findElement(By.xpath("(//h1)[1]")).getText());
 //        для кастом линок 'каталог машин по цене'
-        driver.get("http://www.avtopoisk.ru/cheap-cars");
+        driver.get("https://www.avtopoisk.ru/cheap-cars");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
         assertEquals("Самые дешевые автомобили в России. Купить автомобиль дешево в России: цены, фото", driver.getTitle());
         assertEquals("Продажа дешевых автомобилей в России. Дешевые авто с пробегом в России смотрите на сайте Avtopoisk.Ru.",
@@ -165,7 +165,7 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void markPageSeo() {
-        driver.get("http://www.avtopoisk.ru/car/chevrolet");
+        driver.get("https://www.avtopoisk.ru/car/chevrolet");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
         assertEquals("Купить Chevrolet в России. Продажа автомобилей Шевроле по низкой цене", driver.getTitle());
         assertEquals("Автомобили Chevrolet в России. Выгодная купля-продажа Шевроле в России",
@@ -176,7 +176,7 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void markPlusAuxiliaryFiltersPageSeo() {
-        driver.get("http://www.avtopoisk.ru/car/dodge/subbody/vnedorozhnik/transmission/auto");
+        driver.get("https://www.avtopoisk.ru/car/dodge/subbody/vnedorozhnik/transmission/auto");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
         assertEquals("Купить Dodge в кузове Внедорожник с автоматической коробкой передач в России", driver.getTitle());
         assertEquals("Dodge (Додж) в кузове Внедорожник с автоматической коробкой передач в России. " +
@@ -189,7 +189,7 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void markPlusModelPageSeo() {
-        driver.get("http://jekaterinburg.avtopoisk.ru/car/ford/focus");
+        driver.get("https://jekaterinburg.avtopoisk.ru/car/ford/focus");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
         assertEquals("Купить Ford Focus в Екатеринбурге. Продажа автомобилей Ford Focus по низкой цене", driver.getTitle());
         assertEquals("Автомобили Ford Focus в Екатеринбурге. Выгодная купля-продажа Ford Focus в Екатеринбурге",
@@ -200,7 +200,7 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void markPlusModePlusAuxiliaryFilterslPageSeo() {
-        driver.get("http://samara.avtopoisk.ru/car/toyota/corolla/transmission/mech");
+        driver.get("https://samara.avtopoisk.ru/car/toyota/corolla/transmission/mech");
         assertEquals(driver.getCurrentUrl(), driver.findElement(By.xpath("//link[@rel='canonical']")).getAttribute("href"));
         assertEquals("Купить Toyota Corolla с механической коробкой передач в Самаре", driver.getTitle());
         assertEquals("Toyota Corolla (Тойота Королла) с механической коробкой передач в Самаре. " +
@@ -212,7 +212,7 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void adpageSeo(){
-        driver.get("http://rostov-na-donu.avtopoisk.ru/car/audi/a4/mileagefrom/1/mileageto/2?priceCurrency=RUR&state=all&sort=d&sortd=d");
+        driver.get("https://rostov-na-donu.avtopoisk.ru/car/audi/a4/mileagefrom/1/mileageto/2?priceCurrency=RUR&state=all&sort=d&sortd=d");
         driver.findElement(By.cssSelector(".form-modal.form-modal-subscribe"));
         driver.findElement(By.xpath("//div[@class=\"form-content\"]/a")).click();
         assertEquals("noindex, follow", driver.findElement(By.xpath("//meta[@name='robots'][1]")).getAttribute("content"));
@@ -224,24 +224,24 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void noindexOnPages(){
-        driver.get("http://www.avtopoisk.ru/car/hasfoto/on");
+        driver.get("https://www.avtopoisk.ru/car/hasfoto/on");
         assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
                 .getAttribute("content").contains("noindex, follow"));
-        driver.get("http://www.avtopoisk.ru/car/hasfoto/off");
+        driver.get("https://www.avtopoisk.ru/car/hasfoto/off");
         assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
                 .getAttribute("content").contains("noindex, follow"));
-        driver.get("http://www.avtopoisk.ru/car");
+        driver.get("https://www.avtopoisk.ru/car");
         assertTrue(driver.findElements(By.xpath("//meta[@name='robots']")).isEmpty());
-        driver.get("http://moskva.avtopoisk.ru/car/enginevolume/2000");
+        driver.get("https://moskva.avtopoisk.ru/car/enginevolume/2000");
         assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
                 .getAttribute("content").contains("noindex, follow"));
-        driver.get("http://www.avtopoisk.ru/car/enginevolume/6600");
+        driver.get("https://www.avtopoisk.ru/car/enginevolume/6600");
         assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
                 .getAttribute("content").contains("noindex, follow"));
-        driver.get("http://www.avtopoisk.ru/car/bmw/transmission/auto/year/2013");
+        driver.get("https://www.avtopoisk.ru/car/bmw/transmission/auto/year/2013");
         assertTrue(driver.findElements(By.xpath("//meta[@name='robots']")).isEmpty(),
                 "Страница должна быть открыта от индексации");
-        driver.get("http://samara.avtopoisk.ru/car/toyota/enginetype/benzin/year/2014");
+        driver.get("https://samara.avtopoisk.ru/car/toyota/enginetype/benzin/year/2014");
         assertTrue(driver.findElements(By.xpath("//meta[@name='robots']")).isEmpty(),
                 "Страница должна быть открыта от индексации");
         openAdpage("samara");
@@ -253,13 +253,13 @@ public class SeoRequirementsTests extends BaseClass {
     @Test
     public void noindexOnPagesWhereCountLessThenFive(){
         openSearchPageCar("www", "");
-        driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("dfghj");
+        driver.findElement(By.cssSelector("#ddSearchCars>input")).sendKeys("dfghj");
         clickOnSearchButton();
         assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
                 .getAttribute("content").contains("noindex, follow"),
                 "Страница 'Ничего не найдено' должна быть закрыть от индексации");
         driver.navigate().back();
-        driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("Alfa Romeo Mito");
+        driver.findElement(By.cssSelector("#ddSearchCars>input")).sendKeys("Alfa Romeo 166");
         clickOnSearchButton();
         if(getCountAdvertsOnSearchPage() >0 && getCountAdvertsOnSearchPage() <5){
             assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
@@ -270,15 +270,15 @@ public class SeoRequirementsTests extends BaseClass {
 
     @Test
     public void noidexOnEnginevolumePages(){
-        driver.get("http://moskva.avtopoisk.ru/car/lexus/enginevolumeto/5663");
+        driver.get("https://moskva.avtopoisk.ru/car/lexus/enginevolumeto/5663");
         assertTrue(driver.findElement(By.xpath("//meta[@name='robots']"))
                         .getAttribute("content").contains("noindex, follow"),
                 "Страница по объему двигателя должна быть закрыть от индексации");
 //        убрали nofollow с пагинатора
-        driver.get(" http://moskva.avtopoisk.ru/car/mazda");
+        driver.get(" https://moskva.avtopoisk.ru/car/mazda");
         assertTrue(!driver.findElement(By.cssSelector(".pagination>li:nth-of-type(2)>a")).getAttribute("rel").contains("nofollow"),
                 "Пагинатор должен быть открытым для индексации");
-        driver.get(" http://avtopoisk.ru/car/volvo");
+        driver.get(" https://avtopoisk.ru/car/volvo");
         assertTrue(!driver.findElement(By.cssSelector(".pagination>li:nth-of-type(2)>a")).getAttribute("rel").contains("nofollow"),
                 "Пагинатор должен быть открытым для индексации");
     }

@@ -58,7 +58,7 @@ public class BaseClass {
 //        System.setProperty("webdriver.opera.driver", "C:\\operadriver_win64\\operadriver.exe");
 //        driver = new OperaDriver();
         driver.manage().window().maximize();
-        baseUrl = "http://www.avtopoisk.ru/";
+        baseUrl = "https://www.avtopoisk.ru/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 10);
     }
@@ -113,6 +113,10 @@ public class BaseClass {
     }
 
     protected void clickOnSearchButton() {
+        driver.findElement(By.xpath("//input[@value='Поиск']")).click();
+    }
+
+    protected void clickOnSearchButtonMaiPage() {
         driver.findElement(By.xpath("//input[@value='Найти']")).click();
     }
 
@@ -134,7 +138,7 @@ public class BaseClass {
     }
 
     protected void openMoskvaMainPage() {
-        driver.get("http://www.avtopoisk.ru/");
+        driver.get("https://www.avtopoisk.ru/");
         driver.findElement(By.cssSelector(".caret-dd")).click();
         driver.findElement(By.linkText("Москва")).click();
     }
@@ -213,7 +217,7 @@ public class BaseClass {
     }
 
     protected void checkFineUrlAndTabFine() {
-        assertEquals("http://www.avtopoisk.ru/fine.html", driver.getCurrentUrl());
+        assertEquals("https://www.avtopoisk.ru/fine.html", driver.getCurrentUrl());
         driver.findElement(By.cssSelector(".table-container.table-container__columned"));
     }
 
@@ -223,7 +227,7 @@ public class BaseClass {
     }
 
     protected void openSearchPageCar(String s, String s1) {
-        driver.get("http://"+s+".avtopoisk.ru/car/" + s1);
+        driver.get("https://"+s+".avtopoisk.ru/car/" + s1);
     }
 
     public void clickOnFilterButtons(String s) {
@@ -260,14 +264,14 @@ public class BaseClass {
     }
 
     public void checkPresenseElementsInHeader() {
-        driver.findElement(By.cssSelector(".logo"));
-        driver.findElement(By.cssSelector("#btn-nav-categories")).click();
+        driver.findElement(By.cssSelector(".header-nav__logo"));
+        driver.findElement(By.cssSelector(".header-nav__nav-box>a")).click();
         if (driver.findElement(By.id("nav-categories")).isDisplayed());
         else fail("Главное меню в хедере не отображается");
-        driver.findElement(By.cssSelector("#btn-nav-cities>span")).click();
-        if (driver.findElement(By.id("btn-nav-cities")).isDisplayed());
+        driver.findElement(By.cssSelector(".header__search__link")).click();
+        if (driver.findElement(By.cssSelector(".dropdown-menu.dropdown-menu--city")).isDisplayed());
         else fail("Меню выбора городов не отображается");
-        driver.findElement(By.xpath("//a[contains(text(), 'Войти')]"));
+        driver.findElement(By.cssSelector(".header-nav__auth span:nth-of-type(1)"));
         driver.findElement(By.xpath("//a[contains(text(), '+ разместить объявление')]"));
         driver.findElement(By.id("searchbar"));
     }

@@ -26,7 +26,7 @@ public class CurrentTests extends BaseClass{
     //    проверка каунтеров на выдаче
     public void checkCountAdverts() throws Exception {
         openMainPage();
-        clickOnSearchButton();
+        clickOnSearchButtonMaiPage();
         int counters = getCountAdvertsOnSearchPage();
         if (counters > 360000){
             System.out.println("Объявлений на выдаче достаточно - "+ counters + " штук.");
@@ -40,29 +40,29 @@ public class CurrentTests extends BaseClass{
 //    проверка попапа-подписки на выдаче и при клике на пагинацию
     public void initPopapOnFirstAndSecondSearchPages() {
         openMoskvaMainPage();
-        clickOnSearchButton();
+        clickOnSearchButtonMaiPage();
         WebElement inputField = driver.findElement(By.xpath("//input[@placeholder='E-mail']"));
         inputField.sendKeys("kljkljkljl");
         driver.findElement(By.cssSelector(".btn.btn-lg.btn-blue.w-fluid.buttonSubscribe")).click();
         driver.findElement(By.cssSelector(".btn-close-cross__dk.btn-rnd.btn-md.closeSubscribe")).click();
         assertEquals("Купить авто в Москве. Продажа автомобилей по низкой цене", driver.getTitle());
 //        открытие стр.2 и проверка попапа-подписки
-        driver.findElement(By.xpath("html/body/section/div[2]/div/div[3]/div[1]/nav/ul/li[2]/a")).click();
+        driver.findElement(By.xpath("//*[@id='yw1']/li[2]/a")).click();
         driver.findElement(By.cssSelector(".btn.btn-lg.btn-blue.w-fluid.buttonSubscribe")).click();
     }
 
     @Test
     public void redirectOnCatalogPages(){
-        driver.get("http://moskva.avtopoisk.ru/");
+        driver.get("https://moskva.avtopoisk.ru/");
         driver.findElement(By.cssSelector("#btn-nav-categories")).click();
         driver.findElement(By.xpath("(//div[@class='nav-categories-list']//li/a)[5]")).click();
-        assertTrue(driver.getCurrentUrl().equals("http://www.avtopoisk.ru/catalog"),
+        assertTrue(driver.getCurrentUrl().equals("https://www.avtopoisk.ru/catalog"),
                 "Каталог должен быть без поддомена и без .html");
-        driver.get("http://www.avtopoisk.ru/catalog/mark/ford.html");
+        driver.get("https://www.avtopoisk.ru/catalog/mark/ford.html");
         assertTrue(!driver.getCurrentUrl().contains(".html"));
-        driver.get("http://moskva.avtopoisk.ru/catalog/mark/ford");
+        driver.get("https://moskva.avtopoisk.ru/catalog/mark/ford");
         assertTrue(!driver.getCurrentUrl().contains("moskva"));
-        driver.get("http://moskva.avtopoisk.ru/catalog/mark/ford.html");
+        driver.get("https://moskva.avtopoisk.ru/catalog/mark/ford.html");
         assertTrue(!driver.getCurrentUrl().contains("moskva"));
         assertTrue(!driver.getCurrentUrl().contains(".html"));
     }

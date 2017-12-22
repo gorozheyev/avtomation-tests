@@ -188,7 +188,7 @@ public class SearchFilterTests extends BaseClass{
         openSearchPageCar("omsk", "");
         driver.findElement(By.id("mileageFrom")).sendKeys("20000");
         driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://omsk.avtopoisk.ru/car/mileagefrom/20000"));
+        assertTrue(driver.getCurrentUrl().contains("https://omsk.avtopoisk.ru/car/mileagefrom/20000"));
         List<WebElement> elements = driver.findElements(By.xpath("//div[@class='description']/strong"));
         List<WebElement> otherElements = driver.findElements(By.xpath("//div[@class='table-cell'][contains(text(), 'км')]"));
             if (!otherElements.isEmpty()) {
@@ -213,7 +213,7 @@ public class SearchFilterTests extends BaseClass{
         driver.findElement(By.id("mileageFrom")).sendKeys("20000");
         driver.findElement(By.id("mileageTo")).sendKeys("100000");
         driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://nizhnij-novgorod.avtopoisk.ru/car/mileagefrom/20000/mileageto/100000"));
+        assertTrue(driver.getCurrentUrl().contains("https://nizhnij-novgorod.avtopoisk.ru/car/mileagefrom/20000/mileageto/100000"));
         List<WebElement> elements = driver.findElements(By.xpath("//div[@class='description']/strong/i"));
         for (WebElement mileage : elements) {
             int a = Integer.parseInt(mileage.getText().substring(0, 6).replaceAll(" ", ""));
@@ -243,19 +243,19 @@ public class SearchFilterTests extends BaseClass{
         assertTrue(driver.findElement(By.xpath("//label/a[contains(text(), 'механическая')]")).isDisplayed());
         assertThat(driver.findElement(By.xpath("//div[@id='extraFiltersSet']/div[1]")).getAttribute("class"), is("filter-group open"));
         driver.findElement(By.xpath("//label/a[contains(text(), 'механическая')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://ufa.avtopoisk.ru/car/transmission/mech"));
+        assertTrue(driver.getCurrentUrl().contains("https://ufa.avtopoisk.ru/car/transmission/mech"));
         driver.findElement(By.xpath("//div[@class='filter-group'][1]")).click();
         driver.findElement(By.xpath("//label/a[contains(text(), 'бензиновый')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://ufa.avtopoisk.ru/car/transmission/mech/enginetype/benzin"));
+        assertTrue(driver.getCurrentUrl().contains("https://ufa.avtopoisk.ru/car/transmission/mech/enginetype/benzin"));
         driver.findElement(By.xpath("//div[@class='filter-group'][1]")).click();
         driver.findElement(By.xpath("//label/a[contains(text(), 'красный')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://ufa.avtopoisk.ru/car/transmission/mech/enginetype/benzin/color/red"));
+        assertTrue(driver.getCurrentUrl().contains("https://ufa.avtopoisk.ru/car/transmission/mech/enginetype/benzin/color/red"));
         driver.findElement(By.xpath("//div[@class='filter-group'][1]")).click();
         driver.findElement(By.xpath("//label/a[contains(text(), 'Седан')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://ufa.avtopoisk.ru/car/subbody/sedan/transmission/mech/enginetype/benzin/color/red"));
+        assertTrue(driver.getCurrentUrl().contains("https://ufa.avtopoisk.ru/car/subbody/sedan/transmission/mech/enginetype/benzin/color/red"));
         driver.findElement(By.xpath("//div[@class='filter-group'][1]")).click();
         driver.findElement(By.xpath("//label/a[contains(text(), 'передний')]")).click();
-        assertTrue(driver.getCurrentUrl().contains("http://ufa.avtopoisk.ru/car/subbody/sedan/transmission/mech/enginetype/benzin/color/red/wheeldrive/front"));
+        assertTrue(driver.getCurrentUrl().contains("https://ufa.avtopoisk.ru/car/subbody/sedan/transmission/mech/enginetype/benzin/color/red/wheeldrive/front"));
         driver.findElement(By.xpath("(//div[@class='title h4'])[1]"));
     }
 

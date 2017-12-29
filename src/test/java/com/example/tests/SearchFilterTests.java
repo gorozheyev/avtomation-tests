@@ -214,7 +214,7 @@ public class SearchFilterTests extends BaseClass{
         driver.findElement(By.id("mileageTo")).sendKeys("100000");
         driver.findElement(By.xpath("//button[contains(text(), 'найти')]")).click();
         assertTrue(driver.getCurrentUrl().contains("https://nizhnij-novgorod.avtopoisk.ru/car/mileagefrom/20000/mileageto/100000"));
-        List<WebElement> elements = driver.findElements(By.xpath("//div[@class='description']/strong/i"));
+        List<WebElement> elements = driver.findElements(By.xpath("//div[@class='description']/strong"));
         for (WebElement mileage : elements) {
             int a = Integer.parseInt(mileage.getText().substring(0, 6).replaceAll(" ", ""));
             if (a < 20000 && a > 100000) {
@@ -224,7 +224,7 @@ public class SearchFilterTests extends BaseClass{
         List<WebElement> otherElements = driver.findElements(By.xpath("//div[@class='table-cell'][contains(text(), 'км')]"));
         if (!otherElements.isEmpty()) {
             for (WebElement mileage2 : otherElements) {
-                int b = Integer.parseInt(mileage2.getText().substring(0, 6).replaceAll(" ", ""));
+                int b = Integer.parseInt(mileage2.getText().substring(0, 6).trim());
                 if (b < 20000 && b > 100000) {
                     fail("Пробег должен быть от 20000 до 100000, а найдено объявление с пробегом " + b + "км");
                 }

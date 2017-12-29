@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
+import javax.xml.bind.Element;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -200,7 +201,7 @@ public class SearchPage extends BaseClass{
         }
         driver.findElement(By.id("searchbar")).sendKeys(Keys.END);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='nav-quick']/a[2]"))).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='form-content']/a"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='form-content']/a"))).click();
         Thread.sleep(1500);
         driver.findElement(By.xpath("//div[@class='nav-quick']/a[3]")).click();
         assertTrue(driver.getCurrentUrl().equals("https://voronezh.avtopoisk.ru/auth.html"));
@@ -217,7 +218,7 @@ public class SearchPage extends BaseClass{
         assertTrue(driver.findElement(By.xpath("(//div[@class='favorite-link liked '])[1] ")).getAttribute("title").equals("Добавить в избранное"));
         driver.findElement(By.xpath("//div[@class='header-nav__auth']/a")).click();
         authorizationOnTheSite();
-        assertTrue(driver.getCurrentUrl().equals("https://volgograd.avtopoisk.ru/user/EditProfile"));
+        assertTrue(driver.getCurrentUrl().equals("https://www.avtopoisk.ru/user/EditProfile"));
         driver.findElement(By.xpath("//a[contains(text(), 'Избранное')]")).click();
         List<WebElement> favorite = driver.findElements(By.xpath("//div[@class='item-liked']/a[1]"));
         if(!favorite.isEmpty()){
@@ -234,64 +235,6 @@ public class SearchPage extends BaseClass{
                 "Не совпадает кол-во добавленных объявлений в избранное со счетчиком на липкой панельке");
         driver.findElement(By.xpath("(//a[@class='option-item-del'])[1]")).click();
         driver.findElement(By.xpath("(//div[@class='search-panel__btn'])[2]")).click();
-    }
-
-    @Test
-    public void newMenuHeaderFirstPart() {
-        openSearchPageCar("www", "");
-        driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
-        List<WebElement> categories1 = driver.findElements(By.xpath("//div[@id='collapseOne']//li"));
-        for (int i = 1; i <= categories1.size(); i++) {
-            WebElement page = driver.findElement(By.xpath("(//div[@id='collapseOne']//a)[" + i + "]"));
-            if (!page.getAttribute("title").equals("")) ;
-            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-            page.click();
-            driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
-        }
-    }
-
-    @Test
-    public void newMenuHeaderSecondPart(){
-        openSearchPageCar("www", "");
-        driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
-        Actions actions = new Actions(driver);
-        WebElement element = driver.findElement(By.xpath("//*[@id='headingTwo']/span"));
-        actions.moveToElement(element).build().perform();
-        List<WebElement> categories1 = driver.findElements(By.xpath("//div[@id='collapseTwo']//li"));
-        for (int i = 1; i <=  categories1.size(); i++) {
-            WebElement page = driver.findElement(By.xpath("(//div[@id='collapseTwo']//a)[" + i + "]"));
-            if (!page.getAttribute("title").equals("")) ;
-            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-            page.click();
-            if(i==1) {
-                driver.navigate().back();
-            }
-            driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
-            WebElement element2 = driver.findElement(By.xpath("//*[@id='headingTwo']/span"));
-            actions.moveToElement(element2).build().perform();
-        }
-    }
-
-    @Test
-    public void newMenuHeaderThirdPart() {
-        openSearchPageCar("www", "");
-        driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
-        Actions actions = new Actions(driver);
-        WebElement element = driver.findElement(By.xpath("//*[@id='headingThree']/span"));
-        actions.moveToElement(element).build().perform();
-        List<WebElement> categories1 = driver.findElements(By.xpath("//div[@id='collapseThree']//li"));
-        for (int i = 1; i <= categories1.size(); i++) {
-            WebElement page = driver.findElement(By.xpath("(//div[@id='collapseThree']//a)[" + i + "]"));
-            if (!page.getAttribute("title").equals("")) ;
-            else fail("Пропали тайтлы в выпадающем меню у категорий в хедере");
-            page.click();
-            driver.findElement(By.cssSelector("#searchbar"));
-            driver.findElement(By.cssSelector(".header-nav__nav-box")).click();
-            WebElement element2 = driver.findElement(By.xpath("//*[@id='headingThree']/span"));
-            actions.moveToElement(element2).build().perform();
-        }
     }
 
 }

@@ -1,12 +1,15 @@
 package com.example.tests;
 
+import org.junit.rules.ExpectedException;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.ExpectedExceptions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -266,12 +269,13 @@ public class BaseClass {
     public void checkPresenseElementsInHeader() {
         driver.findElement(By.cssSelector(".header-nav__logo"));
         driver.findElement(By.cssSelector(".header-nav__nav-box>a")).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nav-categories")));
         if (driver.findElement(By.id("nav-categories")).isDisplayed());
-        else fail("Главное меню в хедере не отображается");
+        else fail("Выпадающий список главного меню в хедере не отображается");
         driver.findElement(By.cssSelector(".header__search__link")).click();
         if (driver.findElement(By.cssSelector(".dropdown-menu.dropdown-menu--city")).isDisplayed());
         else fail("Меню выбора городов не отображается");
-        driver.findElement(By.cssSelector(".header-nav__auth span:nth-of-type(1)"));
+        driver.findElement(By.cssSelector(".header-nav__auth>a:nth-of-type(2)"));
         driver.findElement(By.xpath("//a[contains(text(), '+ разместить объявление')]"));
         driver.findElement(By.id("searchbar"));
     }

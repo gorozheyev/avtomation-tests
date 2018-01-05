@@ -417,9 +417,9 @@ public class TestsForMainPage extends BaseClass{
         openMainPage();
         assertEquals("Разместить объявление на Avtopoisk", driver.findElement(By.xpath("(//a[contains(text(), '+ разместить объявление')])[1]")).getAttribute("title"));
         driver.findElement(By.xpath("(//a[contains(text(), '+ разместить объявление')])[1]")).click();
-        assertEquals("https://www.avtopoisk.ru/add.html", driver.getCurrentUrl());
-        assertEquals("Разместить объявление о продаже авто в России.", driver.getTitle());
-        driver.findElement(By.cssSelector(".content-frame-title>h3"));
+        assertEquals("https://www.avtopoisk.ru/proposition.html", driver.getCurrentUrl());
+        assertEquals("Подать объявление о продаже авто в России, разместить объявление бесплатно на Avtopoisk.ru", driver.getTitle());
+        driver.findElement(By.cssSelector(".content-frame-caption.mode-left>h2"));
     }
 
     @Test
